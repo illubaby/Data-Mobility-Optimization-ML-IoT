@@ -1,0 +1,252 @@
+/*
+
+AMD Vivado v2023.2 (64-bit) [Major: 2023, Minor: 2]
+SW Build: 4029153 on Fri Oct 13 20:13:54 MDT 2023
+IP Build: 4028589 on Sat Oct 14 00:45:43 MDT 2023
+IP Build: 4028589 on Sat Oct 14 00:45:43 MDT 2023
+
+Process ID (PID): 22932
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Fri May 03 19:49:59 ICT 2024
+Time zone: 	Indochina Time (Asia/Ho_Chi_Minh)
+
+OS: Ubuntu
+OS Version: 6.5.0-28-generic
+OS Architecture: amd64
+Available processors (cores): 20
+LSB Release Description: Ubuntu 22.04.4 LTS
+
+Display: 1
+Screen size: 1920x1080
+Local screen bounds: x = 1920, y = 0, width = 1920, height = 1080
+Screen resolution (DPI): 139
+Available screens: 2
+Default font: family=Dialog,name=Dialog,style=plain,size=17
+Scale size: 24
+OS font scaling: 139%
+Anti-Alias Enabled: false
+
+Java version: 	17.0.7 64-bit
+JavaFX version: 17.0.1
+Java home: 	/tools/Xilinx/Vivado/2023.2/tps/lnx64/jre17.0.7_7
+Java executable: 	/tools/Xilinx/Vivado/2023.2/tps/lnx64/jre17.0.7_7/bin/java
+Java arguments: 	[-Dsun.java2d.pmoffscreen=false, -Dhttps.protocols=TLSv1,TLSv1.1,TLSv1.2, -Dsun.java2d.xrender=false, -Djdk.gtk.version=2, -Dsun.java2d.uiScale.enabled=false, -Dswing.aatext=true, -XX:-UsePerfData, -Djdk.map.althashing.threshold=512, -XX:StringTableSize=4072, -XX:+UseStringDeduplication, -XX:MaxGCPauseMillis=200, -XX:+ParallelRefProcEnabled, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.base/java.nio=ALL-UNNAMED, --add-opens=java.desktop/sun.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/java.awt.event=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-exports=java.base/java.nio=ALL-UNNAMED, --add-exports=java.desktop/sun.swing=ALL-UNNAMED, --add-exports=java.desktop/javax.swing=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-exports=java.desktop/sun.swing=ALL-UNNAMED, --add-exports=java.desktop/sun.swing.table=ALL-UNNAMED, --add-exports=java.desktop/sun.swing.plaf.synth=ALL-UNNAMED, --add-exports=java.desktop/sun.awt.shell=ALL-UNNAMED, --add-exports=java.base/sun.security.action=ALL-UNNAMED, --add-exports=java.desktop/sun.font=ALL-UNNAMED, --add-opens=java.desktop/sun.awt.X11=ALL-UNNAMED, -XX:NewSize=80m, -XX:MaxNewSize=80m, -Xms512m, -Xmx4072m, -Xss10m, -Xrs]
+Java initial memory (-Xms): 	512 MB
+Java maximum memory (-Xmx):	 3 GB
+
+User name: 	illubaby
+User home directory: /home/illubaby
+User working directory: /home/illubaby/RISC-V/RISCVAIoT/SoC/SoCSource
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: /tools/Xilinx/Vivado
+HDI_APPROOT: /tools/Xilinx/Vivado/2023.2
+RDI_DATADIR: /tools/Xilinx/Vivado/2023.2/data
+RDI_BINDIR: /tools/Xilinx/Vivado/2023.2/bin
+
+Vivado preferences file: /home/illubaby/.Xilinx/Vivado/2023.2/vivado.xml
+Vivado preferences directory: /home/illubaby/.Xilinx/Vivado/2023.2/
+Vivado layouts directory: /home/illubaby/.Xilinx/Vivado/2023.2/data/layouts
+PlanAhead jar file: 	/tools/Xilinx/Vivado/2023.2/lib/classes/planAhead.jar
+Vivado log file: 	/home/illubaby/RISC-V/RISCVAIoT/SoC/SoCSource/vivado.log
+Vivado journal file: 	/home/illubaby/RISC-V/RISCVAIoT/SoC/SoCSource/vivado.jou
+Engine tmp dir: 	./.Xil/Vivado-22932-illubaby-ASUS-TUF-Gaming-F15
+Non-Default Parameters:	[]
+
+Xilinx & AMD Environment Variables
+--------------------------------------------------------------------------------------------
+GNOME_SHELL_SESSION_MODE: ubuntu
+RDI_APPROOT: /tools/Xilinx/Vivado/2023.2
+RDI_BASEROOT: /tools/Xilinx/Vivado
+RDI_BINROOT: /tools/Xilinx/Vivado/2023.2/bin
+RDI_BUILD: yes
+RDI_DATADIR: /tools/Xilinx/Vivado/2023.2/data
+RDI_INSTALLROOT: /tools/Xilinx
+RDI_INSTALLVER: 2023.2
+RDI_JAVA_PLATFORM: 
+RDI_JAVA_VERSION: 17.0.7_7
+RDI_LIBDIR: /tools/Xilinx/Vivado/2023.2/lib/lnx64.o/Ubuntu/22:/tools/Xilinx/Vivado/2023.2/lib/lnx64.o/Ubuntu:/tools/Xilinx/Vivado/2023.2/lib/lnx64.o
+RDI_OPT_EXT: .o
+RDI_PATCHROOT: 
+RDI_PLATFORM: lnx64
+RDI_PREPEND_PATH: /tools/Xilinx/Vitis/2023.2/bin:/tools/Xilinx/Vivado/2023.2/ids_lite/ISE/bin/lin64
+RDI_PROG: /tools/Xilinx/Vivado/2023.2/bin/unwrapped/lnx64.o/vivado
+RDI_SESSION_INFO: /home/illubaby/RISC-V/RISCVAIoT/SoC/SoCSource:illubaby-ASUS-TUF-Gaming-F15_1714740590_22891
+RDI_SHARED_DATA: /tools/Xilinx/SharedData/2023.2/data
+RDI_TPS_ROOT: /tools/Xilinx/Vivado/2023.2/tps/lnx64
+RDI_USE_JDK17: True
+SHELL: /bin/bash
+XILINX: /tools/Xilinx/Vivado/2023.2/ids_lite/ISE
+XILINXD_LICENSE_FILE: PORT@HOST
+XILINX_DSP: /tools/Xilinx/Vivado/2023.2/ids_lite/ISE
+XILINX_HLS: /tools/Xilinx/Vitis_HLS/2023.2
+XILINX_PLANAHEAD: /tools/Xilinx/Vivado/2023.2
+XILINX_SDK: /tools/Xilinx/Vitis/2023.2
+XILINX_VITIS: /tools/Xilinx/Vitis/2023.2
+XILINX_VIVADO: /tools/Xilinx/Vivado/2023.2
+XILINX_VIVADO_HLS: /tools/Xilinx/Vivado/2023.2
+
+
+GUI allocated memory:	512 MB
+GUI max memory:		4,072 MB
+Engine allocated memory: 1,591 MB
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+selectList(PAResourceQtoS.SyntheticaGettingStartedView_RECENT_PROJECTS, "/home/illubaby/Documents/GitHub/Optimization_RISC-V/Implementation/Picorv32/Picorv32.xpr", 0); // b.c (PAResourceQtoS.SyntheticaGettingStartedView_RECENT_PROJECTS)
+// [GUI Memory]: 130 MB (+133619kb) [00:00:04]
+// [Engine Memory]: 1,495 MB (+1415952kb) [00:00:04]
+// Opening Vivado Project: /home/illubaby/Documents/GitHub/Optimization_RISC-V/Implementation/Picorv32/Picorv32.xpr. Version: Vivado v2023.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: FLOW_ADDED
+// Tcl Message: open_project /home/illubaby/Documents/GitHub/Optimization_RISC-V/Implementation/Picorv32/Picorv32.xpr 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,680 MB. GUI used memory: 69 MB. Current time: 5/3/24, 7:50:00 PM ICT
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 1,761 MB (+200896kb) [00:00:08]
+// WARNING: HEventQueue.dispatchEvent() is taking  1163 ms.
+// Tcl Message: open_project /home/illubaby/Documents/GitHub/Optimization_RISC-V/Implementation/Picorv32/Picorv32.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2023.2/data/ip'. 
+// [Engine Memory]: 1,877 MB (+28674kb) [00:00:09]
+// Project name: Picorv32; location: /home/illubaby/Documents/GitHub/Optimization_RISC-V/Implementation/Picorv32; part: xc7a35ticsg324-1L
+dismissDialog("Open Project"); // bq (Open Project Progress)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// [GUI Memory]: 147 MB (+10811kb) [00:00:11]
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Add Sources]", 2, false); // f (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+selectButton("NEXT", "Next >"); // JButton (NEXT)
+// Tcl Message: update_compile_order -fileset sources_1 
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a (PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT)
+setFileChooser("/home/illubaby/RISC-V/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v");
+selectButton("FINISH", "Finish"); // JButton (FINISH)
+// 'f' command handler elapsed time: 14 seconds
+dismissDialog("Add Sources"); // c (dialog0)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -norecurse /home/illubaby/RISC-V/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 20s
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed Time for: 'L.f': 22s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, al_accel_RDATA_ctrl (al_accel_RDATA_ctrl.v)]", 8, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, al_accel_RDATA_ctrl (al_accel_RDATA_ctrl.v)]", 8, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+// HMemoryUtils.trashcanNow. Engine heap size: 2,012 MB. GUI used memory: 79 MB. Current time: 5/3/24, 7:50:25 PM ICT
+// [Engine Memory]: 2,004 MB (+35049kb) [00:00:32]
+// Elapsed Time for: 'L.f': 24s
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // L (PAResourceOtoP.PAViews_BASE_WORKSPACE, PlanAheadTabBaseWorkspace)
+selectCodeEditor("al_accel_RDATA_ctrl.v", 213, 75); // ad (al_accel_RDATA_ctrl.v)
+typeControlKey((HResource) null, "al_accel_RDATA_ctrl.v", 'c'); // ad (al_accel_RDATA_ctrl.v)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 56s
+// Elapsed Time for: 'L.f': 58s
+// Elapsed time: 93 seconds
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // J (PAResourceOtoP.PAViews_CODE, PlanAheadTabCode)
+unMinimizeFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // R (PAResourceOtoP.PAViews_SOURCES, Sources)
+unMinimizeFrame(RDIResource.RDIViews_PROPERTIES, "Properties"); // R (RDIResource.RDIViews_PROPERTIES, Properties)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, al_accel_RDATA_ctrl (al_accel_RDATA_ctrl.v)]", 8, false, false, false, false, true, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ao (RDIResourceCommand.RDICommands_DELETE, global_delete_menu)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (RDIResource.BaseDialog_OK)
+dismissDialog("Remove Sources"); // X (dialog2)
+// Tcl Message: export_ip_user_files -of_objects  [get_files /home/illubaby/RISC-V/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v] -no_script -reset -force -quiet 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files  /home/illubaby/RISC-V/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v 
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B (PAResourceCommand.PACommandNames_ADD_SOURCES, Sources_add_sources)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// Elapsed Time for: 'L.f': 02m:16s
+selectButton("NEXT", "Next >"); // JButton (NEXT)
+// Elapsed Time for: 'L.f': 02m:18s
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_OR_CREATE_SOURCE_FILE, "Add"); // B (PAResourceQtoS.SrcChooserPanel_ADD_OR_CREATE_SOURCE_FILE, Add)
+selectMenuItem(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files..."); // ao (PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, Add Files...)
+setFileChooser("/home/illubaby/RISC-V/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel.v");
+selectTable(PAResourceQtoS.SrcChooserTable_SRC_CHOOSER_TABLE, "VSourceFile ; 1 ; al_accel.v ; xil_defaultlib ; /home/illubaby/RISC-V/RISCVAIoT/SoC/SoCSource/source/accel_source", 0, "1", 1, false, false, false, true, false); // aP (PAResourceQtoS.SrcChooserTable_SRC_CHOOSER_TABLE) - Popup Trigger
+// [GUI Memory]: 158 MB (+3771kb) [00:02:32]
+selectTable(PAResourceQtoS.SrcChooserTable_SRC_CHOOSER_TABLE, "VSourceFile ; 1 ; al_accel.v ; xil_defaultlib ; /home/illubaby/RISC-V/RISCVAIoT/SoC/SoCSource/source/accel_source", 0, "1", 1, false, false, false, true, false); // aP (PAResourceQtoS.SrcChooserTable_SRC_CHOOSER_TABLE) - Popup Trigger
+selectMenu(PAResourceQtoS.SrcChooserPanel_ADD_OR_CREATE_SOURCE_FILE, "Add"); // al (PAResourceQtoS.SrcChooserPanel_ADD_OR_CREATE_SOURCE_FILE, Add)
+selectTable(PAResourceQtoS.SrcChooserTable_SRC_CHOOSER_TABLE, "VSourceFile ; 1 ; al_accel.v ; xil_defaultlib ; /home/illubaby/RISC-V/RISCVAIoT/SoC/SoCSource/source/accel_source", 0, "al_accel.v", 2); // aP (PAResourceQtoS.SrcChooserTable_SRC_CHOOSER_TABLE)
+selectButton(RDIResource.AbstractCombinedPanel_REMOVE_SELECTED_ELEMENTS, "Remove"); // B (RDIResource.AbstractCombinedPanel_REMOVE_SELECTED_ELEMENTS, Remove)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_OR_CREATE_SOURCE_FILE, "Add"); // B (PAResourceQtoS.SrcChooserPanel_ADD_OR_CREATE_SOURCE_FILE, Add)
+selectMenuItem(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files..."); // ao (PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, Add Files...)
+setFileChooser("/home/illubaby/RISC-V/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v");
+selectButton("FINISH", "Finish"); // JButton (FINISH)
+// 'f' command handler elapsed time: 22 seconds
+dismissDialog("Add Sources"); // c (dialog3)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -norecurse /home/illubaby/RISC-V/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v 
+// Elapsed Time for: 'L.f': 02m:40s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 02m:42s
+// Tcl Message: update_compile_order -fileset sources_1 
+// HMemoryUtils.trashcanNow. Engine heap size: 2,030 MB. GUI used memory: 80 MB. Current time: 5/3/24, 7:52:45 PM ICT
+// Elapsed Time for: 'L.f': 02m:44s
+// Elapsed Time for: 'L.f': 02m:46s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, al_accel_RDATA_ctrl (al_accel_RDATA_ctrl.v)]", 8, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, al_accel_RDATA_ctrl (al_accel_RDATA_ctrl.v)]", 8, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+unmaximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // L (PAResourceOtoP.PAViews_BASE_WORKSPACE, PlanAheadTabBaseWorkspace)
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // L (PAResourceOtoP.PAViews_BASE_WORKSPACE, PlanAheadTabBaseWorkspace)
+// Elapsed time: 11 seconds
+selectCodeEditor("al_accel_RDATA_ctrl.v", 155, 173); // ad (al_accel_RDATA_ctrl.v)
+selectCodeEditor("al_accel_RDATA_ctrl.v", 155, 173, false, false, false, false, true); // ad (al_accel_RDATA_ctrl.v) - Double Click
+selectCodeEditor("al_accel_RDATA_ctrl.v", 67, 210); // ad (al_accel_RDATA_ctrl.v)
+selectCodeEditor("al_accel_RDATA_ctrl.v", 204, 231); // ad (al_accel_RDATA_ctrl.v)
+selectCodeEditor("al_accel_RDATA_ctrl.v", 204, 231, false, false, false, false, true); // ad (al_accel_RDATA_ctrl.v) - Double Click
+typeControlKey((HResource) null, "al_accel_RDATA_ctrl.v", 'c'); // ad (al_accel_RDATA_ctrl.v)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "inter_ps_addr"); // d.c (RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX)
+selectCodeEditor("al_accel_RDATA_ctrl.v", 58, 34); // ad (al_accel_RDATA_ctrl.v)
+selectCodeEditor("al_accel_RDATA_ctrl.v", 71, 54); // ad (al_accel_RDATA_ctrl.v)
+selectCodeEditor("al_accel_RDATA_ctrl.v", 247, 34); // ad (al_accel_RDATA_ctrl.v)
+selectCodeEditor("al_accel_RDATA_ctrl.v", 247, 34, false, false, false, false, true); // ad (al_accel_RDATA_ctrl.v) - Double Click
+typeControlKey((HResource) null, "al_accel_RDATA_ctrl.v", 'c'); // ad (al_accel_RDATA_ctrl.v)
+selectCodeEditor("al_accel_RDATA_ctrl.v", 633, 232); // ad (al_accel_RDATA_ctrl.v)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 03m:44s
+typeControlKey((HResource) null, "al_accel_RDATA_ctrl.v", 'c'); // ad (al_accel_RDATA_ctrl.v)
+// Elapsed Time for: 'L.f': 03m:46s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 03m:54s
+// Elapsed Time for: 'L.f': 03m:56s
+// HMemoryUtils.trashcanNow. Engine heap size: 2,104 MB. GUI used memory: 82 MB. Current time: 5/3/24, 7:54:00 PM ICT
+// [Engine Memory]: 2,104 MB (+7kb) [00:06:35]
+// HMemoryUtils.trashcanNow. Engine heap size: 2,105 MB. GUI used memory: 82 MB. Current time: 5/3/24, 8:24:00 PM ICT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,105 MB. GUI used memory: 82 MB. Current time: 5/3/24, 8:54:00 PM ICT

@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Fri May  3 19:49:51 2024
+# Process ID: 22932
+# Current directory: /home/illubaby/RISC-V/RISCVAIoT/SoC/SoCSource
+# Command line: vivado
+# Log file: /home/illubaby/RISC-V/RISCVAIoT/SoC/SoCSource/vivado.log
+# Journal file: /home/illubaby/RISC-V/RISCVAIoT/SoC/SoCSource/vivado.jou
+# Running On: illubaby-ASUS-TUF-Gaming-F15, OS: Linux, CPU Frequency: 2144.380 MHz, CPU Physical cores: 14, Host memory: 16361 MB
+#-----------------------------------------------------------
+start_gui
+open_project /home/illubaby/Documents/GitHub/Optimization_RISC-V/Implementation/Picorv32/Picorv32.xpr
+update_compile_order -fileset sources_1
+add_files -norecurse /home/illubaby/RISC-V/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files /home/illubaby/RISC-V/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v] -no_script -reset -force -quiet
+remove_files  /home/illubaby/RISC-V/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v
+add_files -norecurse /home/illubaby/RISC-V/RISCVAIoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v
+update_compile_order -fileset sources_1

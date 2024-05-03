@@ -1,0 +1,31 @@
+00:07:25 INFO  : updated workspace path: 
+00:07:25 INFO  : updated workspace path: 
+00:07:25 INFO  : bash, -c, source /tools/Xilinx/Vitis/2023.2/tps/lnx64/lopper-1.1.0/env/bin/activate && python /tools/Xilinx/Vitis/2023.2/data/embeddedsw/scripts/pyesw//repo.py -st  /tools/Xilinx/Vitis/2023.2/data/embeddedsw && deactivate
+00:07:25 INFO  : Successfully created repository data at /tmp/rigel_lopper_illubaby17855040276604984831
+00:07:25 INFO  : bash, -c, source /tools/Xilinx/Vitis/2023.2/tps/lnx64/lopper-1.1.0/env/bin/activate && python /tools/Xilinx/Vitis/2023.2/data/embeddedsw/scripts/pyesw//get_template_data.py -d /tmp/rigel_lopper_illubaby7488785080939976001 -r /tmp/rigel_lopper_illubaby17855040276604984831/.repo.yaml && deactivate
+00:07:25 INFO  : Embedded Template List generated successfully
+00:07:25 INFO  : bash, -c, source /tools/Xilinx/Vitis/2023.2/tps/lnx64/lopper-1.1.0/env/bin/activate && python /tools/Xilinx/Vitis/2023.2/data/embeddedsw/scripts/pyesw//repo.py -st  /tools/Xilinx/Vitis/2023.2/data/embeddedsw && deactivate
+00:07:26 INFO  : Successfully created repository data at /tmp/rigel_lopper_illubaby9904979869314974395
+00:07:26 INFO  : bash, -c, source /tools/Xilinx/Vitis/2023.2/tps/lnx64/lopper-1.1.0/env/bin/activate && python /tools/Xilinx/Vitis/2023.2/data/embeddedsw/scripts/pyesw//get_template_data.py -d /tmp/rigel_lopper_illubaby4006312055376473195 -r /tmp/rigel_lopper_illubaby9904979869314974395/.repo.yaml && deactivate
+00:07:26 INFO  : Embedded Template List generated successfully
+00:07:56 INFO  : bash, -c, source /tools/Xilinx/Vitis/2023.2/tps/lnx64/lopper-1.1.0/env/bin/activate && python /tools/Xilinx/Vitis/2023.2/data/embeddedsw/scripts/pyesw//repo.py -st  /tools/Xilinx/Vitis/2023.2/data/embeddedsw && deactivate
+00:07:56 INFO  : created .gitignore file for the project /home/illubaby/RISC-V/RISCVAIoT
+00:07:56 INFO  : updated workspace path: /home/illubaby/RISC-V/RISCVAIoT
+00:07:57 INFO  : Successfully created repository data at /tmp/rigel_lopper_illubaby2464424874571016856
+00:07:57 INFO  : bash, -c, source /tools/Xilinx/Vitis/2023.2/tps/lnx64/lopper-1.1.0/env/bin/activate && python /tools/Xilinx/Vitis/2023.2/data/embeddedsw/scripts/pyesw//get_template_data.py -d /tmp/rigel_lopper_illubaby1430099933630320054 -r /tmp/rigel_lopper_illubaby2464424874571016856/.repo.yaml && deactivate
+00:07:57 INFO  : Embedded Template List generated successfully
+00:07:57 INFO  : Marking the target connection as default Local
+00:07:57 INFO  : Marking the target connection as default Linux Agent
+00:07:57 INFO  : Marking the target connection as default XRTServer
+00:07:57 INFO  : Marking the target connection as default LinuxEmulation
+00:07:57 INFO  : Marking the target connection as default QEMU
+00:07:57 INFO  : created .gitignore file for the project /home/illubaby/RISC-V/RISCVAIoT
+00:07:57 INFO  : bash, -c, source /tools/Xilinx/Vitis/2023.2/tps/lnx64/lopper-1.1.0/env/bin/activate && python /tools/Xilinx/Vitis/2023.2/data/embeddedsw/scripts/pyesw//repo.py -st   /tools/Xilinx/Vitis/2023.2/data/embeddedsw && deactivate
+00:07:57 INFO  : updated workspace path: /home/illubaby/RISC-V/RISCVAIoT
+00:07:58 INFO  : Successfully created repository data at /home/illubaby/RISC-V/RISCVAIoT
+00:07:58 INFO  : bash, -c, source /tools/Xilinx/Vitis/2023.2/tps/lnx64/lopper-1.1.0/env/bin/activate && python /tools/Xilinx/Vitis/2023.2/data/embeddedsw/scripts/pyesw//get_template_data.py -d /tmp/rigel_lopper_illubaby9747407752956619821 -r /home/illubaby/RISC-V/RISCVAIoT/.repo.yaml && deactivate
+00:07:58 INFO  : Embedded Template List generated successfully
+00:07:58 INFO  : bash, -c, source /tools/Xilinx/Vitis/2023.2/tps/lnx64/lopper-1.1.0/env/bin/activate && python /tools/Xilinx/Vitis/2023.2/data/embeddedsw/scripts/pyesw//get_template_data.py -d /tmp/rigel_lopper_illubaby1497301484342227958 -r /home/illubaby/RISC-V/RISCVAIoT/.repo.yaml && deactivate
+00:07:58 INFO  : Embedded Template List generated successfully
+00:35:23 INFO  : Terminating Vitis C++ Server
+00:35:23 INFO  : Vitis C++ Server terminated
