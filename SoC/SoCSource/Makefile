@@ -110,7 +110,7 @@ AL_ULTRA96V2_FW_C_OBJS = 	$(SOC_FW_DIR)/c/fw_model_test.c $(SOC_FW_DIR)/c/mnist_
 							$(SOC_FW_DIR)/c/fw_layer_test.c $(SOC_FW_DIR)/c/fw_layer_data.c \
 							
 							
-TD = CL_TEST
+TD = CL_TC0
 CFLAGS += -DCL_TC0  
 TOOL_DIR	= python_tools
 VITIS_DIR	= vitis_out

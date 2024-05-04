@@ -3820,7 +3820,6 @@ module al_accel_tb;
         .clk    (clk)
     );
 
-    integer i;
     // Debug Info
     initial begin
         

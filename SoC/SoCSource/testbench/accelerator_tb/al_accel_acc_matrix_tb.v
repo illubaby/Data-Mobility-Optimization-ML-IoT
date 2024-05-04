@@ -111,7 +111,7 @@ module al_accel_acc_matrix_tb;
         .acc_matrix_di_2_2_2 (acc_matrix_di_2_2_2),
 
         .acc_matrix_bps_load        (acc_matrix_bps_load),
-        .acc_matrix_inter_sum_load  (acc_matrix_inter_sum_load),
+        //.acc_matrix_inter_sum_load  (acc_matrix_inter_sum_load),
 
         .enb    (enb),
         .clk    (clk),

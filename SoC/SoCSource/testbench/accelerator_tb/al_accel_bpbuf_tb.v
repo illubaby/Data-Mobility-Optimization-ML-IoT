@@ -45,7 +45,7 @@ module al_accel_bpbuf_tb;
 
     al_accel_bpbuf uut (
         .bpbuf_di    (bpbuf_di),
-        .bpbuf_init  (32'd0),
+        //.bpbuf_init  (32'd0),
         .bpbuf_do    (bpbuf_do),
         .bpbuf_ld_wrn(bpbuf_ld_wrn),
 

@@ -421,7 +421,8 @@ module al_accel_ibuf_tb;
 
         .ibuf_ld_wrn    (ibuf_ld_wrn),
         .ibuf_bank_sel  (ibuf_bank_sel),
-        .ibuf_is_conv_layer (1'b1),
+        .cfg_layer_typ  (1'b1),
+        //.ibuf_is_conv_layer (1'b1),
         .ibuf_conv_fi_load (ibuf_conv_fi_load),
         .ibuf_conv_se_load (ibuf_conv_se_load),
 
