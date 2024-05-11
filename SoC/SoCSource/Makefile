@@ -89,6 +89,7 @@ ULTRA96V2_FW_C_OBJS = 	$(SOC_FW_DIR)/c/al_accel_cfg.c \
 AL_ULTRA96V2_VOBJS =	$(SOC_TB_DIR)/al_ultra96v2_tb.v \
 				  		$(SOC_HDL_OBJS_DIR)/al_ultra96v2.v \
 						$(SOC_HDL_OBJS_DIR)/simpleuart.v \
+						$(SOC_HDL_OBJS_DIR)/dma_controller.v \
 						$(SOC_HDL_OBJS_DIR)/al_picosoc.v  $(SOC_HDL_OBJS_DIR)/picorv32.v \
 				  		$(SOC_HDL_OBJS_DIR)/al_accel_pico_ctrl.v \
 				  		$(ACCEL_HDL_OBJS_DIR)/al_accel.v $(AL_ACCEL_SUB_VOBJS)
@@ -657,3 +658,32 @@ clean:
 # 		ver_tb ver_tb_dir
 
 .PHONY: test test_vcd test_sp test_axi test_wb test_wb_vcd test_ez test_ez_vcd test_synth download-tools build-tools toc clean
+########################################################################
+#DMA test 
+# Assuming using Icarus Verilog for simulation
+SIM = iverilog
+WAVE = vvp
+
+
+# Test bench
+TESTBENCH = testbench/soc_tb/dma_tb.v
+
+# Simulation output
+WAVEFORM = test_dma_controller.vcd
+
+all_dma: simulate
+
+dma: $(AL_ULTRA96V2_VOBJS) $(TESTBENCH)
+	$(SIM) -o dma_simulation $(AL_ULTRA96V2_VOBJS) $(TESTBENCH)
+
+simulate_dma:
+	iverilog -o dma_simulation source/al_ultra96v2.v source/simpleuart.v source/dma_controller.v source/al_picosoc.v  source/picorv32.v source/al_accel_pico_ctrl.v source/accel_source/al_accel.v source/accel_source/al_accel_bpbuf.v source/accel_source/al_accel_wbuf.v source/accel_source/al_accel_obuf.v source/accel_source/al_accel_ibuf.v source/accel_source/al_accel_pu_matrix.v source/accel_source/al_accel_wdemux.v source/accel_source/al_accel_idemux.v source/accel_source/al_accel_pu_array.v source/accel_source/al_accel_wreg.v source/accel_source/al_accel_ireg.v source/accel_source/al_accel_pu.v source/accel_source/al_accel_mac.v source/accel_source/al_accel_lut.v source/accel_source/al_accel_lpureg.v source/accel_source/al_accel_acc_matrix.v source/accel_source/al_accel_elw_unit.v source/accel_source/al_accel_quant_unit.v source/accel_source/al_accel_act_func_unit.v source/accel_source/al_accel_cp_unit.v source/accel_source/al_accel_quant_lut.v source/accel_source/al_accel_config_regs.v source/accel_source/al_accel_flow_ctrl.v source/accel_source/al_accel_RDATA_ctrl.v source/accel_source/al_accel_COMPS_ctrl.v source/accel_source/al_accel_WBACK_ctrl.v testbench/soc_tb/dma_tb.v
+	vvp dma_simulation
+
+
+
+view_dma: $(WAVEFORM)
+	gtkwave $(WAVEFORM)
+
+clean_dma:
+	rm -f dma_simulation $(WAVEFORM)
