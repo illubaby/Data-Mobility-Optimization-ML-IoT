@@ -77,4 +77,3 @@ module dma_controller (
         end
     end
 endmodule
-
