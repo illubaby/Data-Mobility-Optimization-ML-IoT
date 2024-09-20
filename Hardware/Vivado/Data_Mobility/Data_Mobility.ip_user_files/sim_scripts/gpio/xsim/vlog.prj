@@ -1,0 +1,18 @@
+verilog xil_defaultlib --include "C:/Xilinx/Vivado/2024.1/data/xilinx_vip/include" --include "../../../../Data_Mobility.gen/sources_1/bd/gpio/ipshared/ec67/hdl" --include "../../../../Data_Mobility.gen/sources_1/bd/gpio/ipshared/a317/hdl" \
+"../../../bd/gpio/ip/gpio_zynq_ultra_ps_e_0_0/sim/gpio_zynq_ultra_ps_e_0_0_vip_wrapper.v" \
+"../../../bd/gpio/ip/gpio_xbar_0/sim/gpio_xbar_0.v" \
+"../../../bd/gpio/ip/gpio_util_vector_logic_0_0/sim/gpio_util_vector_logic_0_0.v" \
+"../../../bd/gpio/ip/gpio_xlslice_0_0/sim/gpio_xlslice_0_0.v" \
+"../../../bd/gpio/ip/gpio_xlslice_0_1/sim/gpio_xlslice_0_1.v" \
+"../../../bd/gpio/ip/gpio_xlconcat_0_0/sim/gpio_xlconcat_0_0.v" \
+"../../../bd/gpio/ip/gpio_xlconstant_0_0/sim/gpio_xlconstant_0_0.v" \
+"../../../bd/gpio/sim/gpio.v" \
+"../../../bd/gpio/ip/gpio_auto_ds_0/sim/gpio_auto_ds_0.v" \
+"../../../bd/gpio/ip/gpio_auto_pc_0/sim/gpio_auto_pc_0.v" \
+"../../../bd/gpio/ip/gpio_auto_ds_1/sim/gpio_auto_ds_1.v" \
+"../../../bd/gpio/ip/gpio_auto_pc_1/sim/gpio_auto_pc_1.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
