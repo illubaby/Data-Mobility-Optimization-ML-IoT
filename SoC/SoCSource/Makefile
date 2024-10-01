@@ -115,8 +115,8 @@ TD = CL_TC0
 CFLAGS += -DCL_TC0  
 TOOL_DIR	= python_tools
 VITIS_DIR	= vitis_out
-VITIS_ALPICO_DIR	= ~/Documents/Xilinx/Vitis/FW_AlPicoSoC/src
-VITIS_PICO_DIR		= ~/Documents/Xilinx/Vitis/FW_PicoSoC/src
+VITIS_ALPICO_DIR	= ../../Software/FW_AlPicoSoC/src
+VITIS_PICO_DIR		= ../../Software/FW_PicoSoC/src
 ######################################################################################################################
 ###################################################### TEST SOC ######################################################
 ######################################################################################################################

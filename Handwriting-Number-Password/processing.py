@@ -1,5 +1,3 @@
-import pytesseract
-from PIL import Image
 import os
 import time
 from processing_lib import *
