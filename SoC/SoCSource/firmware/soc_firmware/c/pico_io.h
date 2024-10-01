@@ -4,7 +4,7 @@
 #include "pico_std.h"
 
 /* Input Data */
-void putchar(char c);
+void putchar1(char c);
 void print(const char *p);
 void print_hex(uint32_t v, int digits);
 void print_dec(uint32_t v);

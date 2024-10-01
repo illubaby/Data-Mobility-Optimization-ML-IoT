@@ -111,8 +111,12 @@ AL_ULTRA96V2_FW_C_OBJS = 	$(SOC_FW_DIR)/c/fw_model_test.c $(SOC_FW_DIR)/c/mnist_
 							$(SOC_FW_DIR)/c/fw_layer_test.c $(SOC_FW_DIR)/c/fw_layer_data.c \
 							
 							
-TD = CL_TC0
-CFLAGS += -DCL_TC0  
+#TD = PL_TC0
+#CFLAGS += -DPL_TC0
+#TD = ABC
+#CFLAGS += -DABC 
+TD = ABCD
+CFLAGS += -DABCD
 TOOL_DIR	= python_tools
 VITIS_DIR	= vitis_out
 VITIS_ALPICO_DIR	= ~/Documents/Xilinx/Vitis/FW_AlPicoSoC/src
@@ -687,3 +691,43 @@ view_dma: $(WAVEFORM)
 
 clean_dma:
 	rm -f dma_simulation $(WAVEFORM)
+	
+	
+#################################### CUSTOM ######################################
+sim_cnn: al_ultra96v2_tb1.vvp al_ultra96v2_fw1.hex
+	vvp -N $(SOC_TB_DIR)/$< +firmware=$(SOC_FW_DIR)/al_ultra96v2_fw.hex > $(SOC_LOG_DIR)/sim_cv.log
+
+al_ultra96v2_tb1.vvp: $(AL_ULTRA96V2_VOBJS)
+	iverilog -D$(TD) -s al_ultra96v2_wrapper -o $(SOC_TB_DIR)/$@ $^
+
+al_ultra96v2_fw1.elf: al_ultra96v2_sections.lds $(SOC_FW_DIR)/c/start.s $(AL_ULTRA96V2_FW_C_OBJS)
+	$(TOOLCHAIN_PREFIX)gcc $(CFLAGS) -DULTRA96V2 -DAL_ACCEL -D$(TD) -mabi=ilp32 -march=rv32imc \
+		-Wl,--build-id=none,-Bstatic,-T,$(SOC_FW_DIR)/section/al_ultra96v2_sections.lds,--strip-debug \
+		-ffreestanding -nostdlib \
+		-o $(SOC_FW_DIR)/al_ultra96v2_fw.elf $(SOC_FW_DIR)/c/start.s $(AL_ULTRA96V2_FW_C_OBJS)
+
+al_ultra96v2_fw1.hex: al_ultra96v2_fw1.elf
+	$(TOOLCHAIN_PREFIX)objcopy -O verilog $(SOC_FW_DIR)/al_ultra96v2_fw.elf $(SOC_FW_DIR)/al_ultra96v2_fw.hex
+################################ PASS_WORD ########################################
+PYTHON = python3
+
+PASSWORD_DIR = password
+
+DRAW = $(PASSWORD_DIR)/draw.py
+CONVERT = $(PASSWORD_DIR)/convert.py
+REPLACE = $(PASSWORD_DIR)/replace.py
+
+password: draw convert replace sim_al_ultra96v2
+
+draw:
+	$(PYTHON) $(DRAW)
+	
+convert: draw
+	$(PYTHON) $(CONVERT)
+
+replace: convert
+	$(PYTHON) $(REPLACE)
+
+	
+	
+	

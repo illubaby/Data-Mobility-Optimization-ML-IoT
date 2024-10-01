@@ -34,13 +34,15 @@
 `elsif FCL_TC0
 	`define TIME_TO_REPEAT  10
 `elsif PL_TC0
-	`define TIME_TO_REPEAT   7
+	`define TIME_TO_REPEAT  20
 `elsif PL_TC1
 	`define TIME_TO_REPEAT   7
 `elsif PL_TC2
 	`define TIME_TO_REPEAT   7
+`elsif TEST_PROGRAM
+	`define TIME_TO_REPEAT   1
 `else
-	`define TIME_TO_REPEAT  20
+	`define TIME_TO_REPEAT  50
 `endif 
 
 module al_ultra96v2_wrapper ();
@@ -55,7 +57,7 @@ module al_ultra96v2_wrapper ();
 		$dumpvars(0, al_ultra96v2_wrapper);
 
 		repeat (`TIME_TO_REPEAT) begin
-			repeat (50000) @(posedge clk);
+			repeat (100000) @(posedge clk);
 			// $display("+50000 cycles");
 		end
 		$display("\nTotal: %d x 50 000 Clock Cycles", `TIME_TO_REPEAT);

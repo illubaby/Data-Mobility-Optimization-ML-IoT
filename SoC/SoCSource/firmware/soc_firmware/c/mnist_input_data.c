@@ -16,6 +16,7 @@ const int8_t test_labels[] = {
 #endif
 
 #if defined(MODEL_RUN)
+print("test MODEL_RUN input data");
 const int model_input_dims[] = {28, 28, 1};
 
 const int number_of_test = 100;
@@ -25,7 +26,7 @@ const int8_t test_labels[] = {
 #endif
 
 #if defined(MODEL_TEST) || defined(CNN_TEST) || defined(CNNNEW_TEST)
-
+print("test MODEL_RUN input data");
 const int model_input_dims[] = {28, 28, 1};
 
 const int number_of_test = 10;

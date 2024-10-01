@@ -2,9 +2,9 @@
 
 // -------------------------------------------------------- //
 
-void putchar(char c) {
+void putchar1(char c) {
 	if (c == '\n')
-		putchar('\r');
+		putchar1('\r');
 	
 	#ifndef VITIS
 		reg_uart_data = c;
@@ -15,7 +15,7 @@ void putchar(char c) {
 
 void print(const char *p) {
 	while (*p)
-		putchar(*(p++));
+		putchar1(*(p++));
 }
 
 void print_hex(uint32_t v, int digits)
@@ -24,18 +24,18 @@ void print_hex(uint32_t v, int digits)
 		char c = "0123456789abcdef"[(v >> (4*i)) & 15];
 		// if (c == '0' && i >= digits) continue;
 		if (i >= digits) continue;
-		putchar(c);
+		putchar1(c);
 		digits = i;
 	}
 }
 
 void print_dec(uint32_t v) {
 	if (v < 10) {
-		putchar('0' + v);
+		putchar1('0' + v);
 		return;
 	}
 	print_dec(v / 10);
-	putchar('0' + (v % 10));
+	putchar1('0' + (v % 10));
 	// if (v >= 1000) {
 	// 	print(">=1000");
 	// 	return;
@@ -79,7 +79,7 @@ void print_dec_8b(int8_t v) {
 	
 	int8_t v_val = (v_signed != 0) ? -v : v;
 
-	if (v_signed) putchar('-');
+	if (v_signed) putchar1('-');
 	print_dec(v_val);
 }
 

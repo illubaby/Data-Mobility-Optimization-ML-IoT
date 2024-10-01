@@ -44,7 +44,7 @@ void testInference_CNNNEW_MNISTModel_NoAccel(
     // Test right here !!!
     int passed_test = 0;
     for (int test_idx = 0; test_idx < number_of_test; test_idx++) {
-        print("TEST CASE "); print_dec(test_idx); putchar('\n');
+        print("TEST CASE "); print_dec(test_idx); putchar1('\n');
 
         __asm__ volatile ("rdcycle %0" : "=r"(cycles_begin));
         __asm__ volatile ("rdinstret %0" : "=r"(instns_begin));
@@ -77,7 +77,7 @@ void testInference_CNNNEW_MNISTModel_NoAccel(
         print("END ");
         print_hex(high_cycles_end, 2);
         print_hex(cycles_end, 8);
-        putchar('\n');
+        putchar1('\n');
 
         print("Instns: BEGIN ");
         print_hex(high_instns_begin, 2);
@@ -86,7 +86,7 @@ void testInference_CNNNEW_MNISTModel_NoAccel(
         print("END ");
         print_hex(high_instns_end, 2);
         print_hex(instns_end, 8);
-        putchar('\n');
+        putchar1('\n');
 
 
         __asm__ volatile ("rdcycle %0" : "=r"(cycles_begin));
@@ -176,7 +176,7 @@ void testInference_CNNNEW_MNISTModel_NoAccel(
         print("END ");
         print_hex(high_cycles_end, 2);
         print_hex(cycles_end, 8);
-        putchar('\n');
+        putchar1('\n');
 
         print("Instns: BEGIN ");
         print_hex(high_instns_begin, 2);
@@ -185,7 +185,7 @@ void testInference_CNNNEW_MNISTModel_NoAccel(
         print("END ");
         print_hex(high_instns_end, 2);
         print_hex(instns_end, 8);
-        putchar('\n');
+        putchar1('\n');
 
 
         __asm__ volatile ("rdcycle %0" : "=r"(cycles_begin));
@@ -221,7 +221,7 @@ void testInference_CNNNEW_MNISTModel_NoAccel(
         print("END ");
         print_hex(high_cycles_end, 2);
         print_hex(cycles_end, 8);
-        putchar('\n');
+        putchar1('\n');
 
         print("Instns: BEGIN ");
         print_hex(high_instns_begin, 2);
@@ -230,7 +230,7 @@ void testInference_CNNNEW_MNISTModel_NoAccel(
         print("END ");
         print_hex(high_instns_end, 2);
         print_hex(instns_end, 8);
-        putchar('\n');
+        putchar1('\n');
     }
     reg_leds = 0;
 
@@ -260,9 +260,9 @@ void testInference_CNNNEW_MNISTModel_NoAccel(
 
     print("Passed Test/Total = ");
     print_dec(passed_test);
-    putchar('/');
+    putchar1('/');
     print_dec(number_of_test);
-    putchar('\n');
+    putchar1('\n');
 }
 
 
@@ -319,7 +319,7 @@ void testInference_CNNNEW_MNISTModel_Accel(
     // Test right here !!!
     int passed_test = 0;
     for (int test_idx = 0; test_idx < number_of_test; test_idx++) {
-        print("TEST CASE "); print_dec(test_idx); putchar('\n');
+        print("TEST CASE "); print_dec(test_idx); putchar1('\n');
 
         __asm__ volatile ("rdcycle %0" : "=r"(cycles_begin));
         __asm__ volatile ("rdinstret %0" : "=r"(instns_begin));
@@ -403,7 +403,7 @@ void testInference_CNNNEW_MNISTModel_Accel(
 
         total_comps_cycles += (cycles_end - cycles_begin);
         total_comps_ins += (instns_end - instns_begin);
-        print("Cycles: "); print_dec(cycles_end - cycles_begin); putchar('\n');
+        print("Cycles: "); print_dec(cycles_end - cycles_begin); putchar1('\n');
 
         // First POOL Layer
         set_al_accel_mode(RESET);
@@ -430,7 +430,7 @@ void testInference_CNNNEW_MNISTModel_Accel(
 
         total_comps_cycles += (cycles_end - cycles_begin);
         total_comps_ins += (instns_end - instns_begin);
-        print("Cycles: "); print_dec(cycles_end - cycles_begin); putchar('\n');
+        print("Cycles: "); print_dec(cycles_end - cycles_begin); putchar1('\n');
 
         // Second CONV Layer
         set_al_accel_mode(RESET); 
@@ -461,7 +461,7 @@ void testInference_CNNNEW_MNISTModel_Accel(
 
         total_comps_cycles += (cycles_end - cycles_begin);
         total_comps_ins += (instns_end - instns_begin);
-        print("Cycles: "); print_dec(cycles_end - cycles_begin); putchar('\n');
+        print("Cycles: "); print_dec(cycles_end - cycles_begin); putchar1('\n');
 
         // Second POOL Layer
         set_al_accel_mode(RESET);
@@ -488,7 +488,7 @@ void testInference_CNNNEW_MNISTModel_Accel(
 
         total_comps_cycles += (cycles_end - cycles_begin);
         total_comps_ins += (instns_end - instns_begin);
-        print("Cycles: "); print_dec(cycles_end - cycles_begin); putchar('\n');
+        print("Cycles: "); print_dec(cycles_end - cycles_begin); putchar1('\n');
 
         // First DENSE Layer
         set_al_accel_mode(RESET);
@@ -518,7 +518,7 @@ void testInference_CNNNEW_MNISTModel_Accel(
 
         total_comps_cycles += (cycles_end - cycles_begin);
         total_comps_ins += (instns_end - instns_begin);
-        print("Cycles: "); print_dec(cycles_end - cycles_begin); putchar('\n');
+        print("Cycles: "); print_dec(cycles_end - cycles_begin); putchar1('\n');
         /*********************/
 
         // __asm__ volatile ("rdcycle %0" : "=r"(cycles_end));
@@ -623,9 +623,9 @@ void testInference_CNNNEW_MNISTModel_Accel(
 
     print("Passed Test/Total = ");
     print_dec(passed_test);
-    putchar('/');
+    putchar1('/');
     print_dec(number_of_test);
-    putchar('\n');
+    putchar1('\n');
 
     print("TOTAL: \n");
     print("\tRead Data  : "); print_dec(total_input_cycles); print(" cycles; "); print_dec(total_input_ins); print(" ins\n");
@@ -684,7 +684,7 @@ void testInference_CNNMNISTModel_NoAccel(
     // Test right here !!!
     int passed_test = 0;
     for (int test_idx = 0; test_idx < number_of_test; test_idx++) {
-        print("TEST CASE "); print_dec(test_idx); putchar('\n');
+        print("TEST CASE "); print_dec(test_idx); putchar1('\n');
 
         __asm__ volatile ("rdcycle %0" : "=r"(cycles_begin));
         __asm__ volatile ("rdinstret %0" : "=r"(instns_begin));
@@ -717,7 +717,7 @@ void testInference_CNNMNISTModel_NoAccel(
         print("END ");
         print_hex(high_cycles_end, 2);
         print_hex(cycles_end, 8);
-        putchar('\n');
+        putchar1('\n');
 
         print("Instns: BEGIN ");
         print_hex(high_instns_begin, 2);
@@ -726,7 +726,7 @@ void testInference_CNNMNISTModel_NoAccel(
         print("END ");
         print_hex(high_instns_end, 2);
         print_hex(instns_end, 8);
-        putchar('\n');
+        putchar1('\n');
 
 
         __asm__ volatile ("rdcycle %0" : "=r"(cycles_begin));
@@ -827,7 +827,7 @@ void testInference_CNNMNISTModel_NoAccel(
         print("END ");
         print_hex(high_cycles_end, 2);
         print_hex(cycles_end, 8);
-        putchar('\n');
+        putchar1('\n');
 
         print("Instns: BEGIN ");
         print_hex(high_instns_begin, 2);
@@ -836,7 +836,7 @@ void testInference_CNNMNISTModel_NoAccel(
         print("END ");
         print_hex(high_instns_end, 2);
         print_hex(instns_end, 8);
-        putchar('\n');
+        putchar1('\n');
 
 
         __asm__ volatile ("rdcycle %0" : "=r"(cycles_begin));
@@ -872,7 +872,7 @@ void testInference_CNNMNISTModel_NoAccel(
         print("END ");
         print_hex(high_cycles_end, 2);
         print_hex(cycles_end, 8);
-        putchar('\n');
+        putchar1('\n');
 
         print("Instns: BEGIN ");
         print_hex(high_instns_begin, 2);
@@ -881,7 +881,7 @@ void testInference_CNNMNISTModel_NoAccel(
         print("END ");
         print_hex(high_instns_end, 2);
         print_hex(instns_end, 8);
-        putchar('\n');
+        putchar1('\n');
     }
     reg_leds = 0;
 
@@ -911,9 +911,9 @@ void testInference_CNNMNISTModel_NoAccel(
 
     print("Passed Test/Total = ");
     print_dec(passed_test);
-    putchar('/');
+    putchar1('/');
     print_dec(number_of_test);
-    putchar('\n');
+    putchar1('\n');
 }
 
 /* Test Model with Al Accel */
@@ -974,7 +974,7 @@ void testInference_CNNMNISTModel_Accel(
     // Test right here !!!
     int passed_test = 0;
     for (int test_idx = 0; test_idx < number_of_test; test_idx++) {
-        print("TEST CASE "); print_dec(test_idx); putchar('\n');
+        print("TEST CASE "); print_dec(test_idx); putchar1('\n');
 
         __asm__ volatile ("rdcycle %0" : "=r"(cycles_begin));
         __asm__ volatile ("rdinstret %0" : "=r"(instns_begin));
@@ -1058,7 +1058,7 @@ void testInference_CNNMNISTModel_Accel(
 
         total_comps_cycles += (cycles_end - cycles_begin);
         total_comps_ins += (instns_end - instns_begin);
-        print("Cycles: "); print_dec(cycles_end - cycles_begin); putchar('\n');
+        print("Cycles: "); print_dec(cycles_end - cycles_begin); putchar1('\n');
 
         // First POOL Layer
         set_al_accel_mode(RESET);
@@ -1085,7 +1085,7 @@ void testInference_CNNMNISTModel_Accel(
 
         total_comps_cycles += (cycles_end - cycles_begin);
         total_comps_ins += (instns_end - instns_begin);
-        print("Cycles: "); print_dec(cycles_end - cycles_begin); putchar('\n');
+        print("Cycles: "); print_dec(cycles_end - cycles_begin); putchar1('\n');
 
         // Second CONV Layer
         set_al_accel_mode(RESET); 
@@ -1116,7 +1116,7 @@ void testInference_CNNMNISTModel_Accel(
 
         total_comps_cycles += (cycles_end - cycles_begin);
         total_comps_ins += (instns_end - instns_begin);
-        print("Cycles: "); print_dec(cycles_end - cycles_begin); putchar('\n');
+        print("Cycles: "); print_dec(cycles_end - cycles_begin); putchar1('\n');
 
         // Second POOL Layer
         set_al_accel_mode(RESET);
@@ -1143,7 +1143,7 @@ void testInference_CNNMNISTModel_Accel(
 
         total_comps_cycles += (cycles_end - cycles_begin);
         total_comps_ins += (instns_end - instns_begin);
-        print("Cycles: "); print_dec(cycles_end - cycles_begin); putchar('\n');
+        print("Cycles: "); print_dec(cycles_end - cycles_begin); putchar1('\n');
 
         // First DENSE Layer
         set_al_accel_mode(RESET);
@@ -1173,7 +1173,7 @@ void testInference_CNNMNISTModel_Accel(
 
         total_comps_cycles += (cycles_end - cycles_begin);
         total_comps_ins += (instns_end - instns_begin);
-        print("Cycles: "); print_dec(cycles_end - cycles_begin); putchar('\n');
+        print("Cycles: "); print_dec(cycles_end - cycles_begin); putchar1('\n');
 
         // Second DENSE Layer
         set_al_accel_mode(RESET);
@@ -1203,7 +1203,7 @@ void testInference_CNNMNISTModel_Accel(
 
         total_comps_cycles += (cycles_end - cycles_begin);
         total_comps_ins += (instns_end - instns_begin);
-        print("Cycles: "); print_dec(cycles_end - cycles_begin); putchar('\n');
+        print("Cycles: "); print_dec(cycles_end - cycles_begin); putchar1('\n');
         /*********************/
 
         // __asm__ volatile ("rdcycle %0" : "=r"(cycles_end));
@@ -1308,9 +1308,9 @@ void testInference_CNNMNISTModel_Accel(
 
     print("Passed Test/Total = ");
     print_dec(passed_test);
-    putchar('/');
+    putchar1('/');
     print_dec(number_of_test);
-    putchar('\n');
+    putchar1('\n');
 
     print("TOTAL: \n");
     print("\tRead Data  : "); print_dec(total_input_cycles); print(" cycles; "); print_dec(total_input_ins); print(" ins\n");
@@ -1407,7 +1407,7 @@ void testInference_SimpleMNISTModel_NoAccel(
     print("END 0x");
     print_hex(high_cycles_end, 8);
 	print_hex(cycles_end, 8);
-	putchar('\n');
+	putchar1('\n');
 
     print("Instns: BEGIN 0x");
     print_hex(high_instns_begin, 8);
@@ -1416,13 +1416,13 @@ void testInference_SimpleMNISTModel_NoAccel(
     print("END 0x");
     print_hex(high_instns_end, 8);
 	print_hex(instns_end, 8);
-	putchar('\n');
+	putchar1('\n');
 
     print("Passed Test/Total = ");
     print_dec(passed_test);
-    putchar('/');
+    putchar1('/');
     print_dec(number_of_test);
-    putchar('\n');
+    putchar1('\n');
 
     // print("BENCHMARK\n");
 	// print("Cycles: 0x");
@@ -1452,6 +1452,7 @@ void testInference_SimpleMNISTModel_Accel(
     const int dense_input_dims[], 
     const int dense_output_dims[], int8_t dense_output_data[]
 ) {
+    print("Simple test program");
     const int new_model_input_dims[] = {28, 28, 3};
 
 	uint32_t cycles_begin, cycles_end;
@@ -1467,6 +1468,8 @@ void testInference_SimpleMNISTModel_Accel(
     reg_leds = 255;
     // Test right here !!!
     int passed_test = 0;
+    //print("number of test: \n");
+    //print_dec(number_of_test);
     for (int test_idx = 0; test_idx < number_of_test; test_idx++) {
         set_al_accel_mode(RESET); 
         set_al_accel_mode(CONFIG);
@@ -1512,6 +1515,8 @@ void testInference_SimpleMNISTModel_Accel(
         print_dec(test_idx);
         print(": predicted = "); 
         print_dec(max_idx);
+        //print("Value:");
+        //print_dec(dense_output_data[1]);
         print("; expected = ");
         print_dec(test_labels[test_idx]);
         print("; result = ");
@@ -1534,7 +1539,7 @@ void testInference_SimpleMNISTModel_Accel(
     print("END 0x");
     print_hex(high_cycles_end, 8);
 	print_hex(cycles_end, 8);
-	putchar('\n');
+	putchar1('\n');
 
     print("Instns: BEGIN 0x");
     print_hex(high_instns_begin, 8);
@@ -1543,7 +1548,7 @@ void testInference_SimpleMNISTModel_Accel(
     print("END 0x");
     print_hex(high_instns_end, 8);
 	print_hex(instns_end, 8);
-	putchar('\n');
+	putchar1('\n');
 
     // print("BENCHMARK\n");
 	// print("Cycles: 0x");
@@ -1556,7 +1561,139 @@ void testInference_SimpleMNISTModel_Accel(
 
     print("Passed Test/Total = ");
     print_dec(passed_test);
-    putchar('/');
+    putchar1('/');
     print_dec(number_of_test);
-    putchar('\n');
+    putchar1('\n');
+}
+
+void test_program(
+    const int8_t test_images[][28 * 28 * 1], const int8_t test_labels[], int number_of_test, 
+    const int model_input_dims[], 
+
+    int32_t conv_ps_data[], int32_t dense_ps_data[],
+
+    const int32_t conv_output_multiplier[], const int8_t conv_output_shift[],
+    const int32_t dense_output_multiplier, const int8_t  dense_output_shift,
+    const int conv_weight_dims[], const int8_t conv_weight_data[],
+    const int conv_bias_dims[], const int32_t conv_bias_data[],
+    const int dense_weight_dims[], const int8_t dense_weight_data[],
+    const int dense_bias_dims[], const int32_t dense_bias_data[],
+
+    const int conv_output_dims[], int8_t conv_output_data[],
+    const int pool_output_dims[], int8_t pool_output_data[],
+    const int dense_input_dims[], 
+    const int dense_output_dims[], int8_t dense_output_data[]
+) {
+    print("Simple test program");
+    const int new_model_input_dims[] = {28, 28, 3};
+
+	uint32_t cycles_begin, cycles_end;
+	uint32_t instns_begin, instns_end;
+    uint32_t high_cycles_begin, high_cycles_end;
+	uint32_t high_instns_begin, high_instns_end;
+
+	__asm__ volatile ("rdcycle %0" : "=r"(cycles_begin));
+	__asm__ volatile ("rdinstret %0" : "=r"(instns_begin));
+    __asm__ volatile ("rdcycleh %0" : "=r"(high_cycles_begin));
+	__asm__ volatile ("rdinstreth %0" : "=r"(high_instns_begin));
+
+    reg_leds = 255;
+    // Test right here !!!
+    int passed_test = 0;
+    //print("number of test: \n");
+    //print_dec(number_of_test);
+    for (int test_idx = 0; test_idx < number_of_test; test_idx++) {
+        set_al_accel_mode(RESET); 
+        set_al_accel_mode(CONFIG);
+        config_al_accel_CONV_layer(
+            test_images[test_idx], new_model_input_dims, 128,
+            conv_weight_data, conv_weight_dims,
+            conv_bias_data, conv_bias_dims,
+            conv_output_data, conv_output_dims, 128,
+            conv_ps_data,
+            1, 1,
+            conv_output_multiplier, conv_output_shift,
+            RELU
+        );
+        run_and_wait_al_accel();
+
+        set_al_accel_mode(RESET);
+        set_al_accel_mode(CONFIG);
+        config_al_accel_POOL_layer(
+            conv_output_data, conv_output_dims,
+            pool_output_data, pool_output_dims,
+            2, 2,
+            2, 2
+        );
+	    run_and_wait_al_accel();
+
+        set_al_accel_mode(RESET);
+        set_al_accel_mode(CONFIG);
+        config_al_accel_DENSE_layer(
+            pool_output_data, dense_input_dims, 128,
+            dense_weight_data, dense_weight_dims,
+            dense_bias_data, dense_bias_dims,
+            dense_output_data , dense_output_dims, -55,
+            dense_ps_data,
+            dense_output_multiplier, dense_output_shift,
+            NO_FUNC
+        );
+        run_and_wait_al_accel();
+        printArray1DI(dense_output_data, 10);
+
+        print("MODEL RESULT\n");
+        int max_idx = get_label(dense_output_data, dense_output_dims[0]);
+        print("Test Case ");
+        print_dec(test_idx);
+        print(": predicted = "); 
+        print_dec(max_idx);
+        //print("Value:");
+        //print_dec(dense_output_data[1]);
+        print("; expected = ");
+        print_dec(test_labels[test_idx]);
+        print("; result = ");
+        print((max_idx == test_labels[test_idx]) ? "true\n" : "false\n");
+        if (max_idx == test_labels[test_idx]) passed_test++;
+    }
+
+    reg_leds = 0;
+
+	__asm__ volatile ("rdcycle %0" : "=r"(cycles_end));
+	__asm__ volatile ("rdinstret %0" : "=r"(instns_end));
+    __asm__ volatile ("rdcycleh %0" : "=r"(high_cycles_end));
+	__asm__ volatile ("rdinstreth %0" : "=r"(high_instns_end));
+
+    print("BENCHMARK\n");
+	print("Cycles: BEGIN 0x");
+    print_hex(high_cycles_begin, 8);
+	print_hex(cycles_begin, 8);
+	print(" - ");
+    print("END 0x");
+    print_hex(high_cycles_end, 8);
+	print_hex(cycles_end, 8);
+	putchar1('\n');
+
+    print("Instns: BEGIN 0x");
+    print_hex(high_instns_begin, 8);
+	print_hex(instns_begin, 8);
+	print(" - ");
+    print("END 0x");
+    print_hex(high_instns_end, 8);
+	print_hex(instns_end, 8);
+	putchar1('\n');
+
+    // print("BENCHMARK\n");
+	// print("Cycles: 0x");
+	// print_hex(cycles_end - cycles_begin, 8);
+	// putchar('\n');
+
+	// print("Instns: 0x");
+	// print_hex(instns_end - instns_begin, 8);
+	// putchar('\n');    
+
+    print("Passed Test/Total = ");
+    print_dec(passed_test);
+    putchar1('/');
+    print_dec(number_of_test);
+    putchar1('\n');
 }

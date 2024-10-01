@@ -161,5 +161,24 @@ void testInference_SimpleMNISTModel_Accel(
     const int dense_output_dims[], int8_t dense_output_data[]
 );
 
+void test_program(
+    const int8_t test_images[][28 * 28 * 1], const int8_t test_labels[], int test_idx, 
+    const int model_input_dims[], 
+
+    int32_t conv_ps_data[], int32_t dense_ps_data[],
+
+    const int32_t conv_output_multiplier[], const int8_t conv_output_shift[],
+    const int32_t dense_output_multiplier, const int8_t  dense_output_shift,
+    const int conv_weight_dims[], const int8_t conv_weight_data[],
+    const int conv_bias_dims[], const int32_t conv_bias_data[],
+    const int dense_weight_dims[], const int8_t dense_weight_data[],
+    const int dense_bias_dims[], const int32_t dense_bias_data[],
+
+    const int conv_output_dims[], int8_t conv_output_data[],
+    const int pool_output_dims[], int8_t pool_output_data[],
+    const int dense_input_dims[], 
+    const int dense_output_dims[], int8_t dense_output_data[]
+);
+
 
 #endif

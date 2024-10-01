@@ -29,6 +29,12 @@
         defined(PL_TC5) ||\
         defined(PL_TC6) 
     #define PL_TEST
+#elif 	defined(TEST)
+    #define PL_TEST
+#elif 	defined(ABC)
+    #define MODEL_TEST
+#elif 	defined(ABCD)
+    #define TEST_PROGRAM
 #endif
 
 #if defined(CL_TEST) || defined (FCL_TEST) || defined(PL_TEST)

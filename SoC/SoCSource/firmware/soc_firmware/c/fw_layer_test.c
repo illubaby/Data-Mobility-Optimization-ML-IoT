@@ -37,11 +37,11 @@ void testFullyConnected2D_NoAccel(
     print("BENCHMARK\n");
 	print("Cycles: 0x");
 	print_hex(cycles_end - cycles_begin, 8);
-	putchar('\n');
+	putchar1('\n');
 
 	print("Instns: 0x");
 	print_hex(instns_end - instns_begin, 8);
-	putchar('\n');    
+	putchar1('\n');    
 
     print("LAYER RESULT\n");
     printArray1DI(output_data, output_dims[0]);
@@ -86,11 +86,11 @@ void testConv2D_NoAccel(
     print("BENCHMARK\n");
 	print("Cycles: 0x");
 	print_hex(cycles_end - cycles_begin, 8);
-	putchar('\n');
+	putchar1('\n');
 
 	print("Instns: 0x");
 	print_hex(instns_end - instns_begin, 8);
-	putchar('\n');    
+	putchar1('\n');    
 
     print("LAYER RESULT\n");
     printArray3DI(output_data, output_dims);
@@ -129,11 +129,11 @@ void testMaxPool_NoAccel(
     print("BENCHMARK\n");
 	print("Cycles: 0x");
 	print_hex(cycles_end - cycles_begin, 8);
-	putchar('\n');
+	putchar1('\n');
 
 	print("Instns: 0x");
 	print_hex(instns_end - instns_begin, 8);
-	putchar('\n');    
+	putchar1('\n');    
 
     print("LAYER RESULT\n");
     printArray3DI(output_data, output_dims);
@@ -181,13 +181,13 @@ void testFullyConnected2D_Accel(
     print("BENCHMARK\n");
 	print("Cycles: 0x");
 	print_hex(cycles_end - cycles_begin, 8);
-	putchar('\n');
+	putchar1('\n');
 
 	print("Instns: 0x");
 	print_hex(instns_end - instns_begin, 8);
-	putchar('\n');    
+	putchar1('\n');    
 
-    print("LAYER RESULT\n");
+    print("FULLY CONNECTED LAYER RESULT\n");
     printArray1DI(output_data, output_dims[0]);
 }
 
@@ -236,13 +236,13 @@ void testConv2D_Accel(
     print("BENCHMARK\n");
 	print("Cycles: 0x");
 	print_hex(cycles_end - cycles_begin, 8);
-	putchar('\n');
+	putchar1('\n');
 
 	print("Instns: 0x");
 	print_hex(instns_end - instns_begin, 8);
-	putchar('\n');    
+	putchar1('\n');    
 
-    print("LAYER RESULT\n");
+    print("CONVOLUTION LAYER RESULT\n");
     printArray3DI(output_data, output_dims);
 }
 
@@ -281,16 +281,17 @@ void testMaxPool_Accel(
 	__asm__ volatile ("rdcycle %0" : "=r"(cycles_end));
 	__asm__ volatile ("rdinstret %0" : "=r"(instns_end));
 
+    print("HAHAHA\n");
     print("BENCHMARK\n");
 	print("Cycles: 0x");
 	print_hex(cycles_end - cycles_begin, 8);
-	putchar('\n');
+	putchar1('\n');
 
 	print("Instns: 0x");
 	print_hex(instns_end - instns_begin, 8);
-	putchar('\n');    
+	putchar1('\n');    
 
-    print("LAYER RESULT\n");
+    print("MAXPOOL LAYER RESULT\n");
     printArray3DI(output_data, output_dims);
 }
 /****************************/
