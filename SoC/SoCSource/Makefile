@@ -119,8 +119,8 @@ TD = ABCD
 CFLAGS += -DABCD
 TOOL_DIR	= python_tools
 VITIS_DIR	= vitis_out
-VITIS_ALPICO_DIR	= ~/Documents/Xilinx/Vitis/FW_AlPicoSoC/src
-VITIS_PICO_DIR		= ~/Documents/Xilinx/Vitis/FW_PicoSoC/src
+VITIS_ALPICO_DIR	= ../Software/FW_AlPicoSoC/src
+VITIS_PICO_DIR		= ../Software/FW_PicoSoC/src
 ######################################################################################################################
 ###################################################### TEST SOC ######################################################
 ######################################################################################################################
@@ -713,11 +713,12 @@ PYTHON = python3
 
 PASSWORD_DIR = password
 
-DRAW = $(PASSWORD_DIR)/draw.py
+DRAW = $(PASSWORD_DIR)/drawing_app.py
 CONVERT = $(PASSWORD_DIR)/convert.py
 REPLACE = $(PASSWORD_DIR)/replace.py
+SEND = $(PASSWORD_DIR)/send_to_server.py
 
-password: draw convert replace sim_al_ultra96v2
+password: draw convert replace hex_al_ultra96v2_fw send
 
 draw:
 	$(PYTHON) $(DRAW)
@@ -727,6 +728,9 @@ convert: draw
 
 replace: convert
 	$(PYTHON) $(REPLACE)
+
+send: hex_al_ultra96v2_fw
+	$(PYTHON) $(SEND)
 
 	
 	

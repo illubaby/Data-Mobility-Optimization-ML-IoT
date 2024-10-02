@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 # Function to process each image
 def process_image(image_file):
     # Load the image
-    image = Image.open(image_file)
+    image = Image.open(f"password/{image_file}")
 
     # Convert to grayscale
     grayscale_image = image.convert('L')
