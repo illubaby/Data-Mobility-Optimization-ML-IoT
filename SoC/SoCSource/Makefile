@@ -718,7 +718,8 @@ CONVERT = $(PASSWORD_DIR)/convert.py
 REPLACE = $(PASSWORD_DIR)/replace.py
 SEND = $(PASSWORD_DIR)/send_to_server.py
 
-password: draw convert replace hex_al_ultra96v2_fw send
+password_hex: draw convert replace hex_al_ultra96v2_fw send
+password_sim: draw convert replace sim_al_ultra96v2
 
 draw:
 	$(PYTHON) $(DRAW)

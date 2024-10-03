@@ -1584,7 +1584,7 @@ void test_program(
     const int dense_input_dims[], 
     const int dense_output_dims[], int8_t dense_output_data[]
 ) {
-    print("Simple test program");
+    print("PASSWORD PROGRAM\n");
     const int new_model_input_dims[] = {28, 28, 3};
 
 	uint32_t cycles_begin, cycles_end;
@@ -1639,21 +1639,23 @@ void test_program(
             NO_FUNC
         );
         run_and_wait_al_accel();
-        printArray1DI(dense_output_data, 10);
+        //printArray1DI(dense_output_data, 10);
 
-        print("MODEL RESULT\n");
+        //print("MODEL RESULT\n");
         int max_idx = get_label(dense_output_data, dense_output_dims[0]);
-        print("Test Case ");
-        print_dec(test_idx);
-        print(": predicted = "); 
+        //print("Test Case ");
+        //print_dec(test_idx);
+        //print(": predicted = "); 
         print_dec(max_idx);
+        print(" ");
         //print("Value:");
         //print_dec(dense_output_data[1]);
-        print("; expected = ");
-        print_dec(test_labels[test_idx]);
-        print("; result = ");
-        print((max_idx == test_labels[test_idx]) ? "true\n" : "false\n");
+        //print("; expected = ");
+        //print_dec(test_labels[test_idx]);
+        //print("; result = ");
+        //print((max_idx == test_labels[test_idx]) ? "true\n" : "false\n");
         if (max_idx == test_labels[test_idx]) passed_test++;
+        if (test_idx == number_of_test - 1) print("\n");
     }
 
     reg_leds = 0;
@@ -1663,7 +1665,7 @@ void test_program(
     __asm__ volatile ("rdcycleh %0" : "=r"(high_cycles_end));
 	__asm__ volatile ("rdinstreth %0" : "=r"(high_instns_end));
 
-    print("BENCHMARK\n");
+    /*print("BENCHMARK\n");
 	print("Cycles: BEGIN 0x");
     print_hex(high_cycles_begin, 8);
 	print_hex(cycles_begin, 8);
@@ -1680,7 +1682,7 @@ void test_program(
     print("END 0x");
     print_hex(high_instns_end, 8);
 	print_hex(instns_end, 8);
-	putchar1('\n');
+	putchar1('\n');*/
 
     // print("BENCHMARK\n");
 	// print("Cycles: 0x");
@@ -1691,9 +1693,9 @@ void test_program(
 	// print_hex(instns_end - instns_begin, 8);
 	// putchar('\n');    
 
-    print("Passed Test/Total = ");
-    print_dec(passed_test);
-    putchar1('/');
-    print_dec(number_of_test);
-    putchar1('\n');
+    //print("Passed Test/Total = ");
+    //print_dec(passed_test);
+    //putchar1('/');
+    //print_dec(number_of_test);
+    //putchar1('\n');
 }
