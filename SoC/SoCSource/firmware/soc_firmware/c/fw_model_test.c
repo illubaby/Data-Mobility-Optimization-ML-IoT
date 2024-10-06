@@ -1,5 +1,5 @@
 #include "fw_model_test.h"
-
+#include <stdio.h>
 // 2 CONV Layer model
 /* Test Layer without Al Accel */
 void testInference_CNNNEW_MNISTModel_NoAccel(
@@ -1584,6 +1584,11 @@ void test_program(
     const int dense_input_dims[], 
     const int dense_output_dims[], int8_t dense_output_data[]
 ) {
+    #define Image_flag (*(volatile uint32_t*)0x03000000)
+    #define Image_flag_1 (*(volatile uint32_t*)0x03000004)
+    #define Image_flag_2 (*(volatile uint32_t*)0x03000008)
+    #define Image_flag_3 (*(volatile uint32_t*)0x0300000C)
+    
     print("PASSWORD PROGRAM\n");
     const int new_model_input_dims[] = {28, 28, 3};
 
@@ -1657,7 +1662,21 @@ void test_program(
         if (max_idx == test_labels[test_idx]) passed_test++;
         if (test_idx == number_of_test - 1) print("\n");
     }
+    // Read the values from the memory-mapped registers
+    Image_flag = (uint32_t)0;
+    print("PASSWORD PROGRAM 1\n");
+    print_dec(Image_flag);
+    Image_flag_1 = (uint32_t)1;
+    print("PASSWORD PROGRAM 2\n");
+    print_dec(Image_flag_1);
+    Image_flag_2 = (uint32_t)2;
+    print("PASSWORD PROGRAM 3\n");
+    Image_flag_3 = (uint32_t)3;
+    print("PASSWORD PROGRAM 3\n");
 
+    // print("PASSWORD PROGRAM 3\n");
+    // print_dec(Image_flag_2);
+    // print("PASSWORD PROGRAM 4\n");
     reg_leds = 0;
 
 	__asm__ volatile ("rdcycle %0" : "=r"(cycles_end));

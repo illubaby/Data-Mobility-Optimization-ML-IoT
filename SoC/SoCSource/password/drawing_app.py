@@ -6,7 +6,7 @@ import support_lib
 
 # Create the Tkinter window
 root = tk.Tk()
-root.title("Jun Tran ăn cứt")
+root.title("Draw your password (4 digits)")
 
 # Set up the canvas
 canvas_width, canvas_height = 800, 600

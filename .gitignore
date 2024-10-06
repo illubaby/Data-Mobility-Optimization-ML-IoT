@@ -53,3 +53,12 @@ dkms.conf
 *.vcd
 *.log
 *.json
+SoC/SoCSource/password/__pycache__/support_lib.cpython-310.pyc
+SoC/SoCSource/password/number1.png
+SoC/SoCSource/password/number2.png
+SoC/SoCSource/password/number3.png
+SoC/SoCSource/password/number4.png
+.vscode/settings.json
+SoC/SoCSource/firmware/soc_firmware/c/al_pico_fw.c
+SoC/SoCSource/testbench/soc_tb/al_ultra96v2_tb.vvp
+SoC/SoCSource/data.txt
