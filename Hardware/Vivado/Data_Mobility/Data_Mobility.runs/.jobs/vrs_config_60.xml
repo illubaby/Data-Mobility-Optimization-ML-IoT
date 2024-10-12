@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="original_system_axi_gpio_1_0_synth_1" LaunchDir="C:/Data-Mobility-Optimization-ML-IoT/Hardware/Vivado/Data_Mobility/Data_Mobility.runs/original_system_axi_gpio_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="original_system_zynq_ultra_ps_e_0_0_synth_1" LaunchDir="C:/Data-Mobility-Optimization-ML-IoT/Hardware/Vivado/Data_Mobility/Data_Mobility.runs/original_system_zynq_ultra_ps_e_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="original_system_axi_gpio_2_0_synth_1" LaunchDir="C:/Data-Mobility-Optimization-ML-IoT/Hardware/Vivado/Data_Mobility/Data_Mobility.runs/original_system_axi_gpio_2_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="original_system_axi_gpio_1_0_synth_1"/>
+	</Run>
+	<Run Id="original_system_axi_gpio_4_0_synth_1" LaunchDir="C:/Data-Mobility-Optimization-ML-IoT/Hardware/Vivado/Data_Mobility/Data_Mobility.runs/original_system_axi_gpio_4_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="original_system_axi_gpio_0_0_synth_1" LaunchDir="C:/Data-Mobility-Optimization-ML-IoT/Hardware/Vivado/Data_Mobility/Data_Mobility.runs/original_system_axi_gpio_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="original_system_axi_gpio_4_0_synth_1"/>
+	</Run>
+	<Run Id="original_system_al_ultra96v2_0_0_synth_1" LaunchDir="C:/Data-Mobility-Optimization-ML-IoT/Hardware/Vivado/Data_Mobility/Data_Mobility.runs/original_system_al_ultra96v2_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="original_system_axi_gpio_3_0_synth_1" LaunchDir="C:/Data-Mobility-Optimization-ML-IoT/Hardware/Vivado/Data_Mobility/Data_Mobility.runs/original_system_axi_gpio_3_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="original_system_axi_gpio_4_0_synth_1"/>
+	</Run>
+	<Run Id="original_system_axi_gpio_5_0_synth_1" LaunchDir="C:/Data-Mobility-Optimization-ML-IoT/Hardware/Vivado/Data_Mobility/Data_Mobility.runs/original_system_axi_gpio_5_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="original_system_axi_gpio_1_0_synth_1"/>
+	</Run>
+	<Run Id="original_system_xbar_0_synth_1" LaunchDir="C:/Data-Mobility-Optimization-ML-IoT/Hardware/Vivado/Data_Mobility/Data_Mobility.runs/original_system_xbar_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="original_system_rst_ps8_0_99M_0_synth_1" LaunchDir="C:/Data-Mobility-Optimization-ML-IoT/Hardware/Vivado/Data_Mobility/Data_Mobility.runs/original_system_rst_ps8_0_99M_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="original_system_axi_gpio_6_0_synth_1" LaunchDir="C:/Data-Mobility-Optimization-ML-IoT/Hardware/Vivado/Data_Mobility/Data_Mobility.runs/original_system_axi_gpio_6_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="original_system_axi_gpio_4_0_synth_1"/>
+	</Run>
+	<Run Id="original_system_pulse_generator_0_0_synth_1" LaunchDir="C:/Data-Mobility-Optimization-ML-IoT/Hardware/Vivado/Data_Mobility/Data_Mobility.runs/original_system_pulse_generator_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="C:/Data-Mobility-Optimization-ML-IoT/Hardware/Vivado/Data_Mobility/Data_Mobility.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="original_system_axi_gpio_1_0_synth_1"/>
+		<Parent Id="original_system_zynq_ultra_ps_e_0_0_synth_1"/>
+		<Parent Id="original_system_axi_gpio_2_0_synth_1"/>
+		<Parent Id="original_system_axi_gpio_4_0_synth_1"/>
+		<Parent Id="original_system_axi_gpio_0_0_synth_1"/>
+		<Parent Id="original_system_al_ultra96v2_0_0_synth_1"/>
+		<Parent Id="original_system_axi_gpio_3_0_synth_1"/>
+		<Parent Id="original_system_axi_gpio_5_0_synth_1"/>
+		<Parent Id="original_system_xbar_0_synth_1"/>
+		<Parent Id="original_system_rst_ps8_0_99M_0_synth_1"/>
+		<Parent Id="original_system_axi_gpio_6_0_synth_1"/>
+		<Parent Id="original_system_pulse_generator_0_0_synth_1"/>
+	</Run>
+	<Run Id="impl_1" LaunchDir="C:/Data-Mobility-Optimization-ML-IoT/Hardware/Vivado/Data_Mobility/Data_Mobility.runs/impl_1" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="write_bitstream">
+		<Parent Id="synth_1"/>
+		<Parent Id="original_system_axi_gpio_1_0_synth_1"/>
+		<Parent Id="original_system_zynq_ultra_ps_e_0_0_synth_1"/>
+		<Parent Id="original_system_axi_gpio_2_0_synth_1"/>
+		<Parent Id="original_system_axi_gpio_4_0_synth_1"/>
+		<Parent Id="original_system_axi_gpio_0_0_synth_1"/>
+		<Parent Id="original_system_al_ultra96v2_0_0_synth_1"/>
+		<Parent Id="original_system_axi_gpio_3_0_synth_1"/>
+		<Parent Id="original_system_axi_gpio_5_0_synth_1"/>
+		<Parent Id="original_system_xbar_0_synth_1"/>
+		<Parent Id="original_system_rst_ps8_0_99M_0_synth_1"/>
+		<Parent Id="original_system_axi_gpio_6_0_synth_1"/>
+		<Parent Id="original_system_pulse_generator_0_0_synth_1"/>
+	</Run>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+		<Parameter Name="runs.enableClusterConf" Val="true" Type="bool"/>
+		<Parameter Name="general.shortenLongPath" Val="true" Type="bool"/>
+	</Parameters>
+	<ProductInfo Name="vivado"/>
+</Runs>
+

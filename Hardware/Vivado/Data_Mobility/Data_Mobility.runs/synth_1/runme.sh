@@ -25,7 +25,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/ADMIN/OneDrive/Documents/GitHub/Data-Mobility-Optimization-ML-IoT/Hardware/Vivado/Data_Mobility/Data_Mobility.runs/synth_1'
+HD_PWD='C:/Data-Mobility-Optimization-ML-IoT/Hardware/Vivado/Data_Mobility/Data_Mobility.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -41,4 +41,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log Test_2_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Test_2_wrapper.tcl
+EAStep vivado -log Test_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Test_wrapper.tcl

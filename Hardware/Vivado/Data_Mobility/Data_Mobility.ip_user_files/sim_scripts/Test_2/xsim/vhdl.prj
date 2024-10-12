@@ -1,0 +1,11 @@
+vhdl xil_defaultlib  \
+"../../../bd/Test_2/ip/Test_2_axi_dma_0_1/sim/Test_2_axi_dma_0_1.vhd" \
+"../../../bd/Test_2/ip/Test_2_axi_dma_1_1/sim/Test_2_axi_dma_1_1.vhd" \
+"../../../bd/Test_2/ip/Test_2_axi_dma_2_1/sim/Test_2_axi_dma_2_1.vhd" \
+"../../../bd/Test_2/ip/Test_2_axi_dma_3_1/sim/Test_2_axi_dma_3_1.vhd" \
+"../../../bd/Test_2/ip/Test_2_axi_smc_1/bd_0/ip/ip_1/sim/bd_2a0c_psr_aclk_0.vhd" \
+"../../../bd/Test_2/ip/Test_2_rst_ps8_0_99M_1/sim/Test_2_rst_ps8_0_99M_1.vhd" \
+"../../../bd/Test_2/ip/Test_2_axi_gpio_0_2/sim/Test_2_axi_gpio_0_2.vhd" \
+
+# Do not sort compile order
+nosort

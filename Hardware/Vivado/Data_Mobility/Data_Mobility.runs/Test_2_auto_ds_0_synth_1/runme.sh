@@ -25,7 +25,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/ADMIN/OneDrive/Documents/GitHub/Data-Mobility-Optimization-ML-IoT/Hardware/Vivado/Data_Mobility/Data_Mobility.runs/Test_2_auto_ds_0_synth_1'
+HD_PWD='C:/Data-Mobility-Optimization-ML-IoT/Hardware/Vivado/Data_Mobility/Data_Mobility.runs/Test_2_auto_ds_0_synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

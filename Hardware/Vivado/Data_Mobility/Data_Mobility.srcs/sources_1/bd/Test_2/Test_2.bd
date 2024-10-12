@@ -4668,8 +4668,8 @@
           "ps8_0_axi_periph/M04_ACLK",
           "ila_0/clk",
           "axi_gpio_0/s_axi_aclk",
-          "pulse_generator_0/clk",
-          "al_ultra96v2_0/clk"
+          "al_ultra96v2_0/clk",
+          "pulse_generator_0/clk"
         ]
       },
       "zynq_ultra_ps_e_0_pl_resetn0": {

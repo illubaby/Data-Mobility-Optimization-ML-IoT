@@ -1,0 +1,34 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Tue Oct  8 10:05:23 2024
+# Process ID: 32000
+# Current directory: C:/Data-Mobility-Optimization-ML-IoT/Hardware/Vivado/Data_Mobility/Data_Mobility.runs/original_system_axi_gpio_6_0_synth_1
+# Command line: vivado.exe -log original_system_axi_gpio_6_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source original_system_axi_gpio_6_0.tcl
+# Log file: C:/Data-Mobility-Optimization-ML-IoT/Hardware/Vivado/Data_Mobility/Data_Mobility.runs/original_system_axi_gpio_6_0_synth_1/original_system_axi_gpio_6_0.vds
+# Journal file: C:/Data-Mobility-Optimization-ML-IoT/Hardware/Vivado/Data_Mobility/Data_Mobility.runs/original_system_axi_gpio_6_0_synth_1\vivado.jou
+# Running On        :TUF-F15
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :22631
+# Processor Detail  :12th Gen Intel(R) Core(TM) i7-12700H
+# CPU Frequency     :2688 MHz
+# CPU Physical cores:14
+# CPU Logical cores :20
+# Host memory       :16781 MB
+# Swap memory       :20230 MB
+# Total Virtual     :37012 MB
+# Available Virtual :7913 MB
+#-----------------------------------------------------------
+source original_system_axi_gpio_6_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:03 ; elapsed = 00:00:13 . Memory (MB): peak = 594.105 ; gain = 264.086
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: original_system_axi_gpio_6_0
+INFO: [IP_Flow 19-6922] IPCACHE: Exporting cached entry 7bde78e8d4bdcfc0 to dir: C:/Data-Mobility-Optimization-ML-IoT/Hardware/Vivado/Data_Mobility/Data_Mobility.runs/original_system_axi_gpio_6_0_synth_1
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Data-Mobility-Optimization-ML-IoT/Hardware/Vivado/Data_Mobility/Data_Mobility.cache/ip/2024.1/7/b/7bde78e8d4bdcfc0/original_system_axi_gpio_4_0.dcp to C:/Data-Mobility-Optimization-ML-IoT/Hardware/Vivado/Data_Mobility/Data_Mobility.runs/original_system_axi_gpio_6_0_synth_1/original_system_axi_gpio_6_0.dcp.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Data-Mobility-Optimization-ML-IoT/Hardware/Vivado/Data_Mobility/Data_Mobility.cache/ip/2024.1/7/b/7bde78e8d4bdcfc0/original_system_axi_gpio_4_0_sim_netlist.v to C:/Data-Mobility-Optimization-ML-IoT/Hardware/Vivado/Data_Mobility/Data_Mobility.runs/original_system_axi_gpio_6_0_synth_1/original_system_axi_gpio_6_0_sim_netlist.v.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Data-Mobility-Optimization-ML-IoT/Hardware/Vivado/Data_Mobility/Data_Mobility.cache/ip/2024.1/7/b/7bde78e8d4bdcfc0/original_system_axi_gpio_4_0_sim_netlist.vhdl to C:/Data-Mobility-Optimization-ML-IoT/Hardware/Vivado/Data_Mobility/Data_Mobility.runs/original_system_axi_gpio_6_0_synth_1/original_system_axi_gpio_6_0_sim_netlist.vhdl.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Data-Mobility-Optimization-ML-IoT/Hardware/Vivado/Data_Mobility/Data_Mobility.cache/ip/2024.1/7/b/7bde78e8d4bdcfc0/original_system_axi_gpio_4_0_stub.v to C:/Data-Mobility-Optimization-ML-IoT/Hardware/Vivado/Data_Mobility/Data_Mobility.runs/original_system_axi_gpio_6_0_synth_1/original_system_axi_gpio_6_0_stub.v.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Data-Mobility-Optimization-ML-IoT/Hardware/Vivado/Data_Mobility/Data_Mobility.cache/ip/2024.1/7/b/7bde78e8d4bdcfc0/original_system_axi_gpio_4_0_stub.vhdl to C:/Data-Mobility-Optimization-ML-IoT/Hardware/Vivado/Data_Mobility/Data_Mobility.runs/original_system_axi_gpio_6_0_synth_1/original_system_axi_gpio_6_0_stub.vhdl.
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP original_system_axi_gpio_6_0, cache-ID = 7bde78e8d4bdcfc0.
+INFO: [Common 17-206] Exiting Vivado at Tue Oct  8 10:05:46 2024...

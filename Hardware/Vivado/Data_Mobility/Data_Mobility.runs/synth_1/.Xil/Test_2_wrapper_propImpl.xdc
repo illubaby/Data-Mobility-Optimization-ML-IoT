@@ -1,5 +1,0 @@
-set_property SRC_FILE_INFO {cfile:C:/Users/ADMIN/OneDrive/Documents/GitHub/Data-Mobility-Optimization-ML-IoT/Hardware/Vivado/Data_Mobility/Data_Mobility.srcs/constrs_1/new/gpio.xdc rfile:../../../Data_Mobility.srcs/constrs_1/new/gpio.xdc id:1} [current_design]
-set_property src_info {type:XDC file:1 line:1 export:INPUT save:INPUT read:READ} [current_design]
-set_property PACKAGE_PIN H12 [get_ports {gpio_rtl_tri_io[0]}]
-set_property src_info {type:XDC file:1 line:2 export:INPUT save:INPUT read:READ} [current_design]
-set_property IOSTANDARD LVCMOS33 [get_ports {gpio_rtl_tri_io[0]}]
