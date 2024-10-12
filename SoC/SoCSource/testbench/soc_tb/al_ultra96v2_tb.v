@@ -39,8 +39,10 @@
 	`define TIME_TO_REPEAT   7
 `elsif PL_TC2
 	`define TIME_TO_REPEAT   7
-`elsif TEST_PROGRAM
+`elsif ABC
 	`define TIME_TO_REPEAT   1
+`elsif SMART
+	`define TIME_TO_REPEAT  10
 `else
 	`define TIME_TO_REPEAT  50
 `endif 

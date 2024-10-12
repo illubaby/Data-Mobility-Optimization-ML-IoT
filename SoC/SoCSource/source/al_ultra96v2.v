@@ -69,7 +69,9 @@ module al_ultra96v2 (
 
 			ps_read_rdy <= 0;
 			ifm_write_rdy <= 0;
+			//$display("outside");
 			if (iomem_addr == 32'h 0300_0000) begin
+				//$display("hahahaha");
 				if (iomem_valid && !iomem_ready) begin
 				iomem_ready <= 1;
 				iomem_rdata <= gpio;
@@ -90,7 +92,7 @@ module al_ultra96v2 (
 					ps_read_rdy <= 1;
 				end
 			end
-			else if (iomem_addr >= 32'h 0400_0000) begin
+			else if (iomem_addr >= 32'h 0400_0000 && iomem_addr < 32'h 0600_0000) begin
 				if (iomem_valid && !iomem_ready) begin
 					// iomem_ready <= ifm_write_fin;
 					iomem_ready <= smooth_ifm_write_fin;
@@ -99,6 +101,17 @@ module al_ultra96v2 (
 					ifm_write_rdy <= 1;
 				end
 			end
+			else if (iomem_addr >= 32'h 0600_0000) begin
+				//$display("hahahaha");
+				if (iomem_valid && !iomem_ready) begin
+					iomem_ready <= 1;
+					iomem_rdata <= gpio;
+					if (iomem_wstrb[0]) gpio[ 7: 0] <= iomem_wdata[ 7: 0];
+					if (iomem_wstrb[1]) gpio[15: 8] <= iomem_wdata[15: 8];
+					if (iomem_wstrb[2]) gpio[23:16] <= iomem_wdata[23:16];
+					if (iomem_wstrb[3]) gpio[31:24] <= iomem_wdata[31:24];
+				end
+			end 
 		end
 	end
 

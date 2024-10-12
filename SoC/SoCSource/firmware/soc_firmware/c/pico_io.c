@@ -83,6 +83,15 @@ void print_dec_8b(int8_t v) {
 	print_dec(v_val);
 }
 
+void print_dec_32b(int32_t v) {
+	int32_t v_signed = v & 0b1000000000000000000000000000000;
+	
+	int32_t v_val = (v_signed != 0) ? -v : v;
+
+	if (v_signed) putchar1('-');
+	print_dec(v_val);
+}
+
 
 // -------------------------------------------------------- //
 

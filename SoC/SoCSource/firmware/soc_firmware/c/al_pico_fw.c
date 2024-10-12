@@ -71,7 +71,7 @@ void layer_test() {
 	#endif
 }
 
-#if defined(MODEL_TEST) || defined(TEST_PROGRAM)
+#if defined(MODEL_TEST) || defined(TEST_PROGRAM) || defined(SMART_APP)
 	//const int    model_input_dims[] = {28, 28, 1};
 	//const int    number_of_test = 10;
 	//const int8_t test_labels[] = {
@@ -445,7 +445,7 @@ const int32_t dense_bias_data[12] = {
 	}
 };
 
-#elif defined(TEST_PROGRAM)
+#elif defined(TEST_PROGRAM) || defined(SMART_APP)
 	const int    model_input_dims[] = {28, 28, 1};
 	const int    number_of_test = 4;
 	const int8_t test_labels[] = {
@@ -644,6 +644,26 @@ void model_test() {
 			dense_input_dims,
 			dense_output_dims, dense_output_data
 		);
+	#elif defined(SMART_APP)
+		print("smart app");
+		smart_app(
+			test_images, test_labels, number_of_test,
+			model_input_dims,
+
+			conv_ps_data, dense_ps_data,
+
+			conv_output_multiplier, conv_output_shift,
+			dense_output_multiplier, dense_output_shift,
+
+			conv_weight_dims, conv_weight_data,
+			conv_bias_dims, conv_bias_data,
+			dense_weight_dims, dense_weight_data,
+			dense_bias_dims, dense_bias_data,
+			conv_output_dims, conv_output_data,
+			pool_output_dims, pool_output_data,
+			dense_input_dims,
+			dense_output_dims, dense_output_data
+		);
 	#endif
 }
 
@@ -663,7 +683,7 @@ void setup() {
 
 	#if defined(LAYER_TEST)
 		layer_test();
-	#elif defined(MODEL_TEST) || defined(MODEL_RUN) || defined(CNN_TEST) || defined(CNN_RUN) || defined(CNNNEW_TEST) || defined(CNNNEW_RUN) || defined (TEST_PROGRAM)
+	#elif defined(MODEL_TEST) || defined(MODEL_RUN) || defined(CNN_TEST) || defined(CNN_RUN) || defined(CNNNEW_TEST) || defined(CNNNEW_RUN) || defined (TEST_PROGRAM) || defined (SMART_APP)
 		model_test();
 	#endif
 	reg_leds = 127;

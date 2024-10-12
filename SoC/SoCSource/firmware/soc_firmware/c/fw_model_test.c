@@ -1584,10 +1584,16 @@ void test_program(
     const int dense_input_dims[], 
     const int dense_output_dims[], int8_t dense_output_data[]
 ) {
-    #define Image_flag (*(volatile uint32_t*)0x03000000)
-    #define Image_flag_1 (*(volatile uint32_t*)0x03000004)
-    #define Image_flag_2 (*(volatile uint32_t*)0x03000008)
-    #define Image_flag_3 (*(volatile uint32_t*)0x0300000C)
+    /*
+    #define Image_flag (*(volatile uint32_t*)0x06000000)
+    #define Image_flag_1 (*(volatile uint32_t*)0x06000004)
+    #define Image_flag_2 (*(volatile uint32_t*)0x06000008)
+    #define Image_flag_3 (*(volatile uint32_t*)0x0600000C) */
+    
+    //#define image   (*(volatile uint32_t*)0x07000010)
+    //#define image_1 (*(volatile uint32_t*)0x00000014)
+    //#define image_2 (*(volatile uint32_t*)0x00000018)
+    //#define image_3 (*(volatile uint32_t*)0x0000001C)
     
     print("PASSWORD PROGRAM\n");
     const int new_model_input_dims[] = {28, 28, 3};
@@ -1663,20 +1669,22 @@ void test_program(
         if (test_idx == number_of_test - 1) print("\n");
     }
     // Read the values from the memory-mapped registers
-    Image_flag = (uint32_t)0;
+    /*Image_flag = (uint32_t)0;
     print("PASSWORD PROGRAM 1\n");
     print_dec(Image_flag);
+    
     Image_flag_1 = (uint32_t)1;
     print("PASSWORD PROGRAM 2\n");
     print_dec(Image_flag_1);
+    
     Image_flag_2 = (uint32_t)2;
     print("PASSWORD PROGRAM 3\n");
+    print_dec(Image_flag_2);
+    
     Image_flag_3 = (uint32_t)3;
-    print("PASSWORD PROGRAM 3\n");
-
-    // print("PASSWORD PROGRAM 3\n");
-    // print_dec(Image_flag_2);
-    // print("PASSWORD PROGRAM 4\n");
+    print("PASSWORD PROGRAM 4\n");
+    print_dec(Image_flag_3); */
+    
     reg_leds = 0;
 
 	__asm__ volatile ("rdcycle %0" : "=r"(cycles_end));
@@ -1717,4 +1725,141 @@ void test_program(
     //putchar1('/');
     //print_dec(number_of_test);
     //putchar1('\n');
+}
+
+void smart_app(
+    const int8_t test_images[][28 * 28 * 1], const int8_t test_labels[], int number_of_test, 
+    const int model_input_dims[], 
+
+    int32_t conv_ps_data[], int32_t dense_ps_data[],
+
+    const int32_t conv_output_multiplier[], const int8_t conv_output_shift[],
+    const int32_t dense_output_multiplier, const int8_t  dense_output_shift,
+    const int conv_weight_dims[], const int8_t conv_weight_data[],
+    const int conv_bias_dims[], const int32_t conv_bias_data[],
+    const int dense_weight_dims[], const int8_t dense_weight_data[],
+    const int dense_bias_dims[], const int32_t dense_bias_data[],
+
+    const int conv_output_dims[], int8_t conv_output_data[],
+    const int pool_output_dims[], int8_t pool_output_data[],
+    const int dense_input_dims[], 
+    const int dense_output_dims[], int8_t dense_output_data[]
+) {
+    
+    //#define image_base_address (*(volatile uint32_t*)0x07000000)
+    //#define image   (*(volatile uint32_t*)0x07000000)
+    //#define image_1 (*(volatile uint32_t*)0x00000014)
+    //#define image_2 (*(volatile uint32_t*)0x00000018)
+    //#define image_3 (*(volatile uint32_t*)0x0000001C)
+    
+    print("PASSWORD PROGRAM\n");
+    const int new_model_input_dims[] = {28, 28, 3};
+
+	uint32_t cycles_begin, cycles_end;
+	uint32_t instns_begin, instns_end;
+    uint32_t high_cycles_begin, high_cycles_end;
+	uint32_t high_instns_begin, high_instns_end;
+
+	__asm__ volatile ("rdcycle %0" : "=r"(cycles_begin));
+	__asm__ volatile ("rdinstret %0" : "=r"(instns_begin));
+    __asm__ volatile ("rdcycleh %0" : "=r"(high_cycles_begin));
+	__asm__ volatile ("rdinstreth %0" : "=r"(high_instns_begin));
+
+    reg_leds = 255;
+    // Test right here !!!
+    int passed_test = 0;
+    //print("number of test: \n");
+    //print_dec(number_of_test);
+    /*
+    for (int test_idx = 0; test_idx < number_of_test; test_idx++) {
+        set_al_accel_mode(RESET); 
+        set_al_accel_mode(CONFIG);
+        config_al_accel_CONV_layer(
+            test_images[test_idx], new_model_input_dims, 128,
+            conv_weight_data, conv_weight_dims,
+            conv_bias_data, conv_bias_dims,
+            conv_output_data, conv_output_dims, 128,
+            conv_ps_data,
+            1, 1,
+            conv_output_multiplier, conv_output_shift,
+            RELU
+        );
+        run_and_wait_al_accel();
+
+        set_al_accel_mode(RESET);
+        set_al_accel_mode(CONFIG);
+        config_al_accel_POOL_layer(
+            conv_output_data, conv_output_dims,
+            pool_output_data, pool_output_dims,
+            2, 2,
+            2, 2
+        );
+	    run_and_wait_al_accel();
+
+        set_al_accel_mode(RESET);
+        set_al_accel_mode(CONFIG);
+        config_al_accel_DENSE_layer(
+            pool_output_data, dense_input_dims, 128,
+            dense_weight_data, dense_weight_dims,
+            dense_bias_data, dense_bias_dims,
+            dense_output_data , dense_output_dims, -55,
+            dense_ps_data,
+            dense_output_multiplier, dense_output_shift,
+            NO_FUNC
+        );
+        run_and_wait_al_accel();
+        //printArray1DI(dense_output_data, 10);
+
+        //print("MODEL RESULT\n");
+        int max_idx = get_label(dense_output_data, dense_output_dims[0]);
+        //print("Test Case ");
+        //print_dec(test_idx);
+        //print(": predicted = "); 
+        print_dec(max_idx);
+        print(" ");
+        //print("Value:");
+        //print_dec(dense_output_data[1]);
+        //print("; expected = ");
+        //print_dec(test_labels[test_idx]);
+        //print("; result = ");
+        //print((max_idx == test_labels[test_idx]) ? "true\n" : "false\n");
+        if (max_idx == test_labels[test_idx]) passed_test++;
+        if (test_idx == number_of_test - 1) print("\n");
+    }
+    // Read the values from the memory-mapped registers
+    /*Image_flag = (uint32_t)0;
+    print("PASSWORD PROGRAM 1\n");
+    print_dec(Image_flag);
+    
+    Image_flag_1 = (uint32_t)1;
+    print("PASSWORD PROGRAM 2\n");
+    print_dec(Image_flag_1);
+    
+    Image_flag_2 = (uint32_t)2;
+    print("PASSWORD PROGRAM 3\n");
+    print_dec(Image_flag_2);
+    
+    Image_flag_3 = (uint32_t)3;
+    print("PASSWORD PROGRAM 4\n");
+    print_dec(Image_flag_3); */
+    //volatile uint8_t* image = image_base_address;*/
+    print("\n");
+    volatile int8_t *image = (volatile int8_t*)0x07000000;
+    for (int i=0;i<4;i++) {
+    	for (int j=0;j <28*28;j++) {
+    		*image = (int8_t)test_images[i][j];
+    		print_dec_32b(*image);
+    		print(" ");
+    		print_hex(image,8);
+    		image++;
+    	}
+    }
+    	   
+    reg_leds = 0;
+
+	__asm__ volatile ("rdcycle %0" : "=r"(cycles_end));
+	__asm__ volatile ("rdinstret %0" : "=r"(instns_end));
+    __asm__ volatile ("rdcycleh %0" : "=r"(high_cycles_end));
+	__asm__ volatile ("rdinstreth %0" : "=r"(high_instns_end));
+
 }

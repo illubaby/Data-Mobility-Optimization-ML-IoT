@@ -35,6 +35,8 @@
     #define MODEL_TEST
 #elif 	defined(ABCD)
     #define TEST_PROGRAM
+#elif	defined(SMART)
+    #define SMART_APP
 #endif
 
 #if defined(CL_TEST) || defined (FCL_TEST) || defined(PL_TEST)
