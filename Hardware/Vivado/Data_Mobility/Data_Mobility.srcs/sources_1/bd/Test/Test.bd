@@ -38,20 +38,21 @@
         "m06_couplers": {},
         "m07_couplers": {}
       },
+      "pulse_generator_0": "",
       "rst_ps8_0_99M": "",
       "xlconstant_0": "",
       "xlconstant_1": "",
       "xlconstant_2": "",
       "zynq_ultra_ps_e_0": "",
       "DataBufferAxi_0": "",
-      "pulse_generator_0": ""
+      "xlconstant_3": ""
     },
     "components": {
       "al_ultra96v2_0": {
         "vlnv": "xilinx.com:module_ref:al_ultra96v2:1.0",
         "ip_revision": "1",
-        "xci_name": "Test_al_ultra96v2_0_2",
-        "xci_path": "ip\\Test_al_ultra96v2_0_2\\Test_al_ultra96v2_0_2.xci",
+        "xci_name": "Test_al_ultra96v2_0_3",
+        "xci_path": "ip\\Test_al_ultra96v2_0_3\\Test_al_ultra96v2_0_3.xci",
         "inst_hier_path": "al_ultra96v2_0",
         "reference_info": {
           "ref_type": "hdl",
@@ -119,7 +120,7 @@
                 "value_src": "user_prop"
               },
               "CLK_DOMAIN": {
-                "value": "Test_zynq_ultra_ps_e_0_3_pl_clk0",
+                "value": "Test_zynq_ultra_ps_e_0_4_pl_clk0",
                 "value_src": "default_prop"
               }
             }
@@ -132,8 +133,8 @@
       "axi_gpio_0": {
         "vlnv": "xilinx.com:ip:axi_gpio:2.0",
         "ip_revision": "33",
-        "xci_name": "Test_axi_gpio_0_3",
-        "xci_path": "ip\\Test_axi_gpio_0_3\\Test_axi_gpio_0_3.xci",
+        "xci_name": "Test_axi_gpio_0_4",
+        "xci_path": "ip\\Test_axi_gpio_0_4\\Test_axi_gpio_0_4.xci",
         "inst_hier_path": "axi_gpio_0",
         "parameters": {
           "C_GPIO_WIDTH": {
@@ -144,22 +145,22 @@
       "axi_gpio_1": {
         "vlnv": "xilinx.com:ip:axi_gpio:2.0",
         "ip_revision": "33",
-        "xci_name": "Test_axi_gpio_1_1",
-        "xci_path": "ip\\Test_axi_gpio_1_1\\Test_axi_gpio_1_1.xci",
+        "xci_name": "Test_axi_gpio_1_2",
+        "xci_path": "ip\\Test_axi_gpio_1_2\\Test_axi_gpio_1_2.xci",
         "inst_hier_path": "axi_gpio_1"
       },
       "axi_gpio_2": {
         "vlnv": "xilinx.com:ip:axi_gpio:2.0",
         "ip_revision": "33",
-        "xci_name": "Test_axi_gpio_2_1",
-        "xci_path": "ip\\Test_axi_gpio_2_1\\Test_axi_gpio_2_1.xci",
+        "xci_name": "Test_axi_gpio_2_2",
+        "xci_path": "ip\\Test_axi_gpio_2_2\\Test_axi_gpio_2_2.xci",
         "inst_hier_path": "axi_gpio_2"
       },
       "axi_gpio_3": {
         "vlnv": "xilinx.com:ip:axi_gpio:2.0",
         "ip_revision": "33",
-        "xci_name": "Test_axi_gpio_3_1",
-        "xci_path": "ip\\Test_axi_gpio_3_1\\Test_axi_gpio_3_1.xci",
+        "xci_name": "Test_axi_gpio_3_2",
+        "xci_path": "ip\\Test_axi_gpio_3_2\\Test_axi_gpio_3_2.xci",
         "inst_hier_path": "axi_gpio_3",
         "parameters": {
           "C_GPIO_WIDTH": {
@@ -170,8 +171,8 @@
       "axi_gpio_4": {
         "vlnv": "xilinx.com:ip:axi_gpio:2.0",
         "ip_revision": "33",
-        "xci_name": "Test_axi_gpio_4_1",
-        "xci_path": "ip\\Test_axi_gpio_4_1\\Test_axi_gpio_4_1.xci",
+        "xci_name": "Test_axi_gpio_4_2",
+        "xci_path": "ip\\Test_axi_gpio_4_2\\Test_axi_gpio_4_2.xci",
         "inst_hier_path": "axi_gpio_4",
         "parameters": {
           "C_GPIO_WIDTH": {
@@ -182,20 +183,15 @@
       "axi_gpio_5": {
         "vlnv": "xilinx.com:ip:axi_gpio:2.0",
         "ip_revision": "33",
-        "xci_name": "Test_axi_gpio_5_1",
-        "xci_path": "ip\\Test_axi_gpio_5_1\\Test_axi_gpio_5_1.xci",
-        "inst_hier_path": "axi_gpio_5",
-        "parameters": {
-          "C_ALL_INPUTS": {
-            "value": "1"
-          }
-        }
+        "xci_name": "Test_axi_gpio_5_2",
+        "xci_path": "ip\\Test_axi_gpio_5_2\\Test_axi_gpio_5_2.xci",
+        "inst_hier_path": "axi_gpio_5"
       },
       "axi_gpio_6": {
         "vlnv": "xilinx.com:ip:axi_gpio:2.0",
         "ip_revision": "33",
-        "xci_name": "Test_axi_gpio_6_1",
-        "xci_path": "ip\\Test_axi_gpio_6_1\\Test_axi_gpio_6_1.xci",
+        "xci_name": "Test_axi_gpio_6_2",
+        "xci_path": "ip\\Test_axi_gpio_6_2\\Test_axi_gpio_6_2.xci",
         "inst_hier_path": "axi_gpio_6",
         "parameters": {
           "C_GPIO_WIDTH": {
@@ -205,9 +201,9 @@
       },
       "ps8_0_axi_periph": {
         "vlnv": "xilinx.com:ip:axi_interconnect:2.1",
-        "xci_path": "ip\\Test_ps8_0_axi_periph_1\\Test_ps8_0_axi_periph_1.xci",
+        "xci_path": "ip\\Test_ps8_0_axi_periph_2\\Test_ps8_0_axi_periph_2.xci",
         "inst_hier_path": "ps8_0_axi_periph",
-        "xci_name": "Test_ps8_0_axi_periph_1",
+        "xci_name": "Test_ps8_0_axi_periph_2",
         "parameters": {
           "NUM_MI": {
             "value": "8"
@@ -447,8 +443,8 @@
           "xbar": {
             "vlnv": "xilinx.com:ip:axi_crossbar:2.1",
             "ip_revision": "32",
-            "xci_name": "Test_xbar_1",
-            "xci_path": "ip\\Test_xbar_1\\Test_xbar_1.xci",
+            "xci_name": "Test_xbar_2",
+            "xci_path": "ip\\Test_xbar_2\\Test_xbar_2.xci",
             "inst_hier_path": "ps8_0_axi_periph/xbar",
             "parameters": {
               "NUM_MI": {
@@ -543,8 +539,8 @@
               "auto_ds": {
                 "vlnv": "xilinx.com:ip:axi_dwidth_converter:2.1",
                 "ip_revision": "31",
-                "xci_name": "Test_auto_ds_0",
-                "xci_path": "ip\\Test_auto_ds_0\\Test_auto_ds_0.xci",
+                "xci_name": "Test_auto_ds_2",
+                "xci_path": "ip\\Test_auto_ds_2\\Test_auto_ds_2.xci",
                 "inst_hier_path": "ps8_0_axi_periph/s00_couplers/auto_ds",
                 "parameters": {
                   "MI_DATA_WIDTH": {
@@ -567,8 +563,8 @@
               "auto_pc": {
                 "vlnv": "xilinx.com:ip:axi_protocol_converter:2.1",
                 "ip_revision": "31",
-                "xci_name": "Test_auto_pc_0",
-                "xci_path": "ip\\Test_auto_pc_0\\Test_auto_pc_0.xci",
+                "xci_name": "Test_auto_pc_2",
+                "xci_path": "ip\\Test_auto_pc_2\\Test_auto_pc_2.xci",
                 "inst_hier_path": "ps8_0_axi_periph/s00_couplers/auto_pc",
                 "parameters": {
                   "MI_PROTOCOL": {
@@ -677,8 +673,8 @@
               "auto_ds": {
                 "vlnv": "xilinx.com:ip:axi_dwidth_converter:2.1",
                 "ip_revision": "31",
-                "xci_name": "Test_auto_ds_1",
-                "xci_path": "ip\\Test_auto_ds_1\\Test_auto_ds_1.xci",
+                "xci_name": "Test_auto_ds_3",
+                "xci_path": "ip\\Test_auto_ds_3\\Test_auto_ds_3.xci",
                 "inst_hier_path": "ps8_0_axi_periph/s01_couplers/auto_ds",
                 "parameters": {
                   "MI_DATA_WIDTH": {
@@ -701,8 +697,8 @@
               "auto_pc": {
                 "vlnv": "xilinx.com:ip:axi_protocol_converter:2.1",
                 "ip_revision": "31",
-                "xci_name": "Test_auto_pc_1",
-                "xci_path": "ip\\Test_auto_pc_1\\Test_auto_pc_1.xci",
+                "xci_name": "Test_auto_pc_3",
+                "xci_path": "ip\\Test_auto_pc_3\\Test_auto_pc_3.xci",
                 "inst_hier_path": "ps8_0_axi_periph/s01_couplers/auto_pc",
                 "parameters": {
                   "MI_PROTOCOL": {
@@ -1386,18 +1382,52 @@
           }
         }
       },
+      "pulse_generator_0": {
+        "vlnv": "xilinx.com:module_ref:pulse_generator:1.0",
+        "ip_revision": "1",
+        "xci_name": "Test_pulse_generator_0_1",
+        "xci_path": "ip\\Test_pulse_generator_0_1\\Test_pulse_generator_0_1.xci",
+        "inst_hier_path": "pulse_generator_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "pulse_generator",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "FREQ_HZ": {
+                "value": "99999001",
+                "value_src": "user_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "Test_zynq_ultra_ps_e_0_4_pl_clk0",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "I": {
+            "direction": "I"
+          },
+          "O": {
+            "direction": "O"
+          }
+        }
+      },
       "rst_ps8_0_99M": {
         "vlnv": "xilinx.com:ip:proc_sys_reset:5.0",
         "ip_revision": "15",
-        "xci_name": "Test_rst_ps8_0_99M_3",
-        "xci_path": "ip\\Test_rst_ps8_0_99M_3\\Test_rst_ps8_0_99M_3.xci",
+        "xci_name": "Test_rst_ps8_0_99M_4",
+        "xci_path": "ip\\Test_rst_ps8_0_99M_4\\Test_rst_ps8_0_99M_4.xci",
         "inst_hier_path": "rst_ps8_0_99M"
       },
       "xlconstant_0": {
         "vlnv": "xilinx.com:ip:xlconstant:1.1",
         "ip_revision": "9",
-        "xci_name": "Test_xlconstant_0_3",
-        "xci_path": "ip\\Test_xlconstant_0_3\\Test_xlconstant_0_3.xci",
+        "xci_name": "Test_xlconstant_0_4",
+        "xci_path": "ip\\Test_xlconstant_0_4\\Test_xlconstant_0_4.xci",
         "inst_hier_path": "xlconstant_0",
         "parameters": {
           "CONST_VAL": {
@@ -1408,8 +1438,8 @@
       "xlconstant_1": {
         "vlnv": "xilinx.com:ip:xlconstant:1.1",
         "ip_revision": "9",
-        "xci_name": "Test_xlconstant_1_0",
-        "xci_path": "ip\\Test_xlconstant_1_0\\Test_xlconstant_1_0.xci",
+        "xci_name": "Test_xlconstant_1_1",
+        "xci_path": "ip\\Test_xlconstant_1_1\\Test_xlconstant_1_1.xci",
         "inst_hier_path": "xlconstant_1",
         "parameters": {
           "CONST_VAL": {
@@ -1423,8 +1453,8 @@
       "xlconstant_2": {
         "vlnv": "xilinx.com:ip:xlconstant:1.1",
         "ip_revision": "9",
-        "xci_name": "Test_xlconstant_2_0",
-        "xci_path": "ip\\Test_xlconstant_2_0\\Test_xlconstant_2_0.xci",
+        "xci_name": "Test_xlconstant_2_1",
+        "xci_path": "ip\\Test_xlconstant_2_1\\Test_xlconstant_2_1.xci",
         "inst_hier_path": "xlconstant_2",
         "parameters": {
           "CONST_VAL": {
@@ -1435,8 +1465,8 @@
       "zynq_ultra_ps_e_0": {
         "vlnv": "xilinx.com:ip:zynq_ultra_ps_e:3.5",
         "ip_revision": "3",
-        "xci_name": "Test_zynq_ultra_ps_e_0_3",
-        "xci_path": "ip\\Test_zynq_ultra_ps_e_0_3\\Test_zynq_ultra_ps_e_0_3.xci",
+        "xci_name": "Test_zynq_ultra_ps_e_0_4",
+        "xci_path": "ip\\Test_zynq_ultra_ps_e_0_4\\Test_zynq_ultra_ps_e_0_4.xci",
         "inst_hier_path": "zynq_ultra_ps_e_0",
         "parameters": {
           "CAN0_BOARD_INTERFACE": {
@@ -4580,8 +4610,8 @@
       "DataBufferAxi_0": {
         "vlnv": "xilinx.com:module_ref:DataBufferAxi:1.0",
         "ip_revision": "1",
-        "xci_name": "Test_DataBufferAxi_0_0",
-        "xci_path": "ip\\Test_DataBufferAxi_0_0\\Test_DataBufferAxi_0_0.xci",
+        "xci_name": "Test_DataBufferAxi_0_1",
+        "xci_path": "ip\\Test_DataBufferAxi_0_1\\Test_DataBufferAxi_0_1.xci",
         "inst_hier_path": "DataBufferAxi_0",
         "reference_info": {
           "ref_type": "hdl",
@@ -4691,7 +4721,7 @@
                 "value_src": "auto"
               },
               "CLK_DOMAIN": {
-                "value": "Test_zynq_ultra_ps_e_0_3_pl_clk0",
+                "value": "Test_zynq_ultra_ps_e_0_4_pl_clk0",
                 "value_src": "default_prop"
               }
             },
@@ -4828,7 +4858,7 @@
                 "value_src": "user_prop"
               },
               "CLK_DOMAIN": {
-                "value": "Test_zynq_ultra_ps_e_0_3_pl_clk0",
+                "value": "Test_zynq_ultra_ps_e_0_4_pl_clk0",
                 "value_src": "default_prop"
               }
             }
@@ -4845,39 +4875,12 @@
           }
         }
       },
-      "pulse_generator_0": {
-        "vlnv": "xilinx.com:module_ref:pulse_generator:1.0",
-        "ip_revision": "1",
-        "xci_name": "Test_pulse_generator_0_0",
-        "xci_path": "ip\\Test_pulse_generator_0_0\\Test_pulse_generator_0_0.xci",
-        "inst_hier_path": "pulse_generator_0",
-        "reference_info": {
-          "ref_type": "hdl",
-          "ref_name": "pulse_generator",
-          "boundary_crc": "0x0"
-        },
-        "ports": {
-          "clk": {
-            "type": "clk",
-            "direction": "I",
-            "parameters": {
-              "FREQ_HZ": {
-                "value": "99999001",
-                "value_src": "user_prop"
-              },
-              "CLK_DOMAIN": {
-                "value": "Test_zynq_ultra_ps_e_0_3_pl_clk0",
-                "value_src": "default_prop"
-              }
-            }
-          },
-          "I": {
-            "direction": "I"
-          },
-          "O": {
-            "direction": "O"
-          }
-        }
+      "xlconstant_3": {
+        "vlnv": "xilinx.com:ip:xlconstant:1.1",
+        "ip_revision": "9",
+        "xci_name": "Test_xlconstant_3_0",
+        "xci_path": "ip\\Test_xlconstant_3_0\\Test_xlconstant_3_0.xci",
+        "inst_hier_path": "xlconstant_3"
       }
     },
     "interface_nets": {
@@ -4943,21 +4946,17 @@
       }
     },
     "nets": {
-      "DataBufferAxi_0_output_data": {
-        "ports": [
-          "DataBufferAxi_0/output_data",
-          "axi_gpio_5/gpio_io_i"
-        ]
-      },
       "al_ultra96v2_0_ps_data": {
         "ports": [
           "al_ultra96v2_0/ps_data",
+          "axi_gpio_5/gpio_io_i",
           "DataBufferAxi_0/al_ps_data"
         ]
       },
       "al_ultra96v2_0_ps_read_rdy": {
         "ports": [
           "al_ultra96v2_0/ps_read_rdy",
+          "axi_gpio_4/gpio_io_i",
           "DataBufferAxi_0/ps_read_rdy"
         ]
       },
@@ -4983,12 +4982,6 @@
         "ports": [
           "axi_gpio_3/gpio_io_o",
           "al_ultra96v2_0/enb"
-        ]
-      },
-      "axi_gpio_4_gpio_io_o": {
-        "ports": [
-          "axi_gpio_4/gpio_io_o",
-          "DataBufferAxi_0/request_signal"
         ]
       },
       "axi_gpio_6_gpio_io_o": {
@@ -5045,6 +5038,12 @@
           "al_ultra96v2_0/ifm_write_fin"
         ]
       },
+      "xlconstant_3_dout": {
+        "ports": [
+          "xlconstant_3/dout",
+          "DataBufferAxi_0/request_signal"
+        ]
+      },
       "zynq_ultra_ps_e_0_pl_clk0": {
         "ports": [
           "zynq_ultra_ps_e_0/pl_clk0",
@@ -5069,9 +5068,9 @@
           "ps8_0_axi_periph/M06_ACLK",
           "ps8_0_axi_periph/S01_ACLK",
           "al_ultra96v2_0/clk",
+          "pulse_generator_0/clk",
           "DataBufferAxi_0/s00_axi_aclk",
-          "ps8_0_axi_periph/M07_ACLK",
-          "pulse_generator_0/clk"
+          "ps8_0_axi_periph/M07_ACLK"
         ]
       },
       "zynq_ultra_ps_e_0_pl_resetn0": {

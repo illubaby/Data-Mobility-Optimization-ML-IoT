@@ -1,6 +1,6 @@
 -------------------------------------
 | Tool Version : Vivado v.2024.1
-| Date         : Sat Oct 12 09:11:20 2024
+| Date         : Thu Oct 17 18:58:20 2024
 | Host         : TUF-F15
 | Design       : design_1
 | Device       : xck26-sfvc784-2LV-C-

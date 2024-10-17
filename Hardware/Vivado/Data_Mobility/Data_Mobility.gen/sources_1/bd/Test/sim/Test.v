@@ -2,7 +2,7 @@
 //Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
-//Date        : Fri Oct 11 10:42:14 2024
+//Date        : Thu Oct 17 18:51:30 2024
 //Host        : TUF-F15 running 64-bit major release  (build 9200)
 //Command     : generate_target Test.bd
 //Design      : Test
@@ -10,18 +10,16 @@
 //--------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CORE_GENERATION_INFO = "Test,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=Test,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=31,numReposBlks=20,numNonXlnxBlks=0,numHierBlks=11,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=3,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=13,da_clkrst_cnt=2,synth_mode=Hierarchical}" *) (* HW_HANDOFF = "Test.hwdef" *) 
+(* CORE_GENERATION_INFO = "Test,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=Test,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=32,numReposBlks=21,numNonXlnxBlks=0,numHierBlks=11,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=3,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=14,da_clkrst_cnt=2,synth_mode=Hierarchical}" *) (* HW_HANDOFF = "Test.hwdef" *) 
 module Test
    ();
 
-  wire [31:0]DataBufferAxi_0_output_data;
   wire [31:0]al_ultra96v2_0_ps_data;
   wire al_ultra96v2_0_ps_read_rdy;
   wire [0:0]axi_gpio_0_gpio_io_o;
   wire [31:0]axi_gpio_1_gpio_io_o;
   wire [31:0]axi_gpio_2_gpio_io_o;
   wire [0:0]axi_gpio_3_gpio_io_o;
-  wire [0:0]axi_gpio_4_gpio_io_o;
   wire [0:0]axi_gpio_6_gpio_io_o;
   wire [39:0]ps8_0_axi_periph_M00_AXI_ARADDR;
   wire ps8_0_axi_periph_M00_AXI_ARREADY;
@@ -166,6 +164,7 @@ module Test
   wire [0:0]xlconstant_0_dout;
   wire [31:0]xlconstant_1_dout;
   wire [0:0]xlconstant_2_dout;
+  wire [0:0]xlconstant_3_dout;
   wire [39:0]zynq_ultra_ps_e_0_M_AXI_HPM0_FPD_ARADDR;
   wire [1:0]zynq_ultra_ps_e_0_M_AXI_HPM0_FPD_ARBURST;
   wire [3:0]zynq_ultra_ps_e_0_M_AXI_HPM0_FPD_ARCACHE;
@@ -243,11 +242,10 @@ module Test
   wire zynq_ultra_ps_e_0_pl_clk0;
   wire zynq_ultra_ps_e_0_pl_resetn0;
 
-  Test_DataBufferAxi_0_0 DataBufferAxi_0
+  Test_DataBufferAxi_0_1 DataBufferAxi_0
        (.al_ps_data(al_ultra96v2_0_ps_data),
-        .output_data(DataBufferAxi_0_output_data),
         .ps_read_rdy(al_ultra96v2_0_ps_read_rdy),
-        .request_signal(axi_gpio_4_gpio_io_o),
+        .request_signal(xlconstant_3_dout),
         .s00_axi_aclk(zynq_ultra_ps_e_0_pl_clk0),
         .s00_axi_araddr(ps8_0_axi_periph_M07_AXI_ARADDR[9:0]),
         .s00_axi_aresetn(rst_ps8_0_99M_peripheral_aresetn),
@@ -269,7 +267,7 @@ module Test
         .s00_axi_wready(ps8_0_axi_periph_M07_AXI_WREADY),
         .s00_axi_wstrb(ps8_0_axi_periph_M07_AXI_WSTRB),
         .s00_axi_wvalid(ps8_0_axi_periph_M07_AXI_WVALID));
-  Test_al_ultra96v2_0_2 al_ultra96v2_0
+  Test_al_ultra96v2_0_3 al_ultra96v2_0
        (.clk(zynq_ultra_ps_e_0_pl_clk0),
         .enb(axi_gpio_3_gpio_io_o),
         .ifm_data(xlconstant_1_dout),
@@ -281,7 +279,7 @@ module Test
         .ps_read_fin(pulse_generator_0_O),
         .ps_read_rdy(al_ultra96v2_0_ps_read_rdy),
         .ser_rx(xlconstant_0_dout));
-  Test_axi_gpio_0_3 axi_gpio_0
+  Test_axi_gpio_0_4 axi_gpio_0
        (.gpio_io_i(1'b0),
         .gpio_io_o(axi_gpio_0_gpio_io_o),
         .s_axi_aclk(zynq_ultra_ps_e_0_pl_clk0),
@@ -303,7 +301,7 @@ module Test
         .s_axi_wready(ps8_0_axi_periph_M00_AXI_WREADY),
         .s_axi_wstrb(ps8_0_axi_periph_M00_AXI_WSTRB),
         .s_axi_wvalid(ps8_0_axi_periph_M00_AXI_WVALID));
-  Test_axi_gpio_1_1 axi_gpio_1
+  Test_axi_gpio_1_2 axi_gpio_1
        (.gpio_io_i({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
         .gpio_io_o(axi_gpio_1_gpio_io_o),
         .s_axi_aclk(zynq_ultra_ps_e_0_pl_clk0),
@@ -325,7 +323,7 @@ module Test
         .s_axi_wready(ps8_0_axi_periph_M01_AXI_WREADY),
         .s_axi_wstrb(ps8_0_axi_periph_M01_AXI_WSTRB),
         .s_axi_wvalid(ps8_0_axi_periph_M01_AXI_WVALID));
-  Test_axi_gpio_2_1 axi_gpio_2
+  Test_axi_gpio_2_2 axi_gpio_2
        (.gpio_io_i({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
         .gpio_io_o(axi_gpio_2_gpio_io_o),
         .s_axi_aclk(zynq_ultra_ps_e_0_pl_clk0),
@@ -347,7 +345,7 @@ module Test
         .s_axi_wready(ps8_0_axi_periph_M02_AXI_WREADY),
         .s_axi_wstrb(ps8_0_axi_periph_M02_AXI_WSTRB),
         .s_axi_wvalid(ps8_0_axi_periph_M02_AXI_WVALID));
-  Test_axi_gpio_3_1 axi_gpio_3
+  Test_axi_gpio_3_2 axi_gpio_3
        (.gpio_io_i(1'b0),
         .gpio_io_o(axi_gpio_3_gpio_io_o),
         .s_axi_aclk(zynq_ultra_ps_e_0_pl_clk0),
@@ -369,9 +367,8 @@ module Test
         .s_axi_wready(ps8_0_axi_periph_M03_AXI_WREADY),
         .s_axi_wstrb(ps8_0_axi_periph_M03_AXI_WSTRB),
         .s_axi_wvalid(ps8_0_axi_periph_M03_AXI_WVALID));
-  Test_axi_gpio_4_1 axi_gpio_4
-       (.gpio_io_i(1'b0),
-        .gpio_io_o(axi_gpio_4_gpio_io_o),
+  Test_axi_gpio_4_2 axi_gpio_4
+       (.gpio_io_i(al_ultra96v2_0_ps_read_rdy),
         .s_axi_aclk(zynq_ultra_ps_e_0_pl_clk0),
         .s_axi_araddr(ps8_0_axi_periph_M04_AXI_ARADDR[8:0]),
         .s_axi_aresetn(rst_ps8_0_99M_peripheral_aresetn),
@@ -391,8 +388,8 @@ module Test
         .s_axi_wready(ps8_0_axi_periph_M04_AXI_WREADY),
         .s_axi_wstrb(ps8_0_axi_periph_M04_AXI_WSTRB),
         .s_axi_wvalid(ps8_0_axi_periph_M04_AXI_WVALID));
-  Test_axi_gpio_5_1 axi_gpio_5
-       (.gpio_io_i(DataBufferAxi_0_output_data),
+  Test_axi_gpio_5_2 axi_gpio_5
+       (.gpio_io_i(al_ultra96v2_0_ps_data),
         .s_axi_aclk(zynq_ultra_ps_e_0_pl_clk0),
         .s_axi_araddr(ps8_0_axi_periph_M05_AXI_ARADDR[8:0]),
         .s_axi_aresetn(rst_ps8_0_99M_peripheral_aresetn),
@@ -412,7 +409,7 @@ module Test
         .s_axi_wready(ps8_0_axi_periph_M05_AXI_WREADY),
         .s_axi_wstrb(ps8_0_axi_periph_M05_AXI_WSTRB),
         .s_axi_wvalid(ps8_0_axi_periph_M05_AXI_WVALID));
-  Test_axi_gpio_6_1 axi_gpio_6
+  Test_axi_gpio_6_2 axi_gpio_6
        (.gpio_io_i(1'b0),
         .gpio_io_o(axi_gpio_6_gpio_io_o),
         .s_axi_aclk(zynq_ultra_ps_e_0_pl_clk0),
@@ -434,7 +431,7 @@ module Test
         .s_axi_wready(ps8_0_axi_periph_M06_AXI_WREADY),
         .s_axi_wstrb(ps8_0_axi_periph_M06_AXI_WSTRB),
         .s_axi_wvalid(ps8_0_axi_periph_M06_AXI_WVALID));
-  Test_ps8_0_axi_periph_1 ps8_0_axi_periph
+  Test_ps8_0_axi_periph_2 ps8_0_axi_periph
        (.ACLK(zynq_ultra_ps_e_0_pl_clk0),
         .ARESETN(rst_ps8_0_99M_peripheral_aresetn),
         .M00_ACLK(zynq_ultra_ps_e_0_pl_clk0),
@@ -669,24 +666,26 @@ module Test
         .S01_AXI_wready(zynq_ultra_ps_e_0_M_AXI_HPM1_FPD_WREADY),
         .S01_AXI_wstrb(zynq_ultra_ps_e_0_M_AXI_HPM1_FPD_WSTRB),
         .S01_AXI_wvalid(zynq_ultra_ps_e_0_M_AXI_HPM1_FPD_WVALID));
-  Test_pulse_generator_0_0 pulse_generator_0
+  Test_pulse_generator_0_1 pulse_generator_0
        (.I(axi_gpio_6_gpio_io_o),
         .O(pulse_generator_0_O),
         .clk(zynq_ultra_ps_e_0_pl_clk0));
-  Test_rst_ps8_0_99M_3 rst_ps8_0_99M
+  Test_rst_ps8_0_99M_4 rst_ps8_0_99M
        (.aux_reset_in(1'b1),
         .dcm_locked(1'b1),
         .ext_reset_in(zynq_ultra_ps_e_0_pl_resetn0),
         .mb_debug_sys_rst(1'b0),
         .peripheral_aresetn(rst_ps8_0_99M_peripheral_aresetn),
         .slowest_sync_clk(zynq_ultra_ps_e_0_pl_clk0));
-  Test_xlconstant_0_3 xlconstant_0
+  Test_xlconstant_0_4 xlconstant_0
        (.dout(xlconstant_0_dout));
-  Test_xlconstant_1_0 xlconstant_1
+  Test_xlconstant_1_1 xlconstant_1
        (.dout(xlconstant_1_dout));
-  Test_xlconstant_2_0 xlconstant_2
+  Test_xlconstant_2_1 xlconstant_2
        (.dout(xlconstant_2_dout));
-  Test_zynq_ultra_ps_e_0_3 zynq_ultra_ps_e_0
+  Test_xlconstant_3_0 xlconstant_3
+       (.dout(xlconstant_3_dout));
+  Test_zynq_ultra_ps_e_0_4 zynq_ultra_ps_e_0
        (.maxigp0_araddr(zynq_ultra_ps_e_0_M_AXI_HPM0_FPD_ARADDR),
         .maxigp0_arburst(zynq_ultra_ps_e_0_M_AXI_HPM0_FPD_ARBURST),
         .maxigp0_arcache(zynq_ultra_ps_e_0_M_AXI_HPM0_FPD_ARCACHE),
@@ -768,7 +767,7 @@ module Test
         .pl_resetn0(zynq_ultra_ps_e_0_pl_resetn0));
 endmodule
 
-module Test_ps8_0_axi_periph_1
+module Test_ps8_0_axi_periph_2
    (ACLK,
     ARESETN,
     M00_ACLK,
@@ -2283,7 +2282,7 @@ module Test_ps8_0_axi_periph_1
         .S_AXI_wready(ps8_0_axi_periph_to_s01_couplers_WREADY),
         .S_AXI_wstrb(ps8_0_axi_periph_to_s01_couplers_WSTRB),
         .S_AXI_wvalid(ps8_0_axi_periph_to_s01_couplers_WVALID));
-  Test_xbar_1 xbar
+  Test_xbar_2 xbar
        (.aclk(ps8_0_axi_periph_ACLK_net),
         .aresetn(ps8_0_axi_periph_ARESETN_net),
         .m_axi_araddr({xbar_to_m07_couplers_ARADDR,xbar_to_m06_couplers_ARADDR,xbar_to_m05_couplers_ARADDR,xbar_to_m04_couplers_ARADDR,xbar_to_m03_couplers_ARADDR,xbar_to_m02_couplers_ARADDR,xbar_to_m01_couplers_ARADDR,xbar_to_m00_couplers_ARADDR}),
@@ -3670,7 +3669,7 @@ module s00_couplers_imp_4VP879
   assign s00_couplers_to_auto_ds_WLAST = S_AXI_wlast;
   assign s00_couplers_to_auto_ds_WSTRB = S_AXI_wstrb[15:0];
   assign s00_couplers_to_auto_ds_WVALID = S_AXI_wvalid;
-  Test_auto_ds_0 auto_ds
+  Test_auto_ds_2 auto_ds
        (.m_axi_araddr(auto_ds_to_auto_pc_ARADDR),
         .m_axi_arburst(auto_ds_to_auto_pc_ARBURST),
         .m_axi_arcache(auto_ds_to_auto_pc_ARCACHE),
@@ -3747,7 +3746,7 @@ module s00_couplers_imp_4VP879
         .s_axi_wready(s00_couplers_to_auto_ds_WREADY),
         .s_axi_wstrb(s00_couplers_to_auto_ds_WSTRB),
         .s_axi_wvalid(s00_couplers_to_auto_ds_WVALID));
-  Test_auto_pc_0 auto_pc
+  Test_auto_pc_2 auto_pc
        (.aclk(S_ACLK_1),
         .aresetn(S_ARESETN_1),
         .m_axi_araddr(auto_pc_to_s00_couplers_ARADDR),
@@ -4080,7 +4079,7 @@ module s01_couplers_imp_130DX9V
   assign s01_couplers_to_auto_ds_WLAST = S_AXI_wlast;
   assign s01_couplers_to_auto_ds_WSTRB = S_AXI_wstrb[15:0];
   assign s01_couplers_to_auto_ds_WVALID = S_AXI_wvalid;
-  Test_auto_ds_1 auto_ds
+  Test_auto_ds_3 auto_ds
        (.m_axi_araddr(auto_ds_to_auto_pc_ARADDR),
         .m_axi_arburst(auto_ds_to_auto_pc_ARBURST),
         .m_axi_arcache(auto_ds_to_auto_pc_ARCACHE),
@@ -4157,7 +4156,7 @@ module s01_couplers_imp_130DX9V
         .s_axi_wready(s01_couplers_to_auto_ds_WREADY),
         .s_axi_wstrb(s01_couplers_to_auto_ds_WSTRB),
         .s_axi_wvalid(s01_couplers_to_auto_ds_WVALID));
-  Test_auto_pc_1 auto_pc
+  Test_auto_pc_3 auto_pc
        (.aclk(S_ACLK_1),
         .aresetn(S_ARESETN_1),
         .m_axi_araddr(auto_pc_to_s01_couplers_ARADDR),

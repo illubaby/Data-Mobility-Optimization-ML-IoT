@@ -6,67 +6,70 @@
 # Block Designs: bd/Test/Test.bd
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Test || ORIG_REF_NAME==Test} -quiet] -quiet
 
-# IP: bd/Test/ip/Test_al_ultra96v2_0_2/Test_al_ultra96v2_0_2.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Test_al_ultra96v2_0_2 || ORIG_REF_NAME==Test_al_ultra96v2_0_2} -quiet] -quiet
+# IP: bd/Test/ip/Test_al_ultra96v2_0_3/Test_al_ultra96v2_0_3.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Test_al_ultra96v2_0_3 || ORIG_REF_NAME==Test_al_ultra96v2_0_3} -quiet] -quiet
 
-# IP: bd/Test/ip/Test_axi_gpio_0_3/Test_axi_gpio_0_3.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Test_axi_gpio_0_3 || ORIG_REF_NAME==Test_axi_gpio_0_3} -quiet] -quiet
+# IP: bd/Test/ip/Test_axi_gpio_0_4/Test_axi_gpio_0_4.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Test_axi_gpio_0_4 || ORIG_REF_NAME==Test_axi_gpio_0_4} -quiet] -quiet
 
-# IP: bd/Test/ip/Test_axi_gpio_1_1/Test_axi_gpio_1_1.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Test_axi_gpio_1_1 || ORIG_REF_NAME==Test_axi_gpio_1_1} -quiet] -quiet
+# IP: bd/Test/ip/Test_axi_gpio_1_2/Test_axi_gpio_1_2.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Test_axi_gpio_1_2 || ORIG_REF_NAME==Test_axi_gpio_1_2} -quiet] -quiet
 
-# IP: bd/Test/ip/Test_axi_gpio_2_1/Test_axi_gpio_2_1.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Test_axi_gpio_2_1 || ORIG_REF_NAME==Test_axi_gpio_2_1} -quiet] -quiet
+# IP: bd/Test/ip/Test_axi_gpio_2_2/Test_axi_gpio_2_2.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Test_axi_gpio_2_2 || ORIG_REF_NAME==Test_axi_gpio_2_2} -quiet] -quiet
 
-# IP: bd/Test/ip/Test_axi_gpio_3_1/Test_axi_gpio_3_1.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Test_axi_gpio_3_1 || ORIG_REF_NAME==Test_axi_gpio_3_1} -quiet] -quiet
+# IP: bd/Test/ip/Test_axi_gpio_3_2/Test_axi_gpio_3_2.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Test_axi_gpio_3_2 || ORIG_REF_NAME==Test_axi_gpio_3_2} -quiet] -quiet
 
-# IP: bd/Test/ip/Test_axi_gpio_4_1/Test_axi_gpio_4_1.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Test_axi_gpio_4_1 || ORIG_REF_NAME==Test_axi_gpio_4_1} -quiet] -quiet
+# IP: bd/Test/ip/Test_axi_gpio_4_2/Test_axi_gpio_4_2.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Test_axi_gpio_4_2 || ORIG_REF_NAME==Test_axi_gpio_4_2} -quiet] -quiet
 
-# IP: bd/Test/ip/Test_axi_gpio_5_1/Test_axi_gpio_5_1.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Test_axi_gpio_5_1 || ORIG_REF_NAME==Test_axi_gpio_5_1} -quiet] -quiet
+# IP: bd/Test/ip/Test_axi_gpio_5_2/Test_axi_gpio_5_2.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Test_axi_gpio_5_2 || ORIG_REF_NAME==Test_axi_gpio_5_2} -quiet] -quiet
 
-# IP: bd/Test/ip/Test_axi_gpio_6_1/Test_axi_gpio_6_1.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Test_axi_gpio_6_1 || ORIG_REF_NAME==Test_axi_gpio_6_1} -quiet] -quiet
+# IP: bd/Test/ip/Test_axi_gpio_6_2/Test_axi_gpio_6_2.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Test_axi_gpio_6_2 || ORIG_REF_NAME==Test_axi_gpio_6_2} -quiet] -quiet
 
-# IP: bd/Test/ip/Test_xbar_1/Test_xbar_1.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Test_xbar_1 || ORIG_REF_NAME==Test_xbar_1} -quiet] -quiet
+# IP: bd/Test/ip/Test_xbar_2/Test_xbar_2.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Test_xbar_2 || ORIG_REF_NAME==Test_xbar_2} -quiet] -quiet
 
-# IP: bd/Test/ip/Test_auto_ds_0/Test_auto_ds_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Test_auto_ds_0 || ORIG_REF_NAME==Test_auto_ds_0} -quiet] -quiet
+# IP: bd/Test/ip/Test_ps8_0_axi_periph_2/Test_ps8_0_axi_periph_2.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Test_ps8_0_axi_periph_2 || ORIG_REF_NAME==Test_ps8_0_axi_periph_2} -quiet] -quiet
 
-# IP: bd/Test/ip/Test_auto_pc_0/Test_auto_pc_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Test_auto_pc_0 || ORIG_REF_NAME==Test_auto_pc_0} -quiet] -quiet
+# IP: bd/Test/ip/Test_pulse_generator_0_1/Test_pulse_generator_0_1.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Test_pulse_generator_0_1 || ORIG_REF_NAME==Test_pulse_generator_0_1} -quiet] -quiet
 
-# IP: bd/Test/ip/Test_auto_ds_1/Test_auto_ds_1.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Test_auto_ds_1 || ORIG_REF_NAME==Test_auto_ds_1} -quiet] -quiet
+# IP: bd/Test/ip/Test_rst_ps8_0_99M_4/Test_rst_ps8_0_99M_4.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Test_rst_ps8_0_99M_4 || ORIG_REF_NAME==Test_rst_ps8_0_99M_4} -quiet] -quiet
 
-# IP: bd/Test/ip/Test_auto_pc_1/Test_auto_pc_1.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Test_auto_pc_1 || ORIG_REF_NAME==Test_auto_pc_1} -quiet] -quiet
+# IP: bd/Test/ip/Test_xlconstant_0_4/Test_xlconstant_0_4.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Test_xlconstant_0_4 || ORIG_REF_NAME==Test_xlconstant_0_4} -quiet] -quiet
 
-# IP: bd/Test/ip/Test_ps8_0_axi_periph_1/Test_ps8_0_axi_periph_1.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Test_ps8_0_axi_periph_1 || ORIG_REF_NAME==Test_ps8_0_axi_periph_1} -quiet] -quiet
+# IP: bd/Test/ip/Test_xlconstant_1_1/Test_xlconstant_1_1.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Test_xlconstant_1_1 || ORIG_REF_NAME==Test_xlconstant_1_1} -quiet] -quiet
 
-# IP: bd/Test/ip/Test_rst_ps8_0_99M_3/Test_rst_ps8_0_99M_3.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Test_rst_ps8_0_99M_3 || ORIG_REF_NAME==Test_rst_ps8_0_99M_3} -quiet] -quiet
+# IP: bd/Test/ip/Test_xlconstant_2_1/Test_xlconstant_2_1.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Test_xlconstant_2_1 || ORIG_REF_NAME==Test_xlconstant_2_1} -quiet] -quiet
 
-# IP: bd/Test/ip/Test_xlconstant_0_3/Test_xlconstant_0_3.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Test_xlconstant_0_3 || ORIG_REF_NAME==Test_xlconstant_0_3} -quiet] -quiet
+# IP: bd/Test/ip/Test_zynq_ultra_ps_e_0_4/Test_zynq_ultra_ps_e_0_4.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Test_zynq_ultra_ps_e_0_4 || ORIG_REF_NAME==Test_zynq_ultra_ps_e_0_4} -quiet] -quiet
 
-# IP: bd/Test/ip/Test_xlconstant_1_0/Test_xlconstant_1_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Test_xlconstant_1_0 || ORIG_REF_NAME==Test_xlconstant_1_0} -quiet] -quiet
+# IP: bd/Test/ip/Test_DataBufferAxi_0_1/Test_DataBufferAxi_0_1.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Test_DataBufferAxi_0_1 || ORIG_REF_NAME==Test_DataBufferAxi_0_1} -quiet] -quiet
 
-# IP: bd/Test/ip/Test_xlconstant_2_0/Test_xlconstant_2_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Test_xlconstant_2_0 || ORIG_REF_NAME==Test_xlconstant_2_0} -quiet] -quiet
+# IP: bd/Test/ip/Test_xlconstant_3_0/Test_xlconstant_3_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Test_xlconstant_3_0 || ORIG_REF_NAME==Test_xlconstant_3_0} -quiet] -quiet
 
-# IP: bd/Test/ip/Test_zynq_ultra_ps_e_0_3/Test_zynq_ultra_ps_e_0_3.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Test_zynq_ultra_ps_e_0_3 || ORIG_REF_NAME==Test_zynq_ultra_ps_e_0_3} -quiet] -quiet
+# IP: bd/Test/ip/Test_auto_ds_2/Test_auto_ds_2.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Test_auto_ds_2 || ORIG_REF_NAME==Test_auto_ds_2} -quiet] -quiet
 
-# IP: bd/Test/ip/Test_DataBufferAxi_0_0/Test_DataBufferAxi_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Test_DataBufferAxi_0_0 || ORIG_REF_NAME==Test_DataBufferAxi_0_0} -quiet] -quiet
+# IP: bd/Test/ip/Test_auto_pc_2/Test_auto_pc_2.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Test_auto_pc_2 || ORIG_REF_NAME==Test_auto_pc_2} -quiet] -quiet
 
-# IP: bd/Test/ip/Test_pulse_generator_0_0/Test_pulse_generator_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Test_pulse_generator_0_0 || ORIG_REF_NAME==Test_pulse_generator_0_0} -quiet] -quiet
+# IP: bd/Test/ip/Test_auto_ds_3/Test_auto_ds_3.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Test_auto_ds_3 || ORIG_REF_NAME==Test_auto_ds_3} -quiet] -quiet
+
+# IP: bd/Test/ip/Test_auto_pc_3/Test_auto_pc_3.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==Test_auto_pc_3 || ORIG_REF_NAME==Test_auto_pc_3} -quiet] -quiet
 
 # XDC: c:/Data-Mobility-Optimization-ML-IoT/Hardware/Vivado/Data_Mobility/Data_Mobility.gen/sources_1/bd/Test/Test_ooc.xdc

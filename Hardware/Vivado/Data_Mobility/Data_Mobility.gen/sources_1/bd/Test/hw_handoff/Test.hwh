@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Fri Oct 11 10:42:17 2024" VIVADOVERSION="2024.1">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Thu Oct 17 18:51:56 2024" VIVADOVERSION="2024.1">
 
   <SYSTEMINFO ARCH="zynquplus" BOARD="xilinx.com:kv260_som:part0:1.4" DEVICE="xck26" NAME="Test" PACKAGE="sfvc784" SPEEDGRADE="-2LV"/>
 
@@ -17,7 +17,7 @@
         <PARAMETER NAME="C_S00_AXI_ADDR_WIDTH" VALUE="10"/>
         <PARAMETER NAME="C_S00_AXI_DATA_WIDTH" VALUE="32"/>
         <PARAMETER NAME="MAX_DATA_COUNT" VALUE="500"/>
-        <PARAMETER NAME="Component_Name" VALUE="Test_DataBufferAxi_0_0"/>
+        <PARAMETER NAME="Component_Name" VALUE="Test_DataBufferAxi_0_1"/>
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
         <PARAMETER NAME="C_BASEADDR" VALUE="0xA0070000"/>
         <PARAMETER NAME="C_HIGHADDR" VALUE="0xA0070FFF"/>
@@ -28,19 +28,15 @@
             <CONNECTION INSTANCE="al_ultra96v2_0" PORT="ps_data"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="31" NAME="output_data" RIGHT="0" SIGIS="undef" SIGNAME="DataBufferAxi_0_output_data">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_gpio_5" PORT="gpio_io_i"/>
-          </CONNECTIONS>
-        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="output_data" RIGHT="0" SIGIS="undef"/>
         <PORT DIR="I" NAME="ps_read_rdy" SIGIS="undef" SIGNAME="al_ultra96v2_0_ps_read_rdy">
           <CONNECTIONS>
             <CONNECTION INSTANCE="al_ultra96v2_0" PORT="ps_read_rdy"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="request_signal" SIGIS="undef" SIGNAME="axi_gpio_4_gpio_io_o">
+        <PORT DIR="I" NAME="request_signal" SIGIS="undef" SIGNAME="xlconstant_3_dout">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_gpio_4" PORT="gpio_io_o"/>
+            <CONNECTION INSTANCE="xlconstant_3" PORT="dout"/>
           </CONNECTIONS>
         </PORT>
         <PORT CLKFREQUENCY="99999001" DIR="I" NAME="s00_axi_aclk" SIGIS="clk" SIGNAME="zynq_ultra_ps_e_0_pl_clk0">
@@ -155,7 +151,7 @@
           <PARAMETER NAME="ARUSER_WIDTH" VALUE="0"/>
           <PARAMETER NAME="AWUSER_WIDTH" VALUE="0"/>
           <PARAMETER NAME="BUSER_WIDTH" VALUE="0"/>
-          <PARAMETER NAME="CLK_DOMAIN" VALUE="Test_zynq_ultra_ps_e_0_3_pl_clk0"/>
+          <PARAMETER NAME="CLK_DOMAIN" VALUE="Test_zynq_ultra_ps_e_0_4_pl_clk0"/>
           <PARAMETER NAME="DATA_WIDTH" VALUE="32"/>
           <PARAMETER NAME="FREQ_HZ" VALUE="99999001"/>
           <PARAMETER NAME="HAS_BRESP" VALUE="1"/>
@@ -209,7 +205,7 @@
     <MODULE COREREVISION="1" FULLNAME="/al_ultra96v2_0" HWVERSION="1.0" INSTANCE="al_ultra96v2_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="al_ultra96v2" VLNV="xilinx.com:module_ref:al_ultra96v2:1.0">
       <DOCUMENTS/>
       <PARAMETERS>
-        <PARAMETER NAME="Component_Name" VALUE="Test_al_ultra96v2_0_2"/>
+        <PARAMETER NAME="Component_Name" VALUE="Test_al_ultra96v2_0_3"/>
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
       </PARAMETERS>
       <PORTS>
@@ -253,6 +249,7 @@
         <PORT DIR="O" LEFT="1" NAME="leds" RIGHT="0" SIGIS="undef"/>
         <PORT DIR="O" LEFT="31" NAME="ps_data" RIGHT="0" SIGIS="undef" SIGNAME="al_ultra96v2_0_ps_data">
           <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_gpio_5" PORT="gpio_io_i"/>
             <CONNECTION INSTANCE="DataBufferAxi_0" PORT="al_ps_data"/>
           </CONNECTIONS>
         </PORT>
@@ -263,6 +260,7 @@
         </PORT>
         <PORT DIR="O" NAME="ps_read_rdy" SIGIS="undef" SIGNAME="al_ultra96v2_0_ps_read_rdy">
           <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_gpio_4" PORT="gpio_io_i"/>
             <CONNECTION INSTANCE="DataBufferAxi_0" PORT="ps_read_rdy"/>
           </CONNECTIONS>
         </PORT>
@@ -461,7 +459,7 @@
         <PARAMETER NAME="C_S_AXI_DATA_WIDTH" VALUE="32"/>
         <PARAMETER NAME="C_TRI_DEFAULT" VALUE="0xFFFFFFFF"/>
         <PARAMETER NAME="C_TRI_DEFAULT_2" VALUE="0xFFFFFFFF"/>
-        <PARAMETER NAME="Component_Name" VALUE="Test_axi_gpio_0_3"/>
+        <PARAMETER NAME="Component_Name" VALUE="Test_axi_gpio_0_4"/>
         <PARAMETER NAME="GPIO2_BOARD_INTERFACE" VALUE="Custom"/>
         <PARAMETER NAME="GPIO_BOARD_INTERFACE" VALUE="Custom"/>
         <PARAMETER NAME="USE_BOARD_FLOW" VALUE="false"/>
@@ -579,7 +577,7 @@
           <PARAMETER NAME="ARUSER_WIDTH" VALUE="0"/>
           <PARAMETER NAME="AWUSER_WIDTH" VALUE="0"/>
           <PARAMETER NAME="BUSER_WIDTH" VALUE="0"/>
-          <PARAMETER NAME="CLK_DOMAIN" VALUE="Test_zynq_ultra_ps_e_0_3_pl_clk0"/>
+          <PARAMETER NAME="CLK_DOMAIN" VALUE="Test_zynq_ultra_ps_e_0_4_pl_clk0"/>
           <PARAMETER NAME="DATA_WIDTH" VALUE="32"/>
           <PARAMETER NAME="FREQ_HZ" VALUE="99999001"/>
           <PARAMETER NAME="HAS_BRESP" VALUE="1"/>
@@ -821,7 +819,7 @@
         <PARAMETER NAME="C_S_AXI_DATA_WIDTH" VALUE="32"/>
         <PARAMETER NAME="C_TRI_DEFAULT" VALUE="0xFFFFFFFF"/>
         <PARAMETER NAME="C_TRI_DEFAULT_2" VALUE="0xFFFFFFFF"/>
-        <PARAMETER NAME="Component_Name" VALUE="Test_axi_gpio_1_1"/>
+        <PARAMETER NAME="Component_Name" VALUE="Test_axi_gpio_1_2"/>
         <PARAMETER NAME="GPIO2_BOARD_INTERFACE" VALUE="Custom"/>
         <PARAMETER NAME="GPIO_BOARD_INTERFACE" VALUE="Custom"/>
         <PARAMETER NAME="USE_BOARD_FLOW" VALUE="false"/>
@@ -939,7 +937,7 @@
           <PARAMETER NAME="ARUSER_WIDTH" VALUE="0"/>
           <PARAMETER NAME="AWUSER_WIDTH" VALUE="0"/>
           <PARAMETER NAME="BUSER_WIDTH" VALUE="0"/>
-          <PARAMETER NAME="CLK_DOMAIN" VALUE="Test_zynq_ultra_ps_e_0_3_pl_clk0"/>
+          <PARAMETER NAME="CLK_DOMAIN" VALUE="Test_zynq_ultra_ps_e_0_4_pl_clk0"/>
           <PARAMETER NAME="DATA_WIDTH" VALUE="32"/>
           <PARAMETER NAME="FREQ_HZ" VALUE="99999001"/>
           <PARAMETER NAME="HAS_BRESP" VALUE="1"/>
@@ -1181,7 +1179,7 @@
         <PARAMETER NAME="C_S_AXI_DATA_WIDTH" VALUE="32"/>
         <PARAMETER NAME="C_TRI_DEFAULT" VALUE="0xFFFFFFFF"/>
         <PARAMETER NAME="C_TRI_DEFAULT_2" VALUE="0xFFFFFFFF"/>
-        <PARAMETER NAME="Component_Name" VALUE="Test_axi_gpio_2_1"/>
+        <PARAMETER NAME="Component_Name" VALUE="Test_axi_gpio_2_2"/>
         <PARAMETER NAME="GPIO2_BOARD_INTERFACE" VALUE="Custom"/>
         <PARAMETER NAME="GPIO_BOARD_INTERFACE" VALUE="Custom"/>
         <PARAMETER NAME="USE_BOARD_FLOW" VALUE="false"/>
@@ -1299,7 +1297,7 @@
           <PARAMETER NAME="ARUSER_WIDTH" VALUE="0"/>
           <PARAMETER NAME="AWUSER_WIDTH" VALUE="0"/>
           <PARAMETER NAME="BUSER_WIDTH" VALUE="0"/>
-          <PARAMETER NAME="CLK_DOMAIN" VALUE="Test_zynq_ultra_ps_e_0_3_pl_clk0"/>
+          <PARAMETER NAME="CLK_DOMAIN" VALUE="Test_zynq_ultra_ps_e_0_4_pl_clk0"/>
           <PARAMETER NAME="DATA_WIDTH" VALUE="32"/>
           <PARAMETER NAME="FREQ_HZ" VALUE="99999001"/>
           <PARAMETER NAME="HAS_BRESP" VALUE="1"/>
@@ -1541,7 +1539,7 @@
         <PARAMETER NAME="C_S_AXI_DATA_WIDTH" VALUE="32"/>
         <PARAMETER NAME="C_TRI_DEFAULT" VALUE="0xFFFFFFFF"/>
         <PARAMETER NAME="C_TRI_DEFAULT_2" VALUE="0xFFFFFFFF"/>
-        <PARAMETER NAME="Component_Name" VALUE="Test_axi_gpio_3_1"/>
+        <PARAMETER NAME="Component_Name" VALUE="Test_axi_gpio_3_2"/>
         <PARAMETER NAME="GPIO2_BOARD_INTERFACE" VALUE="Custom"/>
         <PARAMETER NAME="GPIO_BOARD_INTERFACE" VALUE="Custom"/>
         <PARAMETER NAME="USE_BOARD_FLOW" VALUE="false"/>
@@ -1659,7 +1657,7 @@
           <PARAMETER NAME="ARUSER_WIDTH" VALUE="0"/>
           <PARAMETER NAME="AWUSER_WIDTH" VALUE="0"/>
           <PARAMETER NAME="BUSER_WIDTH" VALUE="0"/>
-          <PARAMETER NAME="CLK_DOMAIN" VALUE="Test_zynq_ultra_ps_e_0_3_pl_clk0"/>
+          <PARAMETER NAME="CLK_DOMAIN" VALUE="Test_zynq_ultra_ps_e_0_4_pl_clk0"/>
           <PARAMETER NAME="DATA_WIDTH" VALUE="32"/>
           <PARAMETER NAME="FREQ_HZ" VALUE="99999001"/>
           <PARAMETER NAME="HAS_BRESP" VALUE="1"/>
@@ -1901,7 +1899,7 @@
         <PARAMETER NAME="C_S_AXI_DATA_WIDTH" VALUE="32"/>
         <PARAMETER NAME="C_TRI_DEFAULT" VALUE="0xFFFFFFFF"/>
         <PARAMETER NAME="C_TRI_DEFAULT_2" VALUE="0xFFFFFFFF"/>
-        <PARAMETER NAME="Component_Name" VALUE="Test_axi_gpio_4_1"/>
+        <PARAMETER NAME="Component_Name" VALUE="Test_axi_gpio_4_2"/>
         <PARAMETER NAME="GPIO2_BOARD_INTERFACE" VALUE="Custom"/>
         <PARAMETER NAME="GPIO_BOARD_INTERFACE" VALUE="Custom"/>
         <PARAMETER NAME="USE_BOARD_FLOW" VALUE="false"/>
@@ -1910,12 +1908,12 @@
         <PARAMETER NAME="C_HIGHADDR" VALUE="0xA004FFFF"/>
       </PARAMETERS>
       <PORTS>
-        <PORT DIR="I" LEFT="0" NAME="gpio_io_i" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="O" LEFT="0" NAME="gpio_io_o" RIGHT="0" SIGIS="undef" SIGNAME="axi_gpio_4_gpio_io_o">
+        <PORT DIR="I" LEFT="0" NAME="gpio_io_i" RIGHT="0" SIGIS="undef" SIGNAME="al_ultra96v2_0_ps_read_rdy">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="DataBufferAxi_0" PORT="request_signal"/>
+            <CONNECTION INSTANCE="al_ultra96v2_0" PORT="ps_read_rdy"/>
           </CONNECTIONS>
         </PORT>
+        <PORT DIR="O" LEFT="0" NAME="gpio_io_o" RIGHT="0" SIGIS="undef"/>
         <PORT DIR="O" LEFT="0" NAME="gpio_io_t" RIGHT="0" SIGIS="undef"/>
         <PORT CLKFREQUENCY="99999001" DIR="I" NAME="s_axi_aclk" SIGIS="clk" SIGNAME="zynq_ultra_ps_e_0_pl_clk0">
           <CONNECTIONS>
@@ -2019,7 +2017,7 @@
           <PARAMETER NAME="ARUSER_WIDTH" VALUE="0"/>
           <PARAMETER NAME="AWUSER_WIDTH" VALUE="0"/>
           <PARAMETER NAME="BUSER_WIDTH" VALUE="0"/>
-          <PARAMETER NAME="CLK_DOMAIN" VALUE="Test_zynq_ultra_ps_e_0_3_pl_clk0"/>
+          <PARAMETER NAME="CLK_DOMAIN" VALUE="Test_zynq_ultra_ps_e_0_4_pl_clk0"/>
           <PARAMETER NAME="DATA_WIDTH" VALUE="32"/>
           <PARAMETER NAME="FREQ_HZ" VALUE="99999001"/>
           <PARAMETER NAME="HAS_BRESP" VALUE="1"/>
@@ -2246,7 +2244,7 @@
         </ADDRESSBLOCK>
       </ADDRESSBLOCKS>
       <PARAMETERS>
-        <PARAMETER NAME="C_ALL_INPUTS" VALUE="1"/>
+        <PARAMETER NAME="C_ALL_INPUTS" VALUE="0"/>
         <PARAMETER NAME="C_ALL_INPUTS_2" VALUE="0"/>
         <PARAMETER NAME="C_ALL_OUTPUTS" VALUE="0"/>
         <PARAMETER NAME="C_ALL_OUTPUTS_2" VALUE="0"/>
@@ -2261,7 +2259,7 @@
         <PARAMETER NAME="C_S_AXI_DATA_WIDTH" VALUE="32"/>
         <PARAMETER NAME="C_TRI_DEFAULT" VALUE="0xFFFFFFFF"/>
         <PARAMETER NAME="C_TRI_DEFAULT_2" VALUE="0xFFFFFFFF"/>
-        <PARAMETER NAME="Component_Name" VALUE="Test_axi_gpio_5_1"/>
+        <PARAMETER NAME="Component_Name" VALUE="Test_axi_gpio_5_2"/>
         <PARAMETER NAME="GPIO2_BOARD_INTERFACE" VALUE="Custom"/>
         <PARAMETER NAME="GPIO_BOARD_INTERFACE" VALUE="Custom"/>
         <PARAMETER NAME="USE_BOARD_FLOW" VALUE="false"/>
@@ -2270,11 +2268,13 @@
         <PARAMETER NAME="C_HIGHADDR" VALUE="0xA005FFFF"/>
       </PARAMETERS>
       <PORTS>
-        <PORT DIR="I" LEFT="31" NAME="gpio_io_i" RIGHT="0" SIGIS="undef" SIGNAME="DataBufferAxi_0_output_data">
+        <PORT DIR="I" LEFT="31" NAME="gpio_io_i" RIGHT="0" SIGIS="undef" SIGNAME="al_ultra96v2_0_ps_data">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="DataBufferAxi_0" PORT="output_data"/>
+            <CONNECTION INSTANCE="al_ultra96v2_0" PORT="ps_data"/>
           </CONNECTIONS>
         </PORT>
+        <PORT DIR="O" LEFT="31" NAME="gpio_io_o" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="31" NAME="gpio_io_t" RIGHT="0" SIGIS="undef"/>
         <PORT CLKFREQUENCY="99999001" DIR="I" NAME="s_axi_aclk" SIGIS="clk" SIGNAME="zynq_ultra_ps_e_0_pl_clk0">
           <CONNECTIONS>
             <CONNECTION INSTANCE="zynq_ultra_ps_e_0" PORT="pl_clk0"/>
@@ -2377,7 +2377,7 @@
           <PARAMETER NAME="ARUSER_WIDTH" VALUE="0"/>
           <PARAMETER NAME="AWUSER_WIDTH" VALUE="0"/>
           <PARAMETER NAME="BUSER_WIDTH" VALUE="0"/>
-          <PARAMETER NAME="CLK_DOMAIN" VALUE="Test_zynq_ultra_ps_e_0_3_pl_clk0"/>
+          <PARAMETER NAME="CLK_DOMAIN" VALUE="Test_zynq_ultra_ps_e_0_4_pl_clk0"/>
           <PARAMETER NAME="DATA_WIDTH" VALUE="32"/>
           <PARAMETER NAME="FREQ_HZ" VALUE="99999001"/>
           <PARAMETER NAME="HAS_BRESP" VALUE="1"/>
@@ -2427,6 +2427,8 @@
         <BUSINTERFACE BUSNAME="__NOC__" NAME="GPIO" TYPE="INITIATOR" VLNV="xilinx.com:interface:gpio:1.0">
           <PORTMAPS>
             <PORTMAP LOGICAL="TRI_I" PHYSICAL="gpio_io_i"/>
+            <PORTMAP LOGICAL="TRI_O" PHYSICAL="gpio_io_o"/>
+            <PORTMAP LOGICAL="TRI_T" PHYSICAL="gpio_io_t"/>
           </PORTMAPS>
         </BUSINTERFACE>
       </BUSINTERFACES>
@@ -2617,7 +2619,7 @@
         <PARAMETER NAME="C_S_AXI_DATA_WIDTH" VALUE="32"/>
         <PARAMETER NAME="C_TRI_DEFAULT" VALUE="0xFFFFFFFF"/>
         <PARAMETER NAME="C_TRI_DEFAULT_2" VALUE="0xFFFFFFFF"/>
-        <PARAMETER NAME="Component_Name" VALUE="Test_axi_gpio_6_1"/>
+        <PARAMETER NAME="Component_Name" VALUE="Test_axi_gpio_6_2"/>
         <PARAMETER NAME="GPIO2_BOARD_INTERFACE" VALUE="Custom"/>
         <PARAMETER NAME="GPIO_BOARD_INTERFACE" VALUE="Custom"/>
         <PARAMETER NAME="USE_BOARD_FLOW" VALUE="false"/>
@@ -2735,7 +2737,7 @@
           <PARAMETER NAME="ARUSER_WIDTH" VALUE="0"/>
           <PARAMETER NAME="AWUSER_WIDTH" VALUE="0"/>
           <PARAMETER NAME="BUSER_WIDTH" VALUE="0"/>
-          <PARAMETER NAME="CLK_DOMAIN" VALUE="Test_zynq_ultra_ps_e_0_3_pl_clk0"/>
+          <PARAMETER NAME="CLK_DOMAIN" VALUE="Test_zynq_ultra_ps_e_0_4_pl_clk0"/>
           <PARAMETER NAME="DATA_WIDTH" VALUE="32"/>
           <PARAMETER NAME="FREQ_HZ" VALUE="99999001"/>
           <PARAMETER NAME="HAS_BRESP" VALUE="1"/>
@@ -2796,7 +2798,7 @@
         <DOCUMENT SOURCE="http://www.xilinx.com/cgi-bin/docs/ipdoc?c=axi_interconnect;v=v2_1;d=pg059-axi-interconnect.pdf"/>
       </DOCUMENTS>
       <PARAMETERS>
-        <PARAMETER NAME="Component_Name" VALUE="Test_ps8_0_axi_periph_1"/>
+        <PARAMETER NAME="Component_Name" VALUE="Test_ps8_0_axi_periph_2"/>
         <PARAMETER NAME="ENABLE_ADVANCED_OPTIONS" VALUE="0"/>
         <PARAMETER NAME="ENABLE_PROTOCOL_CHECKERS" VALUE="0"/>
         <PARAMETER NAME="M00_HAS_DATA_FIFO" VALUE="0"/>
@@ -4543,7 +4545,7 @@
     <MODULE COREREVISION="1" FULLNAME="/pulse_generator_0" HWVERSION="1.0" INSTANCE="pulse_generator_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="pulse_generator" VLNV="xilinx.com:module_ref:pulse_generator:1.0">
       <DOCUMENTS/>
       <PARAMETERS>
-        <PARAMETER NAME="Component_Name" VALUE="Test_pulse_generator_0_0"/>
+        <PARAMETER NAME="Component_Name" VALUE="Test_pulse_generator_0_1"/>
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
       </PARAMETERS>
       <PORTS>
@@ -4579,7 +4581,7 @@
         <PARAMETER NAME="C_NUM_INTERCONNECT_ARESETN" VALUE="1"/>
         <PARAMETER NAME="C_NUM_PERP_ARESETN" VALUE="1"/>
         <PARAMETER NAME="C_NUM_PERP_RST" VALUE="1"/>
-        <PARAMETER NAME="Component_Name" VALUE="Test_rst_ps8_0_99M_3"/>
+        <PARAMETER NAME="Component_Name" VALUE="Test_rst_ps8_0_99M_4"/>
         <PARAMETER NAME="RESET_BOARD_INTERFACE" VALUE="Custom"/>
         <PARAMETER NAME="USE_BOARD_FLOW" VALUE="false"/>
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
@@ -4633,7 +4635,7 @@
       <PARAMETERS>
         <PARAMETER NAME="CONST_VAL" VALUE="0x0"/>
         <PARAMETER NAME="CONST_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="Component_Name" VALUE="Test_xlconstant_0_3"/>
+        <PARAMETER NAME="Component_Name" VALUE="Test_xlconstant_0_4"/>
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
       </PARAMETERS>
       <PORTS>
@@ -4650,7 +4652,7 @@
       <PARAMETERS>
         <PARAMETER NAME="CONST_VAL" VALUE="0x00000000"/>
         <PARAMETER NAME="CONST_WIDTH" VALUE="32"/>
-        <PARAMETER NAME="Component_Name" VALUE="Test_xlconstant_1_0"/>
+        <PARAMETER NAME="Component_Name" VALUE="Test_xlconstant_1_1"/>
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
       </PARAMETERS>
       <PORTS>
@@ -4667,13 +4669,30 @@
       <PARAMETERS>
         <PARAMETER NAME="CONST_VAL" VALUE="0x0"/>
         <PARAMETER NAME="CONST_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="Component_Name" VALUE="Test_xlconstant_2_0"/>
+        <PARAMETER NAME="Component_Name" VALUE="Test_xlconstant_2_1"/>
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
       </PARAMETERS>
       <PORTS>
         <PORT DIR="O" LEFT="0" NAME="dout" RIGHT="0" SIGIS="undef" SIGNAME="xlconstant_2_dout">
           <CONNECTIONS>
             <CONNECTION INSTANCE="al_ultra96v2_0" PORT="ifm_write_fin"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="9" FULLNAME="/xlconstant_3" HWVERSION="1.1" INSTANCE="xlconstant_3" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlconstant" VLNV="xilinx.com:ip:xlconstant:1.1">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="CONST_VAL" VALUE="0x1"/>
+        <PARAMETER NAME="CONST_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="Component_Name" VALUE="Test_xlconstant_3_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="O" LEFT="0" NAME="dout" RIGHT="0" SIGIS="undef" SIGNAME="xlconstant_3_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="DataBufferAxi_0" PORT="request_signal"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
@@ -4724,7 +4743,7 @@
         <PARAMETER NAME="CAN0_BOARD_INTERFACE" VALUE="custom"/>
         <PARAMETER NAME="CAN1_BOARD_INTERFACE" VALUE="custom"/>
         <PARAMETER NAME="CSU_BOARD_INTERFACE" VALUE="custom"/>
-        <PARAMETER NAME="Component_Name" VALUE="Test_zynq_ultra_ps_e_0_3"/>
+        <PARAMETER NAME="Component_Name" VALUE="Test_zynq_ultra_ps_e_0_4"/>
         <PARAMETER NAME="DP_BOARD_INTERFACE" VALUE="custom"/>
         <PARAMETER NAME="GEM0_BOARD_INTERFACE" VALUE="custom"/>
         <PARAMETER NAME="GEM1_BOARD_INTERFACE" VALUE="custom"/>
@@ -6817,9 +6836,9 @@
             <CONNECTION INSTANCE="ps8_0_axi_periph" PORT="M06_ACLK"/>
             <CONNECTION INSTANCE="ps8_0_axi_periph" PORT="S01_ACLK"/>
             <CONNECTION INSTANCE="al_ultra96v2_0" PORT="clk"/>
+            <CONNECTION INSTANCE="pulse_generator_0" PORT="clk"/>
             <CONNECTION INSTANCE="DataBufferAxi_0" PORT="s00_axi_aclk"/>
             <CONNECTION INSTANCE="ps8_0_axi_periph" PORT="M07_ACLK"/>
-            <CONNECTION INSTANCE="pulse_generator_0" PORT="clk"/>
           </CONNECTIONS>
         </PORT>
         <PORT CLKFREQUENCY="99999001" DIR="O" NAME="pl_clk1" SIGIS="clk"/>
@@ -6836,7 +6855,7 @@
           <PARAMETER NAME="ARUSER_WIDTH" VALUE="16"/>
           <PARAMETER NAME="AWUSER_WIDTH" VALUE="16"/>
           <PARAMETER NAME="BUSER_WIDTH" VALUE="0"/>
-          <PARAMETER NAME="CLK_DOMAIN" VALUE="Test_zynq_ultra_ps_e_0_3_pl_clk0"/>
+          <PARAMETER NAME="CLK_DOMAIN" VALUE="Test_zynq_ultra_ps_e_0_4_pl_clk0"/>
           <PARAMETER NAME="DATA_WIDTH" VALUE="128"/>
           <PARAMETER NAME="FREQ_HZ" VALUE="99999001"/>
           <PARAMETER NAME="HAS_BRESP" VALUE="1"/>
@@ -6908,7 +6927,7 @@
           <PARAMETER NAME="ARUSER_WIDTH" VALUE="16"/>
           <PARAMETER NAME="AWUSER_WIDTH" VALUE="16"/>
           <PARAMETER NAME="BUSER_WIDTH" VALUE="0"/>
-          <PARAMETER NAME="CLK_DOMAIN" VALUE="Test_zynq_ultra_ps_e_0_3_pl_clk0"/>
+          <PARAMETER NAME="CLK_DOMAIN" VALUE="Test_zynq_ultra_ps_e_0_4_pl_clk0"/>
           <PARAMETER NAME="DATA_WIDTH" VALUE="128"/>
           <PARAMETER NAME="FREQ_HZ" VALUE="99999001"/>
           <PARAMETER NAME="HAS_BRESP" VALUE="1"/>

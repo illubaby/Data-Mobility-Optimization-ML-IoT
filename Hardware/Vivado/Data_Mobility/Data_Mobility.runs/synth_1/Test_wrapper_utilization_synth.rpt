@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
-| Date         : Sat Oct 12 09:06:59 2024
+| Date         : Thu Oct 17 18:55:37 2024
 | Host         : TUF-F15 running 64-bit major release  (build 9200)
 | Command      : report_utilization -file Test_wrapper_utilization_synth.rpt -pb Test_wrapper_utilization_synth.pb
 | Design       : Test_wrapper
@@ -165,23 +165,23 @@ Warning! For any ECO changes, please run place_design if there are unplaced inst
 +--------------------------+------+
 |         Ref Name         | Used |
 +--------------------------+------+
-| Test_zynq_ultra_ps_e_0_3 |    1 |
-| Test_xbar_1              |    1 |
-| Test_rst_ps8_0_99M_3     |    1 |
-| Test_pulse_generator_0_0 |    1 |
-| Test_axi_gpio_6_1        |    1 |
-| Test_axi_gpio_5_1        |    1 |
-| Test_axi_gpio_4_1        |    1 |
-| Test_axi_gpio_3_1        |    1 |
-| Test_axi_gpio_2_1        |    1 |
-| Test_axi_gpio_1_1        |    1 |
-| Test_axi_gpio_0_3        |    1 |
-| Test_auto_pc_1           |    1 |
-| Test_auto_pc_0           |    1 |
-| Test_auto_ds_1           |    1 |
-| Test_auto_ds_0           |    1 |
-| Test_al_ultra96v2_0_2    |    1 |
-| Test_DataBufferAxi_0_0   |    1 |
+| Test_zynq_ultra_ps_e_0_4 |    1 |
+| Test_xbar_2              |    1 |
+| Test_rst_ps8_0_99M_4     |    1 |
+| Test_pulse_generator_0_1 |    1 |
+| Test_axi_gpio_6_2        |    1 |
+| Test_axi_gpio_5_2        |    1 |
+| Test_axi_gpio_4_2        |    1 |
+| Test_axi_gpio_3_2        |    1 |
+| Test_axi_gpio_2_2        |    1 |
+| Test_axi_gpio_1_2        |    1 |
+| Test_axi_gpio_0_4        |    1 |
+| Test_auto_pc_3           |    1 |
+| Test_auto_pc_2           |    1 |
+| Test_auto_ds_3           |    1 |
+| Test_auto_ds_2           |    1 |
+| Test_al_ultra96v2_0_3    |    1 |
+| Test_DataBufferAxi_0_1   |    1 |
 +--------------------------+------+
 
 
