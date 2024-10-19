@@ -1843,6 +1843,8 @@ void smart_app(
     print("PASSWORD PROGRAM 4\n");
     print_dec(Image_flag_3); */
     //volatile uint8_t* image = image_base_address;*/
+    
+    /*
     print("\n");
     volatile int8_t *image = (volatile int8_t*)0x07000000;
     for (int i=0;i<4;i++) {
@@ -1853,7 +1855,16 @@ void smart_app(
     		print_hex(image,8);
     		image++;
     	}
+    }*/
+    
+    volatile int8_t *image = (volatile int8_t*)0x03000000;
+    //*image = 12;
+    print("test address\n");
+    for (int i=0;i<100;i++) { 
+    	print_dec_32b(*image);
     }
+    print("\n");
+    print("END");
     	   
     reg_leds = 0;
 
