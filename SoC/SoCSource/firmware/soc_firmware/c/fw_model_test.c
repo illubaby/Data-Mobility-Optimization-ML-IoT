@@ -1858,13 +1858,16 @@ void smart_app(
     }*/
     
     volatile int8_t *image = (volatile int8_t*)0x03000000;
-    //*image = 12;
+    *image = 1;
     print("test address\n");
     for (int i=0;i<100;i++) { 
     	print_dec_32b(*image);
     }
     print("\n");
     print("END");
+    while (true) {
+    	print_dec_32b(*image);
+    }
     	   
     reg_leds = 0;
 

@@ -37,6 +37,8 @@
     #define TEST_PROGRAM
 #elif	defined(SMART)
     #define SMART_APP
+#elif	defined(CNNNEW)
+    #define CNNNEW_RUN
 #endif
 
 #if defined(CL_TEST) || defined (FCL_TEST) || defined(PL_TEST)
