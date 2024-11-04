@@ -18,6 +18,10 @@ void *memset(void *s, int c,  unsigned int len);
 
 /* DL Util Function */
 int get_label(const int8_t model_output_data[], const int model_output_len);
+int simple_rand(int min, int max);
+void simple_strcat(char *dest, const char *src);
+void selectionSort(int arr[], int n);
+void swap(int *a, int *b);
 /* Pico Origrnal */
 // void flashio(uint8_t *data, int len, uint8_t wrencmd);
 // void set_flash_qspi_flag();
@@ -33,4 +37,3 @@ int get_label(const int8_t model_output_data[], const int model_output_len);
 // uint32_t cmd_benchmark(bool verbose);
 // uint32_t func_benchmark(void (*fp)());
 #endif
-

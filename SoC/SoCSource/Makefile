@@ -113,10 +113,12 @@ AL_ULTRA96V2_FW_C_OBJS = 	$(SOC_FW_DIR)/c/fw_model_test.c $(SOC_FW_DIR)/c/mnist_
 							
 #TD = PL_TC0
 #CFLAGS += -DPL_TC0
-#TD = ABC
-#CFLAGS += -DABC 
-TD = CNNNEW
-CFLAGS += -DCNNNEW
+TD = SMART
+CFLAGS += -DSMART
+# TD = ABCD
+# CFLAGS += -DABCD
+# TD = CNNNEW
+# CFLAGS += -DCNNNEW
 TOOL_DIR	= python_tools
 VITIS_DIR	= vitis_out
 VITIS_ALPICO_DIR	= ../Software/FW_AlPicoSoC/src

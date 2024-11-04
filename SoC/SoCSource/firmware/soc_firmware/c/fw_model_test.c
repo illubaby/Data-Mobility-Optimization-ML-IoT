@@ -631,6 +631,7 @@ void testInference_CNNNEW_MNISTModel_Accel(
     print("\tRead Data  : "); print_dec(total_input_cycles); print(" cycles; "); print_dec(total_input_ins); print(" ins\n");
     print("\tComputation: "); print_dec(total_comps_cycles); print(" cycles; "); print_dec(total_comps_ins); print(" ins\n");
     print("\tOutput Data: "); print_dec(total_output_cycles); print(" cycles; "); print_dec(total_output_ins); print(" ins\n");
+    print("END\n");
 }
 
 
@@ -1668,6 +1669,40 @@ void test_program(
         if (max_idx == test_labels[test_idx]) passed_test++;
         if (test_idx == number_of_test - 1) print("\n");
     }
+    print("Heavy Task\n");
+    int number_of_data = 10000;
+    int a[number_of_data];
+    for (int i = 0 ;i<number_of_data;i++){
+        a[i] = simple_rand(1,number_of_data);
+    }
+    selectionSort(a,number_of_data);
+    printArray1DI(a,number_of_data);
+    // char* fruits[] = {
+    //     "apple", "banana", "orange", "grape", "watermelon", "strawberry", 
+    //     "kiwi", "pineapple", "mango", "blueberry", "cherry", "peach", 
+    //     "apricot", "plum", "pear", "lemon", "lime", "raspberry", "blackberry",
+    //     "coconut", "dragonfruit", "papaya", "passionfruit", "fig", "pomegranate",
+    //     "avocado", "grapefruit", "mandarin", "melon", "nectarine", "quince",
+    //     "date", "gooseberry", "jackfruit", "lychee", "tangerine", "persimmon",
+    //     "guava", "elderberry", "cantaloupe", "cranberry", "kumquat", "durian",
+    //     "olive", "pear", "pineberry", "soursop", "starfruit", "mulberry", 
+    //     "rambutan", "yuzu", "zucchini"
+    // };  
+    // char str[2000] = "Fruits: ";
+    // int num_fruits = sizeof(fruits) / sizeof(fruits[0]);
+
+    // for (int i = 0; i < 100; i++) {
+    //     int random_index = simple_rand(0, num_fruits - 1);
+    //     simple_strcat(str, fruits[random_index]);
+    //     if (i < 99) {
+    //         simple_strcat(str, ", ");
+    //     }
+    // }
+
+    // print(str);
+
+    print("\n");
+    print("END");
     // Read the values from the memory-mapped registers
     /*Image_flag = (uint32_t)0;
     print("PASSWORD PROGRAM 1\n");
@@ -1746,7 +1781,7 @@ void smart_app(
     const int dense_output_dims[], int8_t dense_output_data[]
 ) {
     
-    //#define image_base_address (*(volatile uint32_t*)0x07000000)
+    //#define image_base_address (*(volatile uint32_t*)0x07000000)g
     //#define image   (*(volatile uint32_t*)0x07000000)
     //#define image_1 (*(volatile uint32_t*)0x00000014)
     //#define image_2 (*(volatile uint32_t*)0x00000018)
@@ -1770,7 +1805,7 @@ void smart_app(
     int passed_test = 0;
     //print("number of test: \n");
     //print_dec(number_of_test);
-    /*
+    
     for (int test_idx = 0; test_idx < number_of_test; test_idx++) {
         set_al_accel_mode(RESET); 
         set_al_accel_mode(CONFIG);
@@ -1826,48 +1861,19 @@ void smart_app(
         if (max_idx == test_labels[test_idx]) passed_test++;
         if (test_idx == number_of_test - 1) print("\n");
     }
-    // Read the values from the memory-mapped registers
-    /*Image_flag = (uint32_t)0;
-    print("PASSWORD PROGRAM 1\n");
-    print_dec(Image_flag);
+
+    // print("\n");
+    // volatile int8_t *image = (volatile int8_t*)0x07000000;
+    // for (int i=0;i<4;i++) {
+    // 	for (int j=0;j <28*28;j++) {
+    // 		*image = (int8_t)test_images[i][j];
+    // 		print_dec_32b(*image);
+    // 		print(" ");
+    // 		print_hex(image,8);
+    // 		image++;
+    // 	}
+    // }
     
-    Image_flag_1 = (uint32_t)1;
-    print("PASSWORD PROGRAM 2\n");
-    print_dec(Image_flag_1);
-    
-    Image_flag_2 = (uint32_t)2;
-    print("PASSWORD PROGRAM 3\n");
-    print_dec(Image_flag_2);
-    
-    Image_flag_3 = (uint32_t)3;
-    print("PASSWORD PROGRAM 4\n");
-    print_dec(Image_flag_3); */
-    //volatile uint8_t* image = image_base_address;*/
-    
-    /*
-    print("\n");
-    volatile int8_t *image = (volatile int8_t*)0x07000000;
-    for (int i=0;i<4;i++) {
-    	for (int j=0;j <28*28;j++) {
-    		*image = (int8_t)test_images[i][j];
-    		print_dec_32b(*image);
-    		print(" ");
-    		print_hex(image,8);
-    		image++;
-    	}
-    }*/
-    
-    volatile int8_t *image = (volatile int8_t*)0x03000000;
-    *image = 1;
-    print("test address\n");
-    for (int i=0;i<100;i++) { 
-    	print_dec_32b(*image);
-    }
-    print("\n");
-    print("END");
-    while (true) {
-    	print_dec_32b(*image);
-    }
     	   
     reg_leds = 0;
 

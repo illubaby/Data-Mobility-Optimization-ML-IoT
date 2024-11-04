@@ -65,6 +65,41 @@ int get_label(const int8_t model_output_data[], const int model_output_len) {
     return max_idx;
 }
 
+int simple_rand(int min, int max) {
+    static unsigned int seed = 0; 
+    seed = (seed * 1103515245 + 12345) & 0x7FFFFFFF; 
+    return min + (seed % (max - min + 1)); 
+}
+
+void simple_strcat(char *dest, const char *src) {
+    while (*dest) {
+        dest++; 
+    }
+    while (*src) {
+        *dest++ = *src++; 
+    }
+    *dest = '\0'; 
+}
+
+void swap(int *a, int *b) {
+    int temp = *a;
+    *a = *b;
+    *b = temp;
+}
+
+void selectionSort(int arr[], int n) {
+    for (int i = 0; i < n - 1; i++) {
+        int minIndex = i;
+
+        for (int j = i + 1; j < n; j++) {
+            if (arr[j] < arr[minIndex]) {
+                minIndex = j;
+            }
+        }
+        swap(&arr[minIndex], &arr[i]);
+    }
+}
+
 /* Pico Original Firmware */
 // void flashio(uint8_t *data, int len, uint8_t wrencmd)
 // {
