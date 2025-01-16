@@ -1,61 +1,66 @@
 {
    "ActiveEmotionalView":"Default View",
-   "Default View_ScaleFactor":"1.16629",
-   "Default View_TopLeft":"2452,809",
+   "Default View_ScaleFactor":"0.779517",
+   "Default View_TopLeft":"-213,1107",
    "ExpandedHierarchyInLayout":"",
    "guistr":"# # String gsaved with Nlview 7.7.1 2023-07-26 3bc4126617 VDI=43 GEI=38 GUI=JA:21.0
 #  -string -flagsOSRD
-preplace inst al_ultra96v2_0 -pg 1 -lvl 8 -x 2980 -y 920 -defaultsOSRD
-preplace inst axi_dma_0 -pg 1 -lvl 6 -x 2310 -y 670 -defaultsOSRD
-preplace inst axi_dma_1 -pg 1 -lvl 2 -x 580 -y 860 -defaultsOSRD
-preplace inst axi_dma_2 -pg 1 -lvl 2 -x 580 -y 260 -defaultsOSRD
-preplace inst axi_dma_3 -pg 1 -lvl 2 -x 580 -y 650 -defaultsOSRD
-preplace inst axi_smc -pg 1 -lvl 3 -x 970 -y 730 -defaultsOSRD
-preplace inst ila_0 -pg 1 -lvl 9 -x 3300 -y 1070 -defaultsOSRD
-preplace inst ps8_0_axi_periph -pg 1 -lvl 5 -x 1950 -y 270 -defaultsOSRD
-preplace inst rst_ps8_0_99M -pg 1 -lvl 1 -x 200 -y 640 -defaultsOSRD
-preplace inst xlconcat_0 -pg 1 -lvl 9 -x 3300 -y 890 -defaultsOSRD
-preplace inst xlconstant_0 -pg 1 -lvl 7 -x 2640 -y 740 -defaultsOSRD
-preplace inst xlconstant_1 -pg 1 -lvl 7 -x 2640 -y 940 -defaultsOSRD
-preplace inst xlconstant_2 -pg 1 -lvl 7 -x 2640 -y 1040 -defaultsOSRD
-preplace inst xlslice_0 -pg 1 -lvl 7 -x 2640 -y 840 -defaultsOSRD
-preplace inst xlslice_1 -pg 1 -lvl 7 -x 2640 -y 640 -defaultsOSRD
-preplace inst zynq_ultra_ps_e_0 -pg 1 -lvl 4 -x 1470 -y 260 -defaultsOSRD
-preplace inst axi_gpio_0 -pg 1 -lvl 4 -x 1470 -y 430 -defaultsOSRD
-preplace inst pulse_generator_0 -pg 1 -lvl 4 -x 1470 -y 700 -defaultsOSRD
-preplace netloc al_ultra96v2_0_ps_data 1 8 1 3180 900n
-preplace netloc al_ultra96v2_0_ps_read_rdy 1 8 1 3170 880n
-preplace netloc axi_dma_0_m_axis_mm2s_tdata 1 6 1 2520 670n
-preplace netloc axi_dma_1_m_axis_mm2s_tdata 1 2 7 750J 1120 NJ 1120 NJ 1120 NJ 1120 NJ 1120 2800 1070 3200J
-preplace netloc axi_dma_2_m_axis_mm2s_tdata 1 2 7 810J 60 NJ 60 NJ 60 NJ 60 NJ 60 2790 1060 N
-preplace netloc axi_dma_3_m_axis_mm2s_tdata 1 2 5 790J 880 NJ 880 NJ 880 NJ 880 2510J
-preplace netloc axi_gpio_0_gpio_io_o 1 3 2 1180 530 1760
-preplace netloc pulse_generator_0_out 1 4 5 1780 850 N 850 2500 1100 2770 1080 N
-preplace netloc rst_ps8_0_99M_peripheral_aresetn 1 1 5 390 520 820 520 1170J 520 1810 700 NJ
-preplace netloc xlconcat_0_dout 1 4 6 1760J 70 NJ 70 NJ 70 NJ 70 NJ 70 3400
-preplace netloc xlconstant_0_dout 1 7 1 2770J 740n
-preplace netloc xlconstant_1_dout 1 7 1 NJ 940
-preplace netloc xlconstant_2_dout 1 7 1 2780J 960n
-preplace netloc xlslice_0_Dout 1 7 2 2760 780 3150
-preplace netloc xlslice_1_Dout 1 7 2 2750 1140 NJ
-preplace netloc zynq_ultra_ps_e_0_pl_clk0 1 0 9 20 740 380 750 780 900 1150 160 1800 470 2130 860 2490J 1110 2810 1090 3190
-preplace netloc zynq_ultra_ps_e_0_pl_resetn0 1 0 5 30 970 NJ 970 NJ 970 NJ 970 1770
-preplace netloc axi_dma_0_M_AXI_MM2S 1 2 5 840 870 NJ 870 NJ 870 NJ 870 2480
-preplace netloc axi_dma_1_M_AXI_MM2S 1 2 1 800 670n
-preplace netloc axi_dma_2_M_AXI_MM2S 1 2 1 830 220n
-preplace netloc axi_dma_3_M_AXI_MM2S 1 2 1 810 610n
-preplace netloc axi_smc_M00_AXI 1 3 1 1160 230n
-preplace netloc ps8_0_axi_periph_M00_AXI 1 5 1 2140 230n
-preplace netloc ps8_0_axi_periph_M01_AXI 1 1 5 410 760 760J 890 NJ 890 NJ 890 2100
-preplace netloc ps8_0_axi_periph_M02_AXI 1 1 5 410 50 NJ 50 NJ 50 NJ 50 2090
-preplace netloc ps8_0_axi_periph_M03_AXI 1 1 5 400 960 NJ 960 NJ 960 NJ 960 2110
-preplace netloc ps8_0_axi_periph_M04_AXI 1 3 3 1180 510 NJ 510 2090
-preplace netloc zynq_ultra_ps_e_0_M_AXI_HPM0_FPD 1 4 1 1770 130n
-levelinfo -pg 1 0 200 580 970 1470 1950 2310 2640 2980 3300 3430
-pagesize -pg 1 -db -bbox -sgen 0 0 3430 1200
+preplace inst DataBufferAxi_0 -pg 1 -lvl 3 -x 1430 -y 410 -defaultsOSRD
+preplace inst al_ultra96v2_0 -pg 1 -lvl 2 -x 900 -y 280 -defaultsOSRD
+preplace inst axi_gpio_0 -pg 1 -lvl 3 -x 1430 -y 1080 -defaultsOSRD
+preplace inst axi_gpio_1 -pg 1 -lvl 3 -x 1430 -y 80 -defaultsOSRD
+preplace inst axi_gpio_2 -pg 1 -lvl 3 -x 1430 -y 760 -defaultsOSRD
+preplace inst axi_gpio_3 -pg 1 -lvl 3 -x 1430 -y 920 -defaultsOSRD
+preplace inst axi_gpio_4 -pg 1 -lvl 3 -x 1430 -y 220 -defaultsOSRD
+preplace inst axi_gpio_5 -pg 1 -lvl 3 -x 1430 -y 600 -defaultsOSRD
+preplace inst axi_gpio_6 -pg 1 -lvl 3 -x 1430 -y 1420 -defaultsOSRD
+preplace inst ps8_0_axi_periph -pg 1 -lvl 2 -x 900 -y 790 -defaultsOSRD
+preplace inst pulse_generator_0 -pg 1 -lvl 1 -x 310 -y 1020 -defaultsOSRD
+preplace inst rst_ps8_0_99M -pg 1 -lvl 1 -x 310 -y 1170 -defaultsOSRD
+preplace inst xlconstant_0 -pg 1 -lvl 1 -x 310 -y 580 -defaultsOSRD
+preplace inst xlconstant_3 -pg 1 -lvl 2 -x 900 -y 60 -defaultsOSRD
+preplace inst zynq_ultra_ps_e_0 -pg 1 -lvl 1 -x 310 -y 850 -defaultsOSRD
+preplace inst axi_gpio_7 -pg 1 -lvl 3 -x 1430 -y 1560 -defaultsOSRD
+preplace inst axi_gpio_8 -pg 1 -lvl 3 -x 1430 -y 1880 -defaultsOSRD
+preplace inst axi_gpio_9 -pg 1 -lvl 3 -x 1430 -y 1720 -defaultsOSRD
+preplace inst axi_gpio_10 -pg 1 -lvl 3 -x 1430 -y 1250 -defaultsOSRD
+preplace inst ila_0 -pg 1 -lvl 1 -x 310 -y 150 -defaultsOSRD
+preplace netloc al_ultra96v2_0_ifm_waddr 1 0 4 -40 -70 N -70 1140J -70 1680
+preplace netloc al_ultra96v2_0_ifm_write_rdy 1 0 4 -70 -90 N -90 1120 -10 1640
+preplace netloc al_ultra96v2_0_ps_data 1 0 4 20 320 610 130 1250 520 1600
+preplace netloc al_ultra96v2_0_ps_read_rdy 1 0 4 -30 -50 650 -40 1100 0 1600
+preplace netloc axi_gpio_0_gpio_io_o 1 0 4 -20 -40 640 -30 NJ -30 1610
+preplace netloc axi_gpio_1_gpio_io_o 1 0 4 10 -30 630 -20 NJ -20 1650
+preplace netloc axi_gpio_2_gpio_io_o 1 0 4 20 -20 620 -10 1110J -40 1660
+preplace netloc axi_gpio_3_gpio_io_o 1 0 4 -10 350 730 140 1260J 300 1630
+preplace netloc axi_gpio_6_gpio_io_o 1 0 4 -50 -80 NJ -80 NJ -80 1690
+preplace netloc axi_gpio_7_gpio_io_o 1 0 4 0 340 600 -60 NJ -60 1670
+preplace netloc axi_gpio_8_gpio_io_o 1 0 4 10 330 660 -50 NJ -50 1620
+preplace netloc pulse_generator_0_O 1 0 2 -20 360 690
+preplace netloc rst_ps8_0_99M_peripheral_aresetn 1 1 2 720 420 1080
+preplace netloc xlconstant_0_dout 1 1 1 670 200n
+preplace netloc xlconstant_3_dout 1 2 1 1090J 60n
+preplace netloc zynq_ultra_ps_e_0_pl_clk0 1 0 3 -60 370 680 120 1240
+preplace netloc zynq_ultra_ps_e_0_pl_resetn0 1 0 2 20 750 600
+preplace netloc ps8_0_axi_periph_M00_AXI 1 2 1 1160 680n
+preplace netloc ps8_0_axi_periph_M01_AXI 1 2 1 1150 60n
+preplace netloc ps8_0_axi_periph_M02_AXI 1 2 1 1170 720n
+preplace netloc ps8_0_axi_periph_M03_AXI 1 2 1 1140 740n
+preplace netloc ps8_0_axi_periph_M04_AXI 1 2 1 1180 200n
+preplace netloc ps8_0_axi_periph_M05_AXI 1 2 1 1070 580n
+preplace netloc ps8_0_axi_periph_M06_AXI 1 2 1 1130 800n
+preplace netloc ps8_0_axi_periph_M07_AXI 1 2 1 1120 820n
+preplace netloc ps8_0_axi_periph_M08_AXI 1 2 1 1090 840n
+preplace netloc ps8_0_axi_periph_M09_AXI 1 2 1 1070 860n
+preplace netloc ps8_0_axi_periph_M10_AXI 1 2 1 1100 880n
+preplace netloc ps8_0_axi_periph_M11_AXI 1 2 1 1110 360n
+preplace netloc zynq_ultra_ps_e_0_M_AXI_HPM0_FPD 1 1 1 700 480n
+preplace netloc zynq_ultra_ps_e_0_M_AXI_HPM1_FPD 1 1 1 730 500n
+levelinfo -pg 1 -90 310 900 1430 1710
+pagesize -pg 1 -db -bbox -sgen -90 -150 1710 1960
 "
 }
 {
-   "da_axi4_cnt":"7",
-   "da_clkrst_cnt":"1"
+   "da_axi4_cnt":"11",
+   "da_clkrst_cnt":"4"
 }

@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../Debug.gen/sources_1/bd/Test_1/ipshared/ec67/hdl" --include "../../../../Debug.gen/sources_1/bd/Test_1/ipshared/a317/hdl" --include "../../../../Debug.gen/sources_1/bd/Test/ipshared/ec67/hdl" --include "../../../../Debug.gen/sources_1/bd/Test/ipshared/a317/hdl" --include "C:/Xilinx/Vivado/2024.1/data/xilinx_vip/include" \
+"../../../../SoCSource/DataBuffer.v" \
+"../../../../Debug.srcs/sim_1/new/buffer_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,932 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Sat Oct 26 16:37:01 2024
+# Process ID: 15280
+# Current directory: C:/Data-Mobility-Optimization-ML-IoT/Hardware/Vivado/Debug/Debug/Debug.runs/Test_1_al_ultra96v2_0_0_synth_1
+# Command line: vivado.exe -log Test_1_al_ultra96v2_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Test_1_al_ultra96v2_0_0.tcl
+# Log file: C:/Data-Mobility-Optimization-ML-IoT/Hardware/Vivado/Debug/Debug/Debug.runs/Test_1_al_ultra96v2_0_0_synth_1/Test_1_al_ultra96v2_0_0.vds
+# Journal file: C:/Data-Mobility-Optimization-ML-IoT/Hardware/Vivado/Debug/Debug/Debug.runs/Test_1_al_ultra96v2_0_0_synth_1\vivado.jou
+# Running On        :TUF-F15
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :22631
+# Processor Detail  :12th Gen Intel(R) Core(TM) i7-12700H
+# CPU Frequency     :2688 MHz
+# CPU Physical cores:14
+# CPU Logical cores :20
+# Host memory       :16781 MB
+# Swap memory       :11274 MB
+# Total Virtual     :28056 MB
+# Available Virtual :12978 MB
+#-----------------------------------------------------------
+source Test_1_al_ultra96v2_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:11 . Memory (MB): peak = 594.516 ; gain = 260.945
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.1/data/ip'.
+Command: synth_design -top Test_1_al_ultra96v2_0_0 -part xck26-sfvc784-2LV-c -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xck26'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xck26'
+INFO: [Device 21-403] Loading part xck26-sfvc784-2LV-c
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 13692
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 2012.148 ; gain = 397.289
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6901] identifier 'cp_data_0' is used before its declaration [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/accel_source/al_accel_cp_unit.v:27]
+WARNING: [Synth 8-6901] identifier 'cp_data_1' is used before its declaration [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/accel_source/al_accel_cp_unit.v:27]
+WARNING: [Synth 8-6901] identifier 'cp_data_0' is used before its declaration [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/accel_source/al_accel_cp_unit.v:27]
+WARNING: [Synth 8-6901] identifier 'cp_data_1' is used before its declaration [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/accel_source/al_accel_cp_unit.v:27]
+WARNING: [Synth 8-6901] identifier 'cp_data_2' is used before its declaration [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/accel_source/al_accel_cp_unit.v:30]
+WARNING: [Synth 8-6901] identifier 'cp_data_2' is used before its declaration [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/accel_source/al_accel_cp_unit.v:30]
+INFO: [Synth 8-11241] undeclared symbol 'cpu_iomem_ready', assumed default net type 'wire' [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/al_picosoc.v:115]
+INFO: [Synth 8-11241] undeclared symbol 'al_accel_iomem_ready', assumed default net type 'wire' [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/al_picosoc.v:116]
+INFO: [Synth 8-11241] undeclared symbol 'al_accel_flow_resetn', assumed default net type 'wire' [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/al_picosoc.v:391]
+CRITICAL WARNING: [Synth 8-9873] overwriting previous definition of module 'picosoc_regs' [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/picosoc.v:252]
+INFO: [Synth 8-9937] previous definition of design element 'picosoc_regs' is here [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/al_picosoc.v:601]
+CRITICAL WARNING: [Synth 8-9873] overwriting previous definition of module 'picosoc_dmem' [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/picosoc.v:282]
+INFO: [Synth 8-9937] previous definition of design element 'picosoc_dmem' is here [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/al_picosoc.v:631]
+CRITICAL WARNING: [Synth 8-9873] overwriting previous definition of module 'picosoc_imem' [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/picosoc.v:303]
+INFO: [Synth 8-9937] previous definition of design element 'picosoc_imem' is here [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/al_picosoc.v:652]
+CRITICAL WARNING: [Synth 8-9873] overwriting previous definition of module 'smooth_rdy_sig_module' [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/al_ultra96v2.v:163]
+INFO: [Synth 8-9937] previous definition of design element 'smooth_rdy_sig_module' is here [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/ultra96v2.v:163]
+INFO: [Synth 8-6157] synthesizing module 'Test_1_al_ultra96v2_0_0' [c:/Data-Mobility-Optimization-ML-IoT/Hardware/Vivado/Debug/Debug/Debug.gen/sources_1/bd/Test_1/ip/Test_1_al_ultra96v2_0_0/synth/Test_1_al_ultra96v2_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'al_ultra96v2' [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/al_ultra96v2.v:11]
+INFO: [Synth 8-6157] synthesizing module 'smooth_rdy_sig_module' [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/al_ultra96v2.v:132]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/al_ultra96v2.v:149]
+INFO: [Synth 8-6155] done synthesizing module 'smooth_rdy_sig_module' (0#1) [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/al_ultra96v2.v:132]
+INFO: [Synth 8-6157] synthesizing module 'al_picosoc' [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/al_picosoc.v:15]
+INFO: [Synth 8-6157] synthesizing module 'picorv32' [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/picorv32.v:63]
+	Parameter ENABLE_COUNTERS bound to: 1'b1 
+	Parameter BARREL_SHIFTER bound to: 1'b1 
+	Parameter COMPRESSED_ISA bound to: 1'b1 
+	Parameter ENABLE_MUL bound to: 1'b1 
+	Parameter ENABLE_FAST_MUL bound to: 1'b0 
+	Parameter ENABLE_DIV bound to: 1'b1 
+	Parameter ENABLE_IRQ bound to: 1'b1 
+	Parameter ENABLE_IRQ_QREGS bound to: 1'b0 
+	Parameter PROGADDR_RESET bound to: 1048576 - type: integer 
+	Parameter PROGADDR_IRQ bound to: 0 - type: integer 
+	Parameter STACKADDR bound to: 32'b00000000000000100000000000000000 
+INFO: [Synth 8-6157] synthesizing module 'picorv32_pcpi_mul' [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/picorv32.v:2193]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/picorv32.v:2224]
+INFO: [Synth 8-6155] done synthesizing module 'picorv32_pcpi_mul' (0#1) [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/picorv32.v:2193]
+INFO: [Synth 8-6157] synthesizing module 'picorv32_pcpi_div' [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/picorv32.v:2416]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/picorv32.v:2441]
+INFO: [Synth 8-6155] done synthesizing module 'picorv32_pcpi_div' (0#1) [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/picorv32.v:2416]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/picorv32.v:332]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/picorv32.v:440]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/picorv32.v:456]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/picorv32.v:510]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/picorv32.v:438]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/picorv32.v:903]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/picorv32.v:985]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/picorv32.v:901]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/picorv32.v:1310]
+INFO: [Synth 8-6157] synthesizing module 'picosoc_regs' [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/picosoc.v:236]
+INFO: [Synth 8-6155] done synthesizing module 'picosoc_regs' (0#1) [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/picosoc.v:236]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/picorv32.v:1493]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/picorv32.v:1579]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/picorv32.v:1579]
+INFO: [Synth 8-6155] done synthesizing module 'picorv32' (0#1) [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/picorv32.v:63]
+WARNING: [Synth 8-7071] port 'trap' of module 'picorv32' is unconnected for instance 'cpu' [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/al_picosoc.v:212]
+WARNING: [Synth 8-7071] port 'mem_la_read' of module 'picorv32' is unconnected for instance 'cpu' [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/al_picosoc.v:212]
+WARNING: [Synth 8-7071] port 'mem_la_write' of module 'picorv32' is unconnected for instance 'cpu' [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/al_picosoc.v:212]
+WARNING: [Synth 8-7071] port 'mem_la_addr' of module 'picorv32' is unconnected for instance 'cpu' [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/al_picosoc.v:212]
+WARNING: [Synth 8-7071] port 'mem_la_wdata' of module 'picorv32' is unconnected for instance 'cpu' [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/al_picosoc.v:212]
+WARNING: [Synth 8-7071] port 'mem_la_wstrb' of module 'picorv32' is unconnected for instance 'cpu' [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/al_picosoc.v:212]
+WARNING: [Synth 8-7071] port 'pcpi_valid' of module 'picorv32' is unconnected for instance 'cpu' [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/al_picosoc.v:212]
+WARNING: [Synth 8-7071] port 'pcpi_insn' of module 'picorv32' is unconnected for instance 'cpu' [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/al_picosoc.v:212]
+WARNING: [Synth 8-7071] port 'pcpi_rs1' of module 'picorv32' is unconnected for instance 'cpu' [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/al_picosoc.v:212]
+WARNING: [Synth 8-7071] port 'pcpi_rs2' of module 'picorv32' is unconnected for instance 'cpu' [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/al_picosoc.v:212]
+WARNING: [Synth 8-7071] port 'pcpi_wr' of module 'picorv32' is unconnected for instance 'cpu' [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/al_picosoc.v:212]
+WARNING: [Synth 8-7071] port 'pcpi_rd' of module 'picorv32' is unconnected for instance 'cpu' [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/al_picosoc.v:212]
+WARNING: [Synth 8-7071] port 'pcpi_wait' of module 'picorv32' is unconnected for instance 'cpu' [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/al_picosoc.v:212]
+WARNING: [Synth 8-7071] port 'pcpi_ready' of module 'picorv32' is unconnected for instance 'cpu' [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/al_picosoc.v:212]
+WARNING: [Synth 8-7071] port 'eoi' of module 'picorv32' is unconnected for instance 'cpu' [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/al_picosoc.v:212]
+WARNING: [Synth 8-7071] port 'trace_valid' of module 'picorv32' is unconnected for instance 'cpu' [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/al_picosoc.v:212]
+WARNING: [Synth 8-7071] port 'trace_data' of module 'picorv32' is unconnected for instance 'cpu' [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/al_picosoc.v:212]
+WARNING: [Synth 8-7023] instance 'cpu' of module 'picorv32' has 27 connections declared, but only 10 given [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/al_picosoc.v:212]
+INFO: [Synth 8-6157] synthesizing module 'pico_switch_read_bus' [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/al_picosoc.v:512]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/al_picosoc.v:561]
+INFO: [Synth 8-6155] done synthesizing module 'pico_switch_read_bus' (0#1) [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/al_picosoc.v:512]
+INFO: [Synth 8-6157] synthesizing module 'picosoc_imem' [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/picosoc.v:284]
+	Parameter IMEM_SIZE bound to: 64'b0000000000000000000000000000000000000000000000010000000000000000 
+INFO: [Synth 8-6155] done synthesizing module 'picosoc_imem' (0#1) [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/picosoc.v:284]
+INFO: [Synth 8-6157] synthesizing module 'simpleuart' [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/simpleuart.v:20]
+INFO: [Synth 8-6155] done synthesizing module 'simpleuart' (0#1) [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/simpleuart.v:20]
+INFO: [Synth 8-6157] synthesizing module 'pico_switch_write_bus' [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/al_picosoc.v:426]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/al_picosoc.v:484]
+INFO: [Synth 8-6155] done synthesizing module 'pico_switch_write_bus' (0#1) [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/al_picosoc.v:426]
+INFO: [Synth 8-6157] synthesizing module 'picosoc_dmem' [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/picosoc.v:255]
+	Parameter DMEM_SIZE bound to: 64'b0000000000000000000000000000000000000000000000001000000000000000 
+INFO: [Synth 8-6155] done synthesizing module 'picosoc_dmem' (0#1) [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/picosoc.v:255]
+INFO: [Synth 8-6157] synthesizing module 'al_accel_pico_ctrl' [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/al_accel_pico_ctrl.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/al_accel_pico_ctrl.v:122]
+INFO: [Synth 8-6155] done synthesizing module 'al_accel_pico_ctrl' (0#1) [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/al_accel_pico_ctrl.v:1]
+INFO: [Synth 8-6157] synthesizing module 'al_accel' [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/accel_source/al_accel.v:1]
+INFO: [Synth 8-6157] synthesizing module 'al_accel_bpbuf' [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/accel_source/al_accel_bpbuf.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'al_accel_bpbuf' (0#1) [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/accel_source/al_accel_bpbuf.v:1]
+INFO: [Synth 8-6157] synthesizing module 'al_accel_wbuf' [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/accel_source/al_accel_wbuf.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/accel_source/al_accel_wbuf.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'al_accel_wbuf' (0#1) [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/accel_source/al_accel_wbuf.v:1]
+INFO: [Synth 8-6157] synthesizing module 'al_accel_ibuf' [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/accel_source/al_accel_ibuf.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/accel_source/al_accel_ibuf.v:68]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/accel_source/al_accel_ibuf.v:114]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/accel_source/al_accel_ibuf.v:160]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/accel_source/al_accel_ibuf.v:66]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/accel_source/al_accel_ibuf.v:208]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/accel_source/al_accel_ibuf.v:277]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/accel_source/al_accel_ibuf.v:323]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/accel_source/al_accel_ibuf.v:369]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/accel_source/al_accel_ibuf.v:275]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/accel_source/al_accel_ibuf.v:64]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/accel_source/al_accel_ibuf.v:418]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/accel_source/al_accel_ibuf.v:538]
+INFO: [Synth 8-6155] done synthesizing module 'al_accel_ibuf' (0#1) [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/accel_source/al_accel_ibuf.v:1]
+INFO: [Synth 8-6157] synthesizing module 'al_accel_pu_matrix' [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/accel_source/al_accel_pu_matrix.v:1]
+INFO: [Synth 8-6157] synthesizing module 'al_accel_wdemux' [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/accel_source/al_accel_wdemux.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/accel_source/al_accel_wdemux.v:29]
+INFO: [Synth 8-6155] done synthesizing module 'al_accel_wdemux' (0#1) [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/accel_source/al_accel_wdemux.v:1]
+INFO: [Synth 8-6157] synthesizing module 'al_accel_idemux' [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/accel_source/al_accel_idemux.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/accel_source/al_accel_idemux.v:29]
+INFO: [Synth 8-6155] done synthesizing module 'al_accel_idemux' (0#1) [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/accel_source/al_accel_idemux.v:1]
+INFO: [Synth 8-6157] synthesizing module 'al_accel_pu_array' [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/accel_source/al_accel_pu_array.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/accel_source/al_accel_pu_array.v:106]
+INFO: [Synth 8-6157] synthesizing module 'al_accel_wreg' [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/accel_source/al_accel_wreg.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'al_accel_wreg' (0#1) [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/accel_source/al_accel_wreg.v:1]
+INFO: [Synth 8-6157] synthesizing module 'al_accel_ireg' [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/accel_source/al_accel_ireg.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'al_accel_ireg' (0#1) [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/accel_source/al_accel_ireg.v:1]
+INFO: [Synth 8-6157] synthesizing module 'al_accel_pu' [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/accel_source/al_accel_pu.v:1]
+INFO: [Synth 8-6157] synthesizing module 'al_accel_lpureg' [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/accel_source/al_accel_lpureg.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'al_accel_lpureg' (0#1) [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/accel_source/al_accel_lpureg.v:1]
+INFO: [Synth 8-6157] synthesizing module 'al_accel_lut' [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/accel_source/al_accel_lut.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'al_accel_lut' (0#1) [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/accel_source/al_accel_lut.v:1]
+INFO: [Synth 8-6157] synthesizing module 'al_accel_mac' [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/accel_source/al_accel_mac.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/accel_source/al_accel_mac.v:156]
+INFO: [Synth 8-6155] done synthesizing module 'al_accel_mac' (0#1) [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/accel_source/al_accel_mac.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'al_accel_pu' (0#1) [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/accel_source/al_accel_pu.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'al_accel_pu_array' (0#1) [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/accel_source/al_accel_pu_array.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'al_accel_pu_matrix' (0#1) [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/accel_source/al_accel_pu_matrix.v:1]
+INFO: [Synth 8-6157] synthesizing module 'al_accel_acc_matrix' [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/accel_source/al_accel_acc_matrix.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'al_accel_acc_matrix' (0#1) [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/accel_source/al_accel_acc_matrix.v:1]
+INFO: [Synth 8-6157] synthesizing module 'al_accel_obuf' [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/accel_source/al_accel_obuf.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'al_accel_obuf' (0#1) [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/accel_source/al_accel_obuf.v:1]
+INFO: [Synth 8-6157] synthesizing module 'al_accel_elw_unit' [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/accel_source/al_accel_elw_unit.v:1]
+INFO: [Synth 8-6157] synthesizing module 'al_accel_quant_lut' [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/accel_source/al_accel_quant_lut.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'al_accel_quant_lut' (0#1) [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/accel_source/al_accel_quant_lut.v:1]
+INFO: [Synth 8-6157] synthesizing module 'al_accel_quant_unit' [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/accel_source/al_accel_quant_unit.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/accel_source/al_accel_quant_unit.v:206]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/accel_source/al_accel_quant_unit.v:242]
+INFO: [Synth 8-6155] done synthesizing module 'al_accel_quant_unit' (0#1) [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/accel_source/al_accel_quant_unit.v:1]
+INFO: [Synth 8-6157] synthesizing module 'al_accel_act_func_unit' [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/accel_source/al_accel_act_func_unit.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/accel_source/al_accel_act_func_unit.v:20]
+INFO: [Synth 8-6155] done synthesizing module 'al_accel_act_func_unit' (0#1) [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/accel_source/al_accel_act_func_unit.v:1]
+INFO: [Synth 8-6157] synthesizing module 'al_accel_cp_unit' [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/accel_source/al_accel_cp_unit.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'al_accel_cp_unit' (0#1) [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/accel_source/al_accel_cp_unit.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'al_accel_elw_unit' (0#1) [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/accel_source/al_accel_elw_unit.v:1]
+INFO: [Synth 8-6157] synthesizing module 'al_accel_config_regs' [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/accel_source/al_accel_config_regs.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/accel_source/al_accel_config_regs.v:154]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/accel_source/al_accel_config_regs.v:183]
+INFO: [Synth 8-6155] done synthesizing module 'al_accel_config_regs' (0#1) [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/accel_source/al_accel_config_regs.v:1]
+INFO: [Synth 8-6157] synthesizing module 'al_accel_flow_ctrl' [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/accel_source/al_accel_flow_ctrl.v:1]
+INFO: [Synth 8-6157] synthesizing module 'al_accel_RDATA_ctrl' [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:331]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:346]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:356]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:366]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:403]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:414]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:464]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:506]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:389]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:610]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:694]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:384]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:894]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:963]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:800]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:1142]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:1282]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:795]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:1448]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:1459]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:1470]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:1481]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:1492]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:1503]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:1514]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:1525]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:1536]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:1443]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:1551]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:1559]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:1567]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:1575]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:1583]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:1591]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:1599]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:1607]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:1615]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:1549]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:1631]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:1640]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:1649]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:1628]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:1665]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:1688]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:1701]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:1725]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:1750]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:1881]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:1949]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:2008]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:2085]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:1747]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:2148]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:2172]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:2187]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:2199]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:2214]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:2145]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:2242]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:2239]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:1432]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:2329]
+INFO: [Common 17-14] Message 'Synth 8-155' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-6155] done synthesizing module 'al_accel_RDATA_ctrl' (0#1) [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:1]
+INFO: [Synth 8-6157] synthesizing module 'al_accel_COMPS_ctrl' [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/accel_source/al_accel_COMPS_ctrl.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'al_accel_COMPS_ctrl' (0#1) [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/accel_source/al_accel_COMPS_ctrl.v:1]
+INFO: [Synth 8-6157] synthesizing module 'al_accel_WBACK_ctrl' [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/accel_source/al_accel_WBACK_ctrl.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'al_accel_WBACK_ctrl' (0#1) [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/accel_source/al_accel_WBACK_ctrl.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'al_accel_flow_ctrl' (0#1) [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/accel_source/al_accel_flow_ctrl.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'al_accel' (0#1) [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/accel_source/al_accel.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'al_picosoc' (0#1) [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/al_picosoc.v:15]
+INFO: [Synth 8-6155] done synthesizing module 'al_ultra96v2' (0#1) [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/al_ultra96v2.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'Test_1_al_ultra96v2_0_0' (0#1) [c:/Data-Mobility-Optimization-ML-IoT/Hardware/Vivado/Debug/Debug/Debug.gen/sources_1/bd/Test_1/ip/Test_1_al_ultra96v2_0_0/synth/Test_1_al_ultra96v2_0_0.v:53]
+WARNING: [Synth 8-6014] Unused sequential element pcpi_ready_reg was removed.  [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/picorv32.v:2305]
+WARNING: [Synth 8-6014] Unused sequential element pcpi_wr_reg was removed.  [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/picorv32.v:2462]
+WARNING: [Synth 8-6014] Unused sequential element next_insn_opcode_reg was removed.  [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/picorv32.v:434]
+WARNING: [Synth 8-6014] Unused sequential element q_ascii_instr_reg was removed.  [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/picorv32.v:778]
+WARNING: [Synth 8-6014] Unused sequential element q_insn_imm_reg was removed.  [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/picorv32.v:779]
+WARNING: [Synth 8-6014] Unused sequential element q_insn_opcode_reg was removed.  [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/picorv32.v:780]
+WARNING: [Synth 8-6014] Unused sequential element q_insn_rs1_reg was removed.  [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/picorv32.v:781]
+WARNING: [Synth 8-6014] Unused sequential element q_insn_rs2_reg was removed.  [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/picorv32.v:782]
+WARNING: [Synth 8-6014] Unused sequential element q_insn_rd_reg was removed.  [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/picorv32.v:783]
+WARNING: [Synth 8-6014] Unused sequential element dbg_next_reg was removed.  [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/picorv32.v:784]
+WARNING: [Synth 8-6014] Unused sequential element dbg_valid_insn_reg was removed.  [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/picorv32.v:787]
+WARNING: [Synth 8-6014] Unused sequential element cached_ascii_instr_reg was removed.  [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/picorv32.v:792]
+WARNING: [Synth 8-6014] Unused sequential element cached_insn_imm_reg was removed.  [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/picorv32.v:793]
+WARNING: [Synth 8-6014] Unused sequential element cached_insn_opcode_reg was removed.  [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/picorv32.v:795]
+WARNING: [Synth 8-6014] Unused sequential element cached_insn_rs1_reg was removed.  [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/picorv32.v:798]
+WARNING: [Synth 8-6014] Unused sequential element cached_insn_rs2_reg was removed.  [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/picorv32.v:799]
+WARNING: [Synth 8-6014] Unused sequential element cached_insn_rd_reg was removed.  [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/picorv32.v:800]
+WARNING: [Synth 8-6014] Unused sequential element dbg_insn_addr_reg was removed.  [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/picorv32.v:804]
+WARNING: [Synth 8-6014] Unused sequential element is_sll_srl_sra_reg was removed.  [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/picorv32.v:1108]
+WARNING: [Synth 8-6014] Unused sequential element set_mem_do_rinst_reg was removed.  [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/picorv32.v:1402]
+WARNING: [Synth 8-6014] Unused sequential element set_mem_do_rdata_reg was removed.  [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/picorv32.v:1403]
+WARNING: [Synth 8-6014] Unused sequential element set_mem_do_wdata_reg was removed.  [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/picorv32.v:1404]
+WARNING: [Synth 8-6014] Unused sequential element alu_out_0_q_reg was removed.  [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/picorv32.v:1406]
+WARNING: [Synth 8-6014] Unused sequential element alu_wait_reg was removed.  [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/picorv32.v:1409]
+WARNING: [Synth 8-6014] Unused sequential element alu_wait_2_reg was removed.  [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/picorv32.v:1410]
+WARNING: [Synth 8-6014] Unused sequential element dbg_rs1val_reg was removed.  [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/picorv32.v:1413]
+WARNING: [Synth 8-6014] Unused sequential element dbg_rs2val_reg was removed.  [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/picorv32.v:1414]
+WARNING: [Synth 8-6014] Unused sequential element dbg_rs1val_valid_reg was removed.  [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/picorv32.v:1415]
+WARNING: [Synth 8-6014] Unused sequential element dbg_rs2val_valid_reg was removed.  [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/picorv32.v:1416]
+WARNING: [Synth 8-6014] Unused sequential element next_irq_pending_reg was removed.  [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/picorv32.v:1436]
+WARNING: [Synth 8-6014] Unused sequential element decoder_trigger_q_reg was removed.  [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/picorv32.v:1443]
+WARNING: [Synth 8-6014] Unused sequential element decoder_pseudo_trigger_q_reg was removed.  [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/picorv32.v:1445]
+WARNING: [Synth 8-6014] Unused sequential element latched_trace_reg was removed.  [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/picorv32.v:1461]
+WARNING: [Synth 8-6014] Unused sequential element current_pc_reg was removed.  [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/picorv32.v:1491]
+WARNING: [Synth 8-6014] Unused sequential element kw_x_reg was removed.  [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:767]
+WARNING: [Synth 8-6014] Unused sequential element kw_y_reg was removed.  [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:768]
+WARNING: [Synth 8-6014] Unused sequential element ou_y_reg was removed.  [C:/Data-Mobility-Optimization-ML-IoT/SoC/SoCSource/source/accel_source/al_accel_RDATA_ctrl.v:773]
+WARNING: [Synth 8-7129] Port COMPS_start in module al_accel_WBACK_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ofm_height[15] in module al_accel_RDATA_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ofm_height[14] in module al_accel_RDATA_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ofm_height[13] in module al_accel_RDATA_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ofm_height[12] in module al_accel_RDATA_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ofm_height[11] in module al_accel_RDATA_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ofm_height[10] in module al_accel_RDATA_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ofm_height[9] in module al_accel_RDATA_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ofm_height[8] in module al_accel_RDATA_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ofm_height[7] in module al_accel_RDATA_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ofm_height[6] in module al_accel_RDATA_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ofm_height[5] in module al_accel_RDATA_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ofm_height[4] in module al_accel_RDATA_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ofm_height[3] in module al_accel_RDATA_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ofm_height[2] in module al_accel_RDATA_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ofm_height[1] in module al_accel_RDATA_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ofm_height[0] in module al_accel_RDATA_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port elew_output_offset[31] in module al_accel_elw_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port elew_output_offset[30] in module al_accel_elw_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port elew_output_offset[29] in module al_accel_elw_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port elew_output_offset[28] in module al_accel_elw_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port elew_output_offset[27] in module al_accel_elw_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port elew_output_offset[26] in module al_accel_elw_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port elew_output_offset[25] in module al_accel_elw_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port elew_output_offset[24] in module al_accel_elw_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port elew_output_offset[23] in module al_accel_elw_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port elew_output_offset[22] in module al_accel_elw_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port elew_output_offset[21] in module al_accel_elw_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port elew_output_offset[20] in module al_accel_elw_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port elew_output_offset[19] in module al_accel_elw_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port elew_output_offset[18] in module al_accel_elw_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port elew_output_offset[17] in module al_accel_elw_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port elew_output_offset[16] in module al_accel_elw_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port elew_output_offset[15] in module al_accel_elw_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port elew_output_offset[14] in module al_accel_elw_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port elew_output_offset[13] in module al_accel_elw_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port elew_output_offset[12] in module al_accel_elw_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port elew_output_offset[11] in module al_accel_elw_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port elew_output_offset[10] in module al_accel_elw_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port elew_output_offset[9] in module al_accel_elw_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port elew_output_offset[8] in module al_accel_elw_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lut_input_offset[31] in module al_accel_lut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lut_input_offset[30] in module al_accel_lut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lut_input_offset[29] in module al_accel_lut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lut_input_offset[28] in module al_accel_lut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lut_input_offset[27] in module al_accel_lut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lut_input_offset[26] in module al_accel_lut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lut_input_offset[25] in module al_accel_lut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lut_input_offset[24] in module al_accel_lut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lut_input_offset[23] in module al_accel_lut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lut_input_offset[22] in module al_accel_lut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lut_input_offset[21] in module al_accel_lut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lut_input_offset[20] in module al_accel_lut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lut_input_offset[19] in module al_accel_lut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lut_input_offset[18] in module al_accel_lut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lut_input_offset[17] in module al_accel_lut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lut_input_offset[16] in module al_accel_lut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lut_input_offset[15] in module al_accel_lut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lut_input_offset[14] in module al_accel_lut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lut_input_offset[13] in module al_accel_lut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lut_input_offset[12] in module al_accel_lut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lut_input_offset[11] in module al_accel_lut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lut_input_offset[10] in module al_accel_lut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port lut_input_offset[9] in module al_accel_lut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port raddr[17] in module picosoc_dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port raddr[16] in module picosoc_dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port raddr[15] in module picosoc_dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port waddr[17] in module picosoc_dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port waddr[16] in module picosoc_dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port waddr[15] in module picosoc_dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_dat_di[31] in module simpleuart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_dat_di[30] in module simpleuart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_dat_di[29] in module simpleuart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_dat_di[28] in module simpleuart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_dat_di[27] in module simpleuart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_dat_di[26] in module simpleuart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_dat_di[25] in module simpleuart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_dat_di[24] in module simpleuart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_dat_di[23] in module simpleuart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_dat_di[22] in module simpleuart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_dat_di[21] in module simpleuart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_dat_di[20] in module simpleuart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_dat_di[19] in module simpleuart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_dat_di[18] in module simpleuart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_dat_di[17] in module simpleuart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_dat_di[16] in module simpleuart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_dat_di[15] in module simpleuart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_dat_di[14] in module simpleuart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_dat_di[13] in module simpleuart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_dat_di[12] in module simpleuart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_dat_di[11] in module simpleuart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_dat_di[10] in module simpleuart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_dat_di[9] in module simpleuart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_dat_di[8] in module simpleuart is either unconnected or has no load
+WARNING: [Synth 8-7129] Port raddr[17] in module picosoc_imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port raddr[16] in module picosoc_imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port waddr[17] in module picosoc_imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port waddr[16] in module picosoc_imem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port waddr[5] in module picosoc_regs is either unconnected or has no load
+WARNING: [Synth 8-7129] Port raddr1[5] in module picosoc_regs is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 2222.836 ; gain = 607.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 2222.836 ; gain = 607.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 2222.836 ; gain = 607.977
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.500 . Memory (MB): peak = 2222.836 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 2278.461 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.526 . Memory (MB): peak = 2395.320 ; gain = 116.711
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:21 . Memory (MB): peak = 2395.320 ; gain = 780.461
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xck26-sfvc784-2LV-c
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:21 . Memory (MB): peak = 2395.320 ; gain = 780.461
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:21 . Memory (MB): peak = 2395.320 ; gain = 780.461
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'smooth_rdy_sig_module'
+INFO: [Synth 8-802] inferred FSM for state register 'mem_state_reg' in module 'picorv32'
+INFO: [Synth 8-802] inferred FSM for state register 'irq_state_reg' in module 'picorv32'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'al_accel_pico_ctrl'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'al_accel_mac'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'al_accel_quant_unit'
+INFO: [Synth 8-802] inferred FSM for state register 'RDATA_imini_state_reg' in module 'al_accel_RDATA_ctrl'
+INFO: [Synth 8-802] inferred FSM for state register 'COMPS_gstate_reg' in module 'al_accel_COMPS_ctrl'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                   START |                              001 |                               00
+                    WAIT |                              010 |                               01
+                 TRIGGER |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'smooth_rdy_sig_module'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE0 |                              001 |                               00
+                 iSTATE1 |                              010 |                               01
+                  iSTATE |                              100 |                               10
+*
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'irq_state_reg' using encoding 'one-hot' in module 'picorv32'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE2 |                               00 |                               00
+                 iSTATE0 |                               01 |                               10
+                  iSTATE |                               10 |                               01
+                 iSTATE1 |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'mem_state_reg' using encoding 'sequential' in module 'picorv32'
+INFO: [Synth 8-6793] RAM ("picosoc_imem:/memory_reg") is implemented using BRAM instead of URAM due to insufficient pipeline registers. Available pipeline stages = 0, Minimum required pipeline stages = 5 
+INFO: [Synth 8-6793] RAM ("picosoc_imem:/memory_reg") is implemented using BRAM instead of URAM due to insufficient pipeline registers. Available pipeline stages = 0, Minimum required pipeline stages = 5 
+INFO: [Synth 8-6793] RAM ("picosoc_dmem:/mem_reg") is implemented using BRAM instead of URAM due to insufficient pipeline registers. Available pipeline stages = 0, Minimum required pipeline stages = 4 
+INFO: [Synth 8-6793] RAM ("picosoc_dmem:/mem_reg") is implemented using BRAM instead of URAM due to insufficient pipeline registers. Available pipeline stages = 0, Minimum required pipeline stages = 4 
+WARNING: [Synth 8-6841] Block RAM (mem_reg) originally specified as a Byte Wide Write Enable RAM cannot take advantage of ByteWide feature and is implemented with single write enable per RAM due to following reason.
+(address width (15) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal. Please use attribute ram_decomp = power if BWWE is desired.)
+INFO: [Synth 8-6793] RAM ("picosoc_dmem:/mem_reg") is implemented using BRAM instead of URAM due to insufficient pipeline registers. Available pipeline stages = 0, Minimum required pipeline stages = 4 
+INFO: [Synth 8-6793] RAM ("picosoc_dmem:/mem_reg") is implemented using BRAM instead of URAM due to insufficient pipeline registers. Available pipeline stages = 0, Minimum required pipeline stages = 4 
+INFO: [Synth 8-6793] RAM ("picosoc_dmem:/mem_reg") is implemented using BRAM instead of URAM due to insufficient pipeline registers. Available pipeline stages = 0, Minimum required pipeline stages = 4 
+INFO: [Synth 8-6793] RAM ("picosoc_dmem:/mem_reg") is implemented using BRAM instead of URAM due to insufficient pipeline registers. Available pipeline stages = 0, Minimum required pipeline stages = 4 
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                     RST |                             0001 |                               00
+                     CFG |                             0010 |                               01
+                     RUN |                             0100 |                               10
+                     FIN |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'al_accel_pico_ctrl'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    LOAD |                             0000 |                             0000
+                   ONE_C |                             0001 |                             0001
+                   TWO_C |                             0010 |                             0010
+                 THREE_C |                             0011 |                             0011
+                  FOUR_C |                             0100 |                             0100
+                  FIVE_C |                             0101 |                             0101
+                   SIX_C |                             0110 |                             0110
+                 SEVEN_C |                             0111 |                             0111
+                 EIGHT_C |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'al_accel_mac'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    LOAD |                             0000 |                             0000
+                   ONE_C |                             0001 |                             0001
+                   TWO_C |                             0010 |                             0010
+                 THREE_C |                             0011 |                             0011
+                  FOUR_C |                             0100 |                             0100
+                  FIVE_C |                             0101 |                             0101
+                   SIX_C |                             0110 |                             0110
+                 SEVEN_C |                             0111 |                             0111
+                 EIGHT_C |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'al_accel_quant_unit'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 I_START |                              000 |                             0000
+            I_SHIFT_LEFT |                              001 |                             0001
+                  iSTATE |                              010 |                             0101
+              I_DOWN_R2L |                              011 |                             0010
+           I_SHIFT_RIGHT |                              100 |                             0011
+                 iSTATE0 |                              101 |                             0110
+              I_DOWN_L2R |                              110 |                             0100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'RDATA_imini_state_reg' using encoding 'sequential' in module 'al_accel_RDATA_ctrl'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 G_START |                              000 |                              000
+               G_MAC_ENB |                              001 |                              001
+               G_ACC_ENB |                              010 |                              010
+                  G_WAIT |                              011 |                              011
+                G_FINISH |                              100 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'COMPS_gstate_reg' using encoding 'sequential' in module 'al_accel_COMPS_ctrl'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:25 . Memory (MB): peak = 2395.320 ; gain = 780.461
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   64 Bit       Adders := 3     
+	   2 Input   63 Bit       Adders := 4     
+	   2 Input   38 Bit       Adders := 3     
+	   3 Input   37 Bit       Adders := 9     
+	   2 Input   37 Bit       Adders := 3     
+	   3 Input   36 Bit       Adders := 9     
+	   2 Input   36 Bit       Adders := 3     
+	   2 Input   35 Bit       Adders := 3     
+	   3 Input   35 Bit       Adders := 3     
+	   2 Input   34 Bit       Adders := 3     
+	   2 Input   32 Bit       Adders := 331   
+	   3 Input   32 Bit       Adders := 2     
+	   4 Input   32 Bit       Adders := 1     
+	  10 Input   32 Bit       Adders := 3     
+	   2 Input   30 Bit       Adders := 8     
+	   3 Input   30 Bit       Adders := 1     
+	   3 Input   17 Bit       Adders := 1     
+	   2 Input   17 Bit       Adders := 4     
+	   2 Input   16 Bit       Adders := 14    
+	   3 Input   16 Bit       Adders := 2     
+	   4 Input   16 Bit       Adders := 2     
+	   2 Input   11 Bit       Adders := 81    
+	   2 Input   10 Bit       Adders := 81    
+	   2 Input    8 Bit       Adders := 81    
+	   3 Input    8 Bit       Adders := 3     
+	   2 Input    7 Bit       Adders := 1     
+	   2 Input    6 Bit       Adders := 1     
+	   2 Input    5 Bit       Adders := 4     
+	   3 Input    5 Bit       Adders := 16    
+	   2 Input    4 Bit       Adders := 4     
+	   2 Input    3 Bit       Adders := 15    
+	   2 Input    2 Bit       Adders := 3     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 81    
++---Registers : 
+	               72 Bit    Registers := 3     
+	               64 Bit    Registers := 7     
+	               63 Bit    Registers := 1     
+	               48 Bit    Registers := 9     
+	               36 Bit    Registers := 1     
+	               32 Bit    Registers := 341   
+	               16 Bit    Registers := 16    
+	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 231   
+	                7 Bit    Registers := 1     
+	                6 Bit    Registers := 11    
+	                5 Bit    Registers := 6     
+	                4 Bit    Registers := 13    
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 126   
++---RAMs : 
+	            2048K Bit	(65536 X 32 bit)          RAMs := 1     
+	            1024K Bit	(32768 X 32 bit)          RAMs := 1     
++---Muxes : 
+	   2 Input   72 Bit        Muxes := 9     
+	   7 Input   72 Bit        Muxes := 3     
+	   4 Input   72 Bit        Muxes := 12    
+	   4 Input   64 Bit        Muxes := 3     
+	   9 Input   64 Bit        Muxes := 3     
+	   2 Input   64 Bit        Muxes := 4     
+	   2 Input   63 Bit        Muxes := 2     
+	   7 Input   48 Bit        Muxes := 12    
+	   2 Input   48 Bit        Muxes := 87    
+	   4 Input   48 Bit        Muxes := 72    
+	   2 Input   32 Bit        Muxes := 198   
+	   9 Input   32 Bit        Muxes := 31    
+	   4 Input   32 Bit        Muxes := 36    
+	  10 Input   32 Bit        Muxes := 10    
+	   5 Input   32 Bit        Muxes := 9     
+	   6 Input   32 Bit        Muxes := 7     
+	   7 Input   32 Bit        Muxes := 2     
+	   3 Input   32 Bit        Muxes := 6     
+	   8 Input   32 Bit        Muxes := 1     
+	   2 Input   30 Bit        Muxes := 3     
+	   2 Input   27 Bit        Muxes := 3     
+	   4 Input   27 Bit        Muxes := 3     
+	  10 Input   27 Bit        Muxes := 1     
+	   2 Input   24 Bit        Muxes := 1     
+	   4 Input   24 Bit        Muxes := 4     
+	   7 Input   24 Bit        Muxes := 3     
+	  10 Input   24 Bit        Muxes := 3     
+	   2 Input   21 Bit        Muxes := 1     
+	   4 Input   21 Bit        Muxes := 1     
+	   5 Input   16 Bit        Muxes := 2     
+	   2 Input   16 Bit        Muxes := 18    
+	  10 Input   16 Bit        Muxes := 7     
+	   4 Input   16 Bit        Muxes := 11    
+	   6 Input   16 Bit        Muxes := 1     
+	   3 Input   16 Bit        Muxes := 2     
+	   2 Input   11 Bit        Muxes := 81    
+	   2 Input   10 Bit        Muxes := 3     
+	   2 Input    9 Bit        Muxes := 4     
+	   4 Input    9 Bit        Muxes := 4     
+	   6 Input    9 Bit        Muxes := 1     
+	  10 Input    9 Bit        Muxes := 2     
+	   5 Input    9 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 164   
+	   4 Input    8 Bit        Muxes := 100   
+	   3 Input    8 Bit        Muxes := 2     
+	   9 Input    8 Bit        Muxes := 1     
+	   4 Input    7 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 79    
+	   7 Input    6 Bit        Muxes := 13    
+	   6 Input    6 Bit        Muxes := 1     
+	  10 Input    6 Bit        Muxes := 4     
+	   4 Input    6 Bit        Muxes := 42    
+	   3 Input    6 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 40    
+	   4 Input    5 Bit        Muxes := 8     
+	  10 Input    5 Bit        Muxes := 2     
+	   5 Input    5 Bit        Muxes := 5     
+	   6 Input    5 Bit        Muxes := 3     
+	   8 Input    5 Bit        Muxes := 2     
+	   9 Input    4 Bit        Muxes := 33    
+	   2 Input    4 Bit        Muxes := 46    
+	   5 Input    4 Bit        Muxes := 3     
+	   6 Input    4 Bit        Muxes := 2     
+	   4 Input    4 Bit        Muxes := 15    
+	  10 Input    4 Bit        Muxes := 3     
+	   3 Input    4 Bit        Muxes := 3     
+	   7 Input    4 Bit        Muxes := 1     
+	   9 Input    3 Bit        Muxes := 27    
+	   2 Input    3 Bit        Muxes := 56    
+	   7 Input    3 Bit        Muxes := 4     
+	  10 Input    3 Bit        Muxes := 11    
+	   4 Input    3 Bit        Muxes := 19    
+	   6 Input    3 Bit        Muxes := 5     
+	  17 Input    3 Bit        Muxes := 1     
+	   3 Input    3 Bit        Muxes := 2     
+	   5 Input    3 Bit        Muxes := 3     
+	   8 Input    3 Bit        Muxes := 2     
+	   2 Input    2 Bit        Muxes := 21    
+	   4 Input    2 Bit        Muxes := 13    
+	   5 Input    2 Bit        Muxes := 3     
+	   6 Input    2 Bit        Muxes := 3     
+	  10 Input    2 Bit        Muxes := 6     
+	   7 Input    2 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 223   
+	   9 Input    1 Bit        Muxes := 96    
+	   4 Input    1 Bit        Muxes := 76    
+	  10 Input    1 Bit        Muxes := 33    
+	   5 Input    1 Bit        Muxes := 32    
+	   6 Input    1 Bit        Muxes := 17    
+	   7 Input    1 Bit        Muxes := 9     
+	  18 Input    1 Bit        Muxes := 87    
+	   8 Input    1 Bit        Muxes := 5     
+	   3 Input    1 Bit        Muxes := 13    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1248 (col length:96)
+BRAMs: 288 (col length: RAMB18 96 RAMB36 48)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+INFO: [Synth 8-6904] The RAM "soci_3/cpu/cpuregs/regs_reg" of size (depth=32 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "soci_3/cpu/cpuregs/regs_reg" of size (depth=32 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6793] RAM ("Test_1_al_ultra96v2_0_0/imem/memory_reg") is implemented using BRAM instead of URAM due to insufficient pipeline registers. Available pipeline stages = 0, Minimum required pipeline stages = 5 
+INFO: [Synth 8-6793] RAM ("Test_1_al_ultra96v2_0_0/dmem/mem_reg") is implemented using BRAM instead of URAM due to insufficient pipeline registers. Available pipeline stages = 0, Minimum required pipeline stages = 4 
+WARNING: [Synth 8-6841] Block RAM (dmem/mem_reg) originally specified as a Byte Wide Write Enable RAM cannot take advantage of ByteWide feature and is implemented with single write enable per RAM due to following reason.
+(address width (15) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal. Please use attribute ram_decomp = power if BWWE is desired.)
+INFO: [Synth 8-6793] RAM ("Test_1_al_ultra96v2_0_0/dmem/mem_reg") is implemented using BRAM instead of URAM due to insufficient pipeline registers. Available pipeline stages = 0, Minimum required pipeline stages = 4 
+INFO: [Synth 8-6793] RAM ("Test_1_al_ultra96v2_0_0/dmem/mem_reg") is implemented using BRAM instead of URAM due to insufficient pipeline registers. Available pipeline stages = 0, Minimum required pipeline stages = 4 
+INFO: [Synth 8-6793] RAM ("Test_1_al_ultra96v2_0_0/dmem/mem_reg") is implemented using BRAM instead of URAM due to insufficient pipeline registers. Available pipeline stages = 0, Minimum required pipeline stages = 4 
+INFO: [Synth 8-6793] RAM ("Test_1_al_ultra96v2_0_0/dmem/mem_reg") is implemented using BRAM instead of URAM due to insufficient pipeline registers. Available pipeline stages = 0, Minimum required pipeline stages = 4 
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:50 ; elapsed = 00:01:29 . Memory (MB): peak = 2649.832 ; gain = 1034.973
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping Report
++--------------------+------------+---------------+----------------+
+|Module Name         | RTL Object | Depth x Width | Implemented As | 
++--------------------+------------+---------------+----------------+
+|al_accel_RDATA_ctrl | ibuf_enb   | 32x3          | LUT            | 
+|al_accel_RDATA_ctrl | ibuf_enb   | 32x3          | LUT            | 
++--------------------+------------+---------------+----------------+
+
+
+Block RAM: Preliminary Mapping Report (see note below)
++------------------------+-----------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|Module Name             | RTL Object      | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | Cascade Heights | 
++------------------------+-----------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|Test_1_al_ultra96v2_0_0 | imem/memory_reg | 64 K x 32(READ_FIRST)  | W |   | 64 K x 32(WRITE_FIRST) |   | R | Port A and B     | 0      | 58     | 8,8,8,8,8,8,8,2 | 
+|Test_1_al_ultra96v2_0_0 | dmem/mem_reg    | 32 K x 32(READ_FIRST)  | W |   | 32 K x 32(WRITE_FIRST) |   | R | Port A and B     | 0      | 32     | 8,8,8,8         | 
++------------------------+-----------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++------------+------------------+-----------+----------------------+---------------+
+|Module Name | RTL Object       | Inference | Size (Depth x Width) | Primitives    | 
++------------+------------------+-----------+----------------------+---------------+
+|soci_3/cpu  | cpuregs/regs_reg | Implied   | 32 x 32              | RAM32M16 x 6  | 
++------------+------------------+-----------+----------------------+---------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:56 ; elapsed = 00:01:39 . Memory (MB): peak = 2750.148 ; gain = 1135.289
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:56 ; elapsed = 00:01:39 . Memory (MB): peak = 2750.324 ; gain = 1135.465
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping Report
++------------------------+-----------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|Module Name             | RTL Object      | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | Cascade Heights | 
++------------------------+-----------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|Test_1_al_ultra96v2_0_0 | imem/memory_reg | 64 K x 32(READ_FIRST)  | W |   | 64 K x 32(WRITE_FIRST) |   | R | Port A and B     | 0      | 58     | 8,8,8,8,8,8,8,2 | 
+|Test_1_al_ultra96v2_0_0 | dmem/mem_reg    | 32 K x 32(READ_FIRST)  | W |   | 32 K x 32(WRITE_FIRST) |   | R | Port A and B     | 0      | 32     | 8,8,8,8         | 
++------------------------+-----------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+
+
+Distributed RAM: Final Mapping Report
++------------+------------------+-----------+----------------------+---------------+
+|Module Name | RTL Object       | Inference | Size (Depth x Width) | Primitives    | 
++------------+------------------+-----------+----------------------+---------------+
+|soci_3/cpu  | cpuregs/regs_reg | Implied   | 32 x 32              | RAM32M16 x 6  | 
++------------+------------------+-----------+----------------------+---------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance inst/soc/imem/memory_reg_bram_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/soc/imem/memory_reg_bram_15 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/soc/imem/memory_reg_bram_23 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/soc/imem/memory_reg_bram_31 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/soc/imem/memory_reg_bram_39 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/soc/imem/memory_reg_bram_47 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/soc/imem/memory_reg_bram_55 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/soc/imem/memory_reg_bram_57 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/soc/dmem/mem_reg_0_bram_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/soc/dmem/mem_reg_1_bram_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/soc/dmem/mem_reg_2_bram_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/soc/dmem/mem_reg_3_bram_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:57 ; elapsed = 00:01:42 . Memory (MB): peak = 2858.848 ; gain = 1243.988
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:59 ; elapsed = 00:01:46 . Memory (MB): peak = 2866.375 ; gain = 1251.516
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:59 ; elapsed = 00:01:47 . Memory (MB): peak = 2866.375 ; gain = 1251.516
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:00 ; elapsed = 00:01:49 . Memory (MB): peak = 2866.375 ; gain = 1251.516
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:00 ; elapsed = 00:01:49 . Memory (MB): peak = 2866.375 ; gain = 1251.516
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:00 ; elapsed = 00:01:50 . Memory (MB): peak = 2866.375 ; gain = 1251.516
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:00 ; elapsed = 00:01:50 . Memory (MB): peak = 2866.375 ; gain = 1251.516
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY8   |  1457|
+|2     |LUT1     |   904|
+|3     |LUT2     |  3132|
+|4     |LUT3     |  2409|
+|5     |LUT4     |  2252|
+|6     |LUT5     |  5671|
+|7     |LUT6     | 10045|
+|8     |MUXF7    |   314|
+|9     |MUXF8    |    29|
+|10    |RAM32M   |     2|
+|11    |RAM32M16 |     4|
+|12    |RAMB36E2 |    90|
+|23    |FDRE     | 11941|
+|24    |FDSE     |   104|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:00 ; elapsed = 00:01:50 . Memory (MB): peak = 2866.375 ; gain = 1251.516
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 17 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:51 ; elapsed = 00:01:44 . Memory (MB): peak = 2866.375 ; gain = 1079.031
+Synthesis Optimization Complete : Time (s): cpu = 00:01:00 ; elapsed = 00:01:50 . Memory (MB): peak = 2866.375 ; gain = 1251.516
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.505 . Memory (MB): peak = 2866.375 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1806 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 2866.375 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 6 instances were transformed.
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 2 instances
+  RAM32M16 => RAM32M16 (RAMD32(x14), RAMS32(x2)): 4 instances
+
+Synth Design complete | Checksum: e04c2dc
+INFO: [Common 17-83] Releasing license: Synthesis
+252 Infos, 166 Warnings, 4 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:05 ; elapsed = 00:02:07 . Memory (MB): peak = 2866.375 ; gain = 2222.844
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Coretcl 2-1174] Renamed 168 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.049 . Memory (MB): peak = 2866.375 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Data-Mobility-Optimization-ML-IoT/Hardware/Vivado/Debug/Debug/Debug.runs/Test_1_al_ultra96v2_0_0_synth_1/Test_1_al_ultra96v2_0_0.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file Test_1_al_ultra96v2_0_0_utilization_synth.rpt -pb Test_1_al_ultra96v2_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Oct 26 16:39:34 2024...

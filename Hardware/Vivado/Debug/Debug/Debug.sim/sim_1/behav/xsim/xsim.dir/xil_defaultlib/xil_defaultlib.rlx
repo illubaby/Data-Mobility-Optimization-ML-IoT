@@ -1,0 +1,7 @@
+0.7
+2020.2
+May 22 2024
+19:03:11
+C:/Data-Mobility-Optimization-ML-IoT/Hardware/Vivado/Debug/Debug/Debug.sim/sim_1/behav/xsim/glbl.v,1708598507,verilog,,,,glbl,,axi_vip_v1_1_17;xilinx_vip;zynq_ultra_ps_e_vip_v1_0_17,,,,,,
+C:/Data-Mobility-Optimization-ML-IoT/Hardware/Vivado/Debug/Debug/Debug.srcs/sim_1/new/buffer_tb.v,1730825692,verilog,,,,myip_tb,,axi_vip_v1_1_17;xilinx_vip;zynq_ultra_ps_e_vip_v1_0_17,../../../../Debug.gen/sources_1/bd/Test/ipshared/a317/hdl;../../../../Debug.gen/sources_1/bd/Test/ipshared/ec67/hdl;../../../../Debug.gen/sources_1/bd/Test_1/ipshared/a317/hdl;../../../../Debug.gen/sources_1/bd/Test_1/ipshared/ec67/hdl;C:/Xilinx/Vivado/2024.1/data/xilinx_vip/include,,,,,
+C:/Data-Mobility-Optimization-ML-IoT/Hardware/Vivado/Debug/Debug/SoCSource/DataBuffer.v,1730132918,verilog,,C:/Data-Mobility-Optimization-ML-IoT/Hardware/Vivado/Debug/Debug/Debug.srcs/sim_1/new/buffer_tb.v,,DataBufferAxi,,axi_vip_v1_1_17;xilinx_vip;zynq_ultra_ps_e_vip_v1_0_17,../../../../Debug.gen/sources_1/bd/Test/ipshared/a317/hdl;../../../../Debug.gen/sources_1/bd/Test/ipshared/ec67/hdl;../../../../Debug.gen/sources_1/bd/Test_1/ipshared/a317/hdl;../../../../Debug.gen/sources_1/bd/Test_1/ipshared/ec67/hdl;C:/Xilinx/Vivado/2024.1/data/xilinx_vip/include,,,,,
